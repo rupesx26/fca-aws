@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+ text-rendering: optimizeLegibility;
+}
+// body::-webkit-scrollbar { 
+//   display: none; 
+// }
+
+#root {
+  min-height: 100%;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.row {
+  flex-direction: row;
+
+  &.reverse {
+    flex-direction: row-reverse;;
+  }
+}
+
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  margin-right: $gutter;
+  margin-left: $gutter;
+
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  [class^="col-"] {
+      box-sizing: border-box;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding-right: $gutter / 2;
+      padding-left: $gutter / 2;
+  }
+  &.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    }
+
+  .no-gutters {
+    padding-right: 0;
+    padding-left: 0;
+    }
+    .no-gutters-left {
+      padding-left: 0;
+    }
+    .no-gutters-right {
+      padding-right: 0;
+    }
+
+}
+
+@include grid-generator(xs, 12);
+
+@include respond-from(sm) {
+	@include grid-generator(sm, 12);
+}
+
+@include respond-from(md) {
+	@include grid-generator(md, 12);
+}
+
+@include respond-from(lg) {
+	@include grid-generator(lg, 12);
+}
+
+@include respond-from(xl) {
+	@include grid-generator(xl, 10);
+	@include grid-generator(xl, 12);
+}
+
+.align-right {
+  text-align: right;
+}
+
+
+.justify-content-right {
+  justify-content: flex-end!important;
+}
+
+.justify-content-left {
+  justify-content: flex-start!important;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.none {
+  display: none!important;
+}
+
+.home-page {
+    @include respond-until(sm) {
+      overflow-x: hidden;
+    }
+}
+
+.scrollbar-thumb {
+  background-color: rgba($color: #ccc, $alpha: 0.4)!important;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.bg-color-gray {
+  background: #f2f2f2;
+}
