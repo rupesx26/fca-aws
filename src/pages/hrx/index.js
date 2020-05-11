@@ -11,11 +11,12 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { hrxImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import HrxSlider from "../../components/pageslider";
+import * as meta from "../../components/meta.json";
 import "./hrx.scss";
+
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 console.log(plugins);
-
 //import 'debug.addIndicators';
 class About extends Component {
   constructor(props) {
@@ -78,6 +79,9 @@ class About extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -240,13 +244,15 @@ class About extends Component {
       para2: `So, we created and designed a graphic novel that \n he would hand out to the kids. The story is inspired \n by Hrithik’s own struggles as a child and how \n he overcame hurdle after hurdle, \n to become the star he is today.`,
       para3: ` `
     };
+    const metakeywords = meta.hrithikroshan;
+
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

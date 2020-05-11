@@ -23,6 +23,12 @@ class CareersInternal extends Component {
     this.internalPages = this.internalPages.bind(this);
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  }
+
   internalPages(param) {
     const player = OpeningAPI.get(parseInt(param.id, 10));
     const jobRole = player.jobRole ? player.jobRole : null;

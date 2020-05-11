@@ -10,6 +10,8 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { niharImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
+import * as meta from "../../components/meta.json";
+
 import "./nihar.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -44,6 +46,9 @@ class NiharGold extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -180,13 +185,14 @@ class NiharGold extends Component {
       para2: `Our approach was to create something new without losing the familiarity built by the brand over \n so many years. The coconut halves and the hair silhouette announce that it’s a Nihar coconut hair oil product from a mile.  We added a pop of parallel gold streaks to convey that this is a premium sub-brand.`,
       para3: ` `
     };
+    const metakeywords = meta.nihargold;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

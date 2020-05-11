@@ -3,9 +3,6 @@ import Slider from "react-slick";
 import "./slider.scss";
 
 class SimpleSlider extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const settings = {
       dots: this.props.dots,

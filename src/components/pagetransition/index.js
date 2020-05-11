@@ -32,6 +32,7 @@ const PageAnimWrapper = props => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      scroll={0}
     >
       {props.children}
     </motion.div>

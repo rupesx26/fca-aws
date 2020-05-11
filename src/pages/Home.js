@@ -78,7 +78,7 @@ import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 import { isMobile } from "react-device-detect"; //is for mobile devices
 import Pagination from "../components/verticalpagination";
-
+import * as meta from "../components/meta.json";
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -307,12 +307,13 @@ class Home extends Component {
     const renderContent = mobileView
       ? this.mobileContent()
       : this.fullpageWrapper();
+    const metakeywords = meta.home;
     return (
       <PageAnimWrapper>
         <Head
-          title="new react ssr home page"
-          description="home page description"
-          content="home page content"
+          title="FINDCreative Eve"
+          content="We are a global agency that delivers digital transformation powered by creativity, who believe in Ideas Without Limits, pushing the boundaries of technology and creativity."
+          keywordslist={`${metakeywords}`}
         />
         <Navigation
           toggleHeader={this.state.toggleHeader}

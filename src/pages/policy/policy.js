@@ -3,6 +3,8 @@ import Head from "../Head";
 import PageAnimWrapper from "../../components/pagetransition";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
+import * as meta from "../../components/meta.json";
+
 import "./policy.scss";
 
 class Policy extends Component {
@@ -18,15 +20,24 @@ class Policy extends Component {
       fullpageAnimation: false
     };
   }
-
+  componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  }
   render() {
+    const projectSummaryContent = {
+      workTitle: `policy`,
+      brief: `Findcreative policy`
+    };
+    const metakeywords = meta.common;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

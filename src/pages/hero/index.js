@@ -10,12 +10,14 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { heroImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
+import * as meta from "../../components/meta.json";
+
 import "./hero.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 console.log(plugins);
 
-class NiharGold extends Component {
+class Hero extends Component {
   constructor(props) {
     super(props);
     this.ScrollMagic = null;
@@ -53,6 +55,10 @@ class NiharGold extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -300,13 +306,14 @@ class NiharGold extends Component {
       para2: ` `,
       para1: `Hero Talkies is an online video-streaming platform with South Indian content. In order to position the brand as an authentic platform for the best curation of high-quality movies, we redesigned the logo. \n We used the classic ‘play’ button and a lightning bolt to represent great quality and speed. We also designed collaterals, stationery and brand guidelines for the brand.`
     };
+    const metakeywords = meta.herotalkies;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}
@@ -485,4 +492,4 @@ class NiharGold extends Component {
     );
   }
 }
-export default NiharGold;
+export default Hero;

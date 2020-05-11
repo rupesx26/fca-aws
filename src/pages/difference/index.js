@@ -10,6 +10,8 @@ import Navigation from "../../components/navigation";
 import { TimelineMax, TimelineLite, TweenMax, Power2, CSSPlugin } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import { differImagePath } from "../../utils/assetUtils";
+import * as meta from "../../components/meta.json";
+
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 console.log(plugins);
@@ -57,6 +59,9 @@ class About extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     const classArray = [
       "color1",
       "color2",
@@ -119,7 +124,7 @@ class About extends Component {
         "-=.95"
       );
       para2ContentArr.map((ele, idx) => {
-        para2TextAnimation.fromTo(
+        return para2TextAnimation.fromTo(
           ele,
           1.1,
           { opacity: 0, y: 100 },
@@ -149,7 +154,7 @@ class About extends Component {
       );
 
       listArr.map((ele, idx) => {
-        listAnimation.fromTo(
+        return listAnimation.fromTo(
           ele,
           1.1,
           { opacity: 0, y: 100 },
@@ -177,7 +182,7 @@ class About extends Component {
         { opacity: 1, y: 0, ease: Power2.inOut }
       );
       boxCellArr.map((ele, idx) => {
-        boxAnimation.fromTo(
+        return boxAnimation.fromTo(
           ele,
           1.1,
           { opacity: 0, y: 100 },
@@ -236,13 +241,18 @@ class About extends Component {
   }
 
   render() {
+    const projectSummaryContent = {
+      workTitle: `Difference`,
+      brief: `The first step to solving a problem is to simplify the brief`
+    };
+    const metakeywords = meta.difference;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}
@@ -544,10 +554,10 @@ class About extends Component {
             </small>
             <Link
               to="/work"
-              data-text="view work"
+              data-text="View Work"
               className={`title footer-title invert`}
             >
-              view work
+              View Work
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

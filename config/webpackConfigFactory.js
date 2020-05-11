@@ -156,6 +156,8 @@ module.exports = function(envType) {
       }
     ].filter(Boolean)
   };
+  /* eslint-disable */
+
   (config.resolve = IS_DEV
     ? {
         modules: ["node_modules"],

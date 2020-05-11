@@ -74,7 +74,7 @@ class Navigation extends Component {
   menuListAnimation() {
     return menu.map((val, index) => {
       const delay = 0.3 + index / 10;
-      this.menuItemToggle
+      return this.menuItemToggle
         .fromTo(
           `.list-item-wrapper:nth-child(${index + 1})`,
           delay,

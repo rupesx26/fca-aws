@@ -6,6 +6,7 @@ import Head from "../Head";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 import PortfolioList from "../../components/portfoliolist";
+import * as meta from "../../components/meta.json";
 //import { ScrollScene, addIndicators } from 'scrollscene';
 
 import "./work.scss";
@@ -33,6 +34,10 @@ class Work extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+
     window.addEventListener("scroll", this.handleScroll);
   }
   componentWillUnmount() {
@@ -68,13 +73,18 @@ class Work extends Component {
   }
 
   render() {
+    const projectSummaryContent = {
+      workTitle: `work`,
+      brief: `Findcreative work`
+    };
+    const metakeywords = meta.common;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

@@ -5,11 +5,13 @@ import Head from "../Head";
 import PageAnimWrapper from "../../components/pagetransition";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
-import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin } from "gsap";
+import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { rapidrupeeImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
+import * as meta from "../../components/meta.json";
+
 import "./rapidrupee.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -47,6 +49,9 @@ class Rapidrupee extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -74,7 +79,7 @@ class Rapidrupee extends Component {
 
     this.ScrollMagic = require("scrollmagic");
     this.controller = new this.ScrollMagic.Controller();
-    ScrollMagicPluginGsap(this.ScrollMagic, TweenMax, TimelineLite);
+    ScrollMagicPluginGsap(this.ScrollMagic, TweenMax, TimelineLite, gsap);
 
     const cardParallax = new TimelineLite();
     cardParallax
@@ -119,7 +124,7 @@ class Rapidrupee extends Component {
           y: 50,
           scale: 1,
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          ease: Power4.easeOut
+          ease: Power4.easeInOut
         },
         "-=.95"
       );
@@ -185,13 +190,14 @@ class Rapidrupee extends Component {
       para1: `Rapid Rupee is an online money-lending app which provides quick and convenient personal loans. \n We designed its logo, keeping in mind that we needed to cue in security, optimism and progress. \n Being a brand introducing itself to India, we also designed a detailed branding structure for it. One that encapsulates brand identity, character and tone of voice - a holy grail that can guide all future brand communication.`,
       para2: ` `
     };
+    const metakeywords = meta.rapidrupee;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

@@ -132,7 +132,7 @@ class PortfolioList extends Component {
       const animationTypeTwo = new TimelineMax();
 
       itemArr.map((item, index) => {
-        animationType
+        return animationType
           .to(
             `#${item.route}.work-wrapper-0 .work-image`,
             2,

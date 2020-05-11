@@ -13,6 +13,8 @@ import { cocoImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import VideoSection from "../../components/videosection";
 import "./cocosoul.scss";
+import * as meta from "../../components/meta.json";
+
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 console.log(plugins);
@@ -55,6 +57,9 @@ class Cocosoul extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -234,13 +239,14 @@ class Cocosoul extends Component {
       para2: `Everybody relates to the dedication that goes into cooking. But few people talk about the painstaking love that goes into sourcing and creating the ingredients. \n So, that’s exactly the story we told.`,
       para3: ` `
     };
+    const metakeywords = meta.cocosoul;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

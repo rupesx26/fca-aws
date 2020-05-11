@@ -17,6 +17,8 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { thambbiImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
+import * as meta from "../../components/meta.json";
+
 import "./thambbi.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -58,6 +60,9 @@ class Thambbi extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -285,13 +290,14 @@ class Thambbi extends Component {
       para1: `Thambbi is a South Indian restaurant chain, with 9 outlets in Mumbai and 1 in Pune. While the name itself translates to ‘brother’ in Tamil, the challenge was to strengthen its position as an authentic South-Indian restaurant chain. We started off with the main identity of the brand- the logo. We borrowed from the shapes of food, and the many colours and elements associated with South India. The rebranding exercise was followed by a new menu card design to enhance the overall experience of the restaurant.`,
       para2: ` `
     };
+    const metakeywords = meta.thambbi;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

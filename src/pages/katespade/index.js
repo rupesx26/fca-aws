@@ -10,6 +10,8 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { kateImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
+import * as meta from "../../components/meta.json";
+
 import "./kate.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -55,6 +57,9 @@ class KateSpade extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -305,13 +310,14 @@ class KateSpade extends Component {
       para1: `Being a global luxury fashion brand, Kate Spade was faced with a sudden flurry of new entrants and competition brands stealing the limelight. \n We helped them reclaim their position by auditing their Instagram page and strategizing creative ways to stand out of the clutter. The first step was to build \n a unique, identifiable brand identity, tone of voice and brand personality. We also helped them to identify Instagram fashion influencers/bloggers based out of Singapore.`,
       para2: ` `
     };
+    const metakeywords = meta.katespade;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

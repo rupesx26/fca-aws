@@ -5,6 +5,7 @@ import PageAnimWrapper from "../../components/pagetransition";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
 import "./connect.scss";
+import * as meta from "../../components/meta.json";
 
 //import 'debug.addIndicators';
 class Connect extends Component {
@@ -32,7 +33,9 @@ class Connect extends Component {
   }
 
   componentDidMount() {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
   }
 
@@ -57,13 +60,18 @@ class Connect extends Component {
   }
 
   render() {
+    const projectSummaryContent = {
+      workTitle: `Connect`,
+      brief: `Connect with us`
+    };
+    const metakeywords = meta.connect;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

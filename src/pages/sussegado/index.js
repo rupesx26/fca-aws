@@ -12,6 +12,8 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { sussegadoImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
+import * as meta from "../../components/meta.json";
+
 import "./sussegado.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -62,6 +64,9 @@ class Sussegado extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
     window.addEventListener("scroll", this.handleScroll);
     if (!isMobile) {
       this.pageAnimation();
@@ -219,14 +224,14 @@ class Sussegado extends Component {
       para2: `We designed 5 quirky characters – a rapper, hippie, biker, tattoo artist and a DJ. All who are at their best when there’s a steaming cup of coffee.`,
       para3: `The transparent slots for eyes in each jar create \n an illusion of droopy eyes as the level of the coffee goes down. So when your jar looks sleepy, it’s time to wake up, and get a new refill pack. `
     };
-
+    const metakeywords = meta.sussegado;
     return (
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            content={`${projectSummaryContent.brief}`}
+            keywordslist={`${metakeywords}`}
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}
