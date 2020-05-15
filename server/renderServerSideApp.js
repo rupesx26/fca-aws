@@ -47,6 +47,6 @@ function renderApp(ServerApp, data, req, res) {
       markup
     });
 
-    res.status(404).send(fullMarkup);
+    res.status(200).send(fullMarkup);
   }
 }

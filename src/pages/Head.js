@@ -95,6 +95,7 @@ const Head = props => {
         rel="shortcut icon"
         href={`${process.env.PUBLIC_URL}/favicons/favicon.ico?v1`}
       />
+      <link rel="manifest" href={`${process.env.PUBLIC_URL}/manifest.json`} />
     </Helmet>
   );
 };
