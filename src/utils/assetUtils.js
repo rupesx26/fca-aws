@@ -1,51 +1,53 @@
 // We can use "process.env.VAR_NAME" on both the server and the client.
 // See config/env.js and server/indexHtml.js
+
+const ImageUrl = "https://d2qj18ujwk1hn4.cloudfront.net";
 export function imagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/${assetName}`;
+  return `${ImageUrl}/${assetName}`;
 }
 
 export function workImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/work/${assetName}`;
+  return `${ImageUrl}/work/${assetName}`;
 }
 
 export function differImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/difference/${assetName}`;
+  return `${ImageUrl}/difference/${assetName}`;
 }
 
 export function hrxImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/hrx/${assetName}`;
+  return `${ImageUrl}/hrx/${assetName}`;
 }
 
 export function niharImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/nihar-gold/${assetName}`;
+  return `${ImageUrl}/nihar-gold/${assetName}`;
 }
 
 export function kateImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/kate/${assetName}`;
+  return `${ImageUrl}/kate/${assetName}`;
 }
 
 export function thambbiImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/thambbi/${assetName}`;
+  return `${ImageUrl}/thambbi/${assetName}`;
 }
 
 export function heroImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/hero/${assetName}`;
+  return `${ImageUrl}/hero/${assetName}`;
 }
 
 export function cocoImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/coco/${assetName}`;
+  return `${ImageUrl}/coco/${assetName}`;
 }
 
 export function sussegadoImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/jars/${assetName}`;
+  return `${ImageUrl}/jars/${assetName}`;
 }
 
 export function rapidrupeeImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/rapid-rupee/${assetName}`;
+  return `${ImageUrl}/rapid-rupee/${assetName}`;
 }
 
 export function gravityImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/gravity/${assetName}`;
+  return `${ImageUrl}/gravity/${assetName}`;
 }
 
 export function fontPath(assetName) {
@@ -53,5 +55,5 @@ export function fontPath(assetName) {
 }
 
 export function blobImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/blob/${assetName}`;
+  return `${ImageUrl}/blob/${assetName}`;
 }

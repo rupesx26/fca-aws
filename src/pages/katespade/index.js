@@ -15,7 +15,6 @@ import * as meta from "../../components/meta.json";
 import "./kate.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 class KateSpade extends Component {
   constructor(props) {

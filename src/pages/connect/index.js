@@ -88,7 +88,7 @@ class Connect extends Component {
                         Together, let’s find the best ways to build your brand.
                       </div>
 
-                      <form>
+                      <form style={{ display: "none" }}>
                         <div className="form-field">
                           <label>Your Name</label>
                           <input type="text" className="field" />

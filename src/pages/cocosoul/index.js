@@ -17,7 +17,6 @@ import * as meta from "../../components/meta.json";
 
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 class Cocosoul extends Component {
   constructor(props) {

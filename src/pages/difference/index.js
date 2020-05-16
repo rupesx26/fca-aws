@@ -14,7 +14,6 @@ import * as meta from "../../components/meta.json";
 
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 //import 'debug.addIndicators';
 class About extends Component {

@@ -15,7 +15,6 @@ import * as meta from "../../components/meta.json";
 import "./gravity.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 class Gravity extends Component {
   constructor(props) {

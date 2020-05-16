@@ -15,7 +15,6 @@ import * as meta from "../../components/meta.json";
 import "./hero.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 class Hero extends Component {
   constructor(props) {

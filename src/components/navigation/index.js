@@ -13,7 +13,6 @@ import "./navigation.scss";
 const menu = ["Difference", "Work", "Connect"];
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 class Navigation extends Component {
   constructor(props) {
