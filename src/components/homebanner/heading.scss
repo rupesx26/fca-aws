@@ -13,6 +13,7 @@
         font-weight: 600;
         text-align: center;
         letter-spacing: -.01783333em;
+        text-transform: lowercase;
         // width: 49vw;
         position: relative;
         @include respond-until(lg) {
