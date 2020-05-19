@@ -31,6 +31,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
+    min-height: 10px;
+   
+        .blob-outer {
+            @include respond-from(md) {
+                top: -100%;
+                left: 60%;
+                margin-right: -60px;
+            }
+        }
+    
 }
 .scroll-down {
     position: absolute;

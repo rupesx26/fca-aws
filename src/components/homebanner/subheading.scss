@@ -3,12 +3,10 @@
 
 .sub-head-banner {
     margin-bottom: 1.3em;
-    @include respond-until(sm) {
-        padding: 0 5vw;
-    }
+   
 }
 .sub-head-banner .sub-title {
-    font-size: 1.4vw;
+    font-size: 1.2em;
     line-height: 1;
     color: #000000;
     font-family: 'Nexa-Light';
@@ -16,13 +14,19 @@
     margin-bottom: 1.8em;
     position: relative;
     z-index: 1000;
-
     @include respond-until(sm) {
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+    }
+    @include respond-until(s) {
         font-size:1.1em;
-        text-align: left;
+        text-align: center;
         display: block;
         word-spacing: 0.1em;
+        margin: 0;
     }
+   
+    
 }
 .animation-slide {
     .slideWrap {
@@ -49,5 +53,9 @@
     .slide-mob{
         position: absolute;
         line-height: 1.4;
+        @include respond-until(md) {
+            position: unset;
+        }
     }
+    
 }

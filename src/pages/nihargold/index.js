@@ -261,8 +261,8 @@ class NiharGold extends Component {
                         <div className="col-md-5 col-xs-12 nihar-gold-jar">
                           <img src={this.NiharGoldJar} alt="nihar gold" />
                         </div>
-                        <div className="col-md-2"></div>
-                        <div className="col-md-5 col-xs-12 text nihar-gold-jar-text">
+                        <div className="col-md-1"></div>
+                        <div className="col-md-6 col-xs-12 text nihar-gold-jar-text">
                           <p>
                             Along with the bottle design, we also designed the
                             jar packaging. These jars are a boon especially{" "}

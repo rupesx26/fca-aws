@@ -270,7 +270,8 @@ class Gravity extends Component {
                           know?
                           <br /> Well, this new design was the only
                           communication that the Client has relied on for sales
-                          (over 5 lakh and counting). Now, isn’t that sweet?{" "}
+                          (over 5 lakh and counting). Now, <br /> isn’t that
+                          sweet?{" "}
                         </p>
                       </div>
                     </div>

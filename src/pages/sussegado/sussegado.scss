@@ -7,6 +7,12 @@
 		max-width: 100%;
 	}
 	&.work-details-page {
+		.project-content{
+			p{
+				margin-bottom: 50px;
+				font-size: 1.13em;
+			}
+		}
 		.work-description {
 			@include respond-until(sm) {
 				padding-bottom: 50px;
@@ -50,12 +56,7 @@
 			}
 		}
 	}
-	.project-content{
-		p{
-			margin-bottom: 50px;
-			font-size: 1.13em;
-		}
-	}
+	
 	
 	.fold-3 {
 		width: 100%;

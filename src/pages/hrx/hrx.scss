@@ -42,7 +42,7 @@
 			left: 50%;
 			margin-left: -27.5vw;
 			z-index: 1;
-			font-size: 6vw;
+			font-size: 6em;
 			color: #fff;
 			text-transform: uppercase;
 			font-weight: 600;
@@ -78,7 +78,14 @@
 	.fold-2{
 		width: 100%;
 		position: relative;
-		height: 100vh;
+		height: 100%;
+		
+		@include respond-until(md) {
+			height: 60vh;
+		}
+		@include respond-until(s) {
+			height: 75vh;
+		}
 		clear: both;
 		.project-image-container {
 			display: flex;
@@ -99,10 +106,25 @@
 			z-index: 10;
 			position: relative;
 			padding-top: 55vh;
+			@include respond-until(md) {
+				padding-top: 40vh;
+			}
+			@include respond-until(s) {
+				padding-top: 55vh;
+			}
 			z-index: 0;
 			p {
 				font-size: 1.2em;
 				font-weight: 400;
+				@include respond-until(lg) {
+					font-size: 1.1em;
+				}
+				@include respond-until(md) {
+					font-size: 0.8em;
+				}
+				@include respond-until(s) {
+					font-size: 0.8em;
+				}
 			}
 		}
 		

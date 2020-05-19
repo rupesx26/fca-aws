@@ -81,8 +81,8 @@ class Connect extends Component {
             <section className="full-page-wrapper contact-form">
               <div className="container">
                 <div className="row">
-                  <div className="col-md-8 col-xs-12 col-offset-md-2">
-                    <div className="col-md-10 col-xs-12">
+                  <div className="col-md-9 col-xs-12 col-offset-md-2">
+                    <div className="col-xs-12">
                       <h1>Want to work with us? Get in touch.</h1>
                       <div className="sub-title">
                         Together, let’s find the best ways to build your brand.

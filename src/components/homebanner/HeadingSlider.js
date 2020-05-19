@@ -10,9 +10,7 @@ import {
 import { isMobile } from "react-device-detect"; //is for mobile devices
 import "./heading.scss";
 import Blob from "../blob/Blob";
-/* eslint-disable no-console */
 const plugins = [CSSPlugin];
-console.log(plugins);
 
 // * to create is to unite
 // * now is everything
@@ -441,6 +439,7 @@ class HeadingSlider extends Component {
                 <div>Branding&nbsp;</div>
                 <div>and&nbsp;</div>
                 <div>digital&nbsp;</div>
+                <br />
                 <div>content&nbsp;</div>
                 <div>is&nbsp;</div>
                 <div>our&nbsp;</div>

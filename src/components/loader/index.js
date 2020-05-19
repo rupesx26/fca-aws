@@ -30,10 +30,13 @@ const PageLoader = () => {
           src={imagePath("fca-logo-black.png")}
           className="black"
           alt="fca"
+          style={{ display: "none" }}
         />
       </div>
       <div>
-        <div className="loader-text">We are FINDCreative eve.</div>
+        <div className="loader-text" style={{ display: "none" }}>
+          We are FINDCreative eve.
+        </div>
       </div>
     </div>
   );

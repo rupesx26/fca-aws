@@ -54,12 +54,13 @@ class Policy extends Component {
                         We, FINDCreative, a Limited Liability Partnership
                         incorporated under the Limited Liability Partnership
                         Act, 2008 (hereinafter referred to as "LLP"), having its
-                        registered office at _______________________Mumbai,
-                        India, the creator of this Privacy Policy ensure our
-                        firm commitment to your privacy vis-à-vis the protection
-                        of your priceless information. In order to endow you
-                        with our uninterrupted services, we may collect and, in
-                        some circumstances, disclose information about you. To
+                        registered office at A Wing 904 - 905, Kanakia Wall
+                        Street, Chakala, Andheri (E), Mumbai 400093, India, the
+                        creator of this Privacy Policy ensure our firm
+                        commitment to your privacy vis-à-vis the protection of
+                        your priceless information. In order to endow you with
+                        our uninterrupted services, we may collect and, in some
+                        circumstances, disclose information about you. To
                         enhance better protection of your privacy we provide
                         this notice explaining our information practices and the
                         choices you can make about the way your information is

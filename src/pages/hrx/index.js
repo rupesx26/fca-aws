@@ -303,14 +303,14 @@ class About extends Component {
                     <div
                       className="fold-2-bg"
                       style={{
-                        height: "100vh",
+                        height: "100%",
                         backgroundImage: `url(${this.HrxGraphicBg})`
                       }}
                     ></div>
                     <div className="col-md-11 col-xs-12">
                       <div className="row">
-                        <div className="col-md-7"></div>
-                        <div className="col-md-5 col-xs-12">
+                        <div className="col-md-7 col-sm-6"></div>
+                        <div className="col-md-5 col-sm-6 col-xs-12">
                           <div className="project-content fold-2-content justify-content-right">
                             <p>
                               My name is Hrithik Roshan and I would like <br />

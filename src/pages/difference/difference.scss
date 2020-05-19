@@ -8,6 +8,9 @@
       width: 100%;
       display: flex;
       align-items: center;
+      &.founders-wrapper {
+          min-height: 0;
+      }
   }
 
   .title {

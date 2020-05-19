@@ -2,8 +2,9 @@
 @import '../../styles/mixins';
 
 .head-banner {
+   
     .title {
-        font-size: 6em;
+        font-size: 5.8em;
         text-align: center;
         color: #000000;
         margin: 0 auto;
@@ -14,18 +15,25 @@
         letter-spacing: -.01783333em;
         // width: 49vw;
         position: relative;
-        @include respond-until(sm) {
-            font-size: 2.5em;
-            text-emphasis: left;
+        @include respond-until(lg) {
+            font-size: 5.3em;
         }
+        @include respond-until(md) {
+            font-size: 3em;
+        }
+        @include respond-until(s) {
+            font-size: 2.4em;
+        } 
     }
 
     .blob-outer {
+
         @include respond-until(sm) {
-            height: 190px;
-            width: 190px;
-            right: -60px;
-            top: 11em;
+            height: 250px;
+            width: 250px;
+            left: 50%;
+            top: -65%;
+            margin-left: 20px;
             .blob-layer-1 {
                 width: calc(100% - 60px);
                 height: calc(100% - 60px);
@@ -51,6 +59,40 @@
                 left: 8px;
             }
         }
+
+        @include respond-until(s) {
+            height: 190px;
+            width: 190px;
+            left: 50%;
+            top: -52%;
+            margin-left: 20px;
+            .blob-layer-1 {
+                width: calc(100% - 60px);
+                height: calc(100% - 60px);
+                top: 1em;
+                left: -1em;
+            }
+            .blob-layer-2 {
+                width: calc(100% - 90px);
+                height: calc(100% - 70px);
+                top: 2em;
+                right: 6em;
+            }
+            .blob {
+                width: calc(100% - 90px);
+                height: calc(100% - 90px);
+                top: 0em;
+                left: 0em;
+            }
+            .blob-layer-3 {
+                width: calc(100% - 100px);
+                height: calc(100% - 100px);
+                top: 42px;
+                left: 8px;
+            }
+        }
+
+       
     }
     
 } 
@@ -63,12 +105,14 @@
         left: 0;
         opacity: 0;
         @include respond-until(sm) {
-            padding: 0 0.3em;
+            //padding: 0 0.3em;
         }
         &.head-slide-1 {
-            @include respond-until(sm) {
+            @include respond-until(md) {
                 opacity: 1;
-                text-align: left;
+            }
+            @include respond-until(s) {
+                opacity: 1;
             }
         }
         &.head-slide-3 {
