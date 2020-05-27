@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/anim';
 
 .connect-page {
     + .page-footer {
@@ -60,17 +61,50 @@
 	    		position: relative;
 	    		line-height: 1.2;
 	    		color: #252525;
-	    		padding: 0 0 9px;
-	    		&:after {
+				padding: 0 0 9px;
+				overflow: hidden;
+				text-align: left;
+				cursor: pointer;
+				transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+				&:disabled {
+					color: #ccc;
+					cursor: not-allowed;
+					transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+					&:after, &:before {
+						background: #ccc;
+					}
+				}
+				&.sent-msg {
+					color: green;
+					transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+					&:after, &:before {
+						opacity: 0;
+					}
+				}
+				&.loading {
+					transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+					color: orange;
+					&:after {
+						animation: loadingbarinc 2s infinite;
+						background: orange;
+					}
+					&:before {
+						animation: loadingbardec 2s 0.5s infinite;
+						background: orange;
+					}
+				}
+	    		&:after, &:before {
 	    			content: '';
 				    position: absolute;
-				    bottom: -4px;
+				    bottom: 0px;
 				    width: 24px;
 				    left: 0;
 				    height: 2px;
 				    background: #252525;
 	    		}
-	    	}
+			}
+			
+			
 
 	    	.agreement {
 				position: relative;
@@ -123,10 +157,7 @@
 						}
 				   	 }
 				   }
-				   
-				   
 	    		}
-
 	    		.text {
 	    			display: inline-block;
    					font-size: 15px;
@@ -210,7 +241,10 @@
 		}
 	}
 
-	
-  
+	.error-msg {
+		color : #ff0000;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
 }
 

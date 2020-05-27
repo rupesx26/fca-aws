@@ -448,7 +448,7 @@ class HeadingSlider extends Component {
               <div className="slide-wrap head-slide-5">
                 <div>Now&nbsp;</div>
                 <div>is&nbsp;</div>
-                <div>everthing&nbsp;</div>
+                <div>everything&nbsp;</div>
               </div>
 
               {/* <div className="slide-wrap head-slide-7">

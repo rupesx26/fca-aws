@@ -81,6 +81,15 @@ class Careers extends Component {
                 </div>
               </div>
             </div>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8 col-xs-12 col-offset-md-2">
+                  <div className="back-btn" style={{ marginTop: "100px" }}>
+                    <Link to="/connect">Back</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <Footer
             activeSlide={this.state.currentSlide}
