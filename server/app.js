@@ -5,7 +5,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import responseTime from "response-time";
 import bodyParser from "body-parser";
-
+import { USER, PASSWORD } from "./config";
 import { renderServerSideApp } from "./renderServerSideApp";
 import { todoRoutes } from "./todoApi";
 import nodemailer from "nodemailer";
@@ -52,8 +52,8 @@ app.post("/send", (req, res) => {
       host: "smtp.ethereal.email",
       port: 587,
       auth: {
-        user: "laurel26@ethereal.email ",
-        pass: "tAtyAkxv4zn6qmRjuq"
+        user: USER,
+        pass: PASSWORD
       }
     });
 

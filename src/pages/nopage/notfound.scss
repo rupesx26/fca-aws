@@ -1,0 +1,98 @@
+@import '../../styles/mixins';
+@import '../../styles/anim';
+
+.notfound-page {
+    + .page-footer {
+        height: 5vh;
+        @include respond-until(s) {
+            height: 25vh;
+        }
+    }
+    .notfound-wrapper {
+        margin-top: 150px;
+    }
+    .full-page-wrapper {
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 5em;
+        @include respond-until(s) {
+            font-size: 2em;
+        }
+    }
+    .title {
+        position: relative;
+        line-height: 1;
+       .left {
+        text-align: right;
+        width: 50%;
+       }
+       .right {
+        width: 50%;
+        transform: translateX(81%);
+       }
+    }
+
+    .img-container {
+        margin-top: 1em;
+        width: 27vw;
+        @include respond-until(s) {
+            width: 62vw;
+            margin: 1em auto;
+        }
+    }
+
+    .subtitle-text{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .link {
+        position: absolute;
+        top: 70%;
+        margin-left: 30px;
+        color: #333;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: "Work Sans", sans-serif;
+        cursor: pointer;
+        padding-bottom: 8px;
+        overflow: hidden;
+        @include respond-until(s) {
+            position: unset;
+            display: block;
+            width: 100%;
+            font-size: 1em;
+            text-align: center;
+            margin: 0;
+        }
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            width: 24px;
+            left: 0;
+            height: 2px;
+            background: #252525;
+        }
+        &:hover {
+                color: #333;
+                transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+                &:after {
+                    animation: loadingbarinc 2s infinite;
+                    background: #333;
+                }
+                &:before {
+                    animation: loadingbardec 2s 0.5s infinite;
+                    background: #333;
+                }
+            
+        }
+    }
+
+
+}

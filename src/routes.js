@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Loadable from "react-loadable";
 import PageLoader from "./components/loader";
 // import { AnimatePresence } from 'framer-motion';
@@ -27,7 +27,7 @@ const LoadableConnect = Loadable({
 });
 
 const LoadableNotFound = Loadable({
-  loader: () => import(/* webpackChunkName: 'notfound' */ "./pages/Notfound"),
+  loader: () => import(/* webpackChunkName: 'notfound' */ "./pages/nopage"),
   loading: () => <PageLoader />
 });
 
@@ -99,6 +99,42 @@ const LoadableTerms = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableLogin = Loadable({
+  loader: () => import(/* webpackChunkName: 'login' */ "./pages/login"),
+  loading: () => <PageLoader />
+});
+
+const fakeAuth = {
+  isAuthenticated: false,
+  authenticate(cb) {
+    fakeAuth.isAuthenticated = true;
+    setTimeout(cb, 100); // fake async
+  },
+  signout(cb) {
+    fakeAuth.isAuthenticated = false;
+    setTimeout(cb, 100);
+  }
+};
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  return (
+    <Route
+      {...rest}
+      render={({ location }) =>
+        fakeAuth.isAuthenticated ? (
+          <Component {...rest} />
+        ) : (
+          <Redirect
+            to={{
+              pathname: "/login",
+              state: { from: location }
+            }}
+          />
+        )
+      }
+    />
+  );
+};
 const Routes = () => {
   return (
     <Switch>
@@ -112,6 +148,13 @@ const Routes = () => {
       <Route exact path="/work/thambbi" component={LoadableThambbi} />
       <Route exact path="/work/hero-talkies" component={LoadableHero} />
       <Route exact path="/work/cocosoul" component={LoadableCoco} />
+      <Route
+        exact
+        path="/login"
+        component={LoadableLogin}
+        component={props => <LoadableLogin {...props} handleLogin={fakeAuth} />}
+      />
+      {/* <PrivateRoute exact path="/work/hrithik-roshan" component={LoadableHrx}/> */}
       <Route
         exact
         path="/work/sussegado-coffee"
