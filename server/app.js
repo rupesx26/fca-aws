@@ -56,7 +56,7 @@ app.post("/send", (req, res) => {
       <p>message : ${req.body.data.message}</p>
     `;
     let transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
+      host: "smtp.gmail.com",
       port: 587,
       auth: {
         type: TYPE,
