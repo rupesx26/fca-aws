@@ -70,9 +70,10 @@ app.post("/send", (req, res) => {
 
     let mailOption = {
       from: req.body.email,
-      to: "efren.williamson39@ethereal.email",
+      to: "hello@findcreative.in",
+      cc: "rupesh@makemelive.in, sharik@makemelive.in",
       replyTo: req.body.email,
-      subject: "new email",
+      subject: "Contact form enquiry",
       text: req.body.message,
       html: htmlEmail
     };
