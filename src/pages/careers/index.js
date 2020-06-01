@@ -36,7 +36,7 @@ class Careers extends Component {
       <PageAnimWrapper>
         <div>
           <Head
-            title={`FINDCreative Eve | ${projectSummaryContent.workTitle}`}
+            title={`FINDCreative Ave | ${projectSummaryContent.workTitle}`}
             content={`${projectSummaryContent.brief}`}
             keywordslist={`${metakeywords}`}
           />

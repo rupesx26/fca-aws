@@ -311,7 +311,7 @@ class Home extends Component {
     return (
       <PageAnimWrapper>
         <Head
-          title="FINDCreative Eve"
+          title="FINDCreative Ave"
           content="We are a global agency that delivers digital transformation powered by creativity, who believe in Ideas Without Limits, pushing the boundaries of technology and creativity."
           keywordslist={`${metakeywords}`}
         />
