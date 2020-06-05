@@ -312,7 +312,11 @@ class Home extends Component {
       <PageAnimWrapper>
         <Head
           title="FINDCreative Ave"
-          content="We are a global agency that delivers digital transformation powered by creativity, who believe in Ideas Without Limits, pushing the boundaries of technology and creativity."
+          content="Design is the face of every object and is the first point of
+          interaction. Whether it’s traditional advertising, app interface,
+          branding, packaging or product. So, our approach is always
+          design-first. When you voice a business problem to us,
+          our minds race to find the best design-led solutions."
           keywordslist={`${metakeywords}`}
         />
         <Navigation
