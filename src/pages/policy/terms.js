@@ -58,8 +58,9 @@ class Terms extends Component {
                           owned and operated by FINDCreative, a Limited
                           Liability Partnership incorporated under the Limited
                           Liability Partnership Act, 2008, having its registered
-                          address at ___________________________Mumbai, India
-                          (hereinafter referred to as the “LLP”) You are advised
+                          address A Wing 904 - 905, Kanakia Wall Street,
+                          Chakala, Andheri (E), Mumbai 400093, India,
+                          (hereinafter referred to as the "LLP") You are advised
                           to read and understand these Terms carefully as moving
                           past the home page, or using any of the services shall
                           be taken to mean that You have read and agreed to all
@@ -78,21 +79,21 @@ class Terms extends Component {
                           same, and wherever the context so requires "You" shall
                           mean any natural or legal person who has agreed to
                           become a user of the Website by accessing the Website,
-                          the term “Creative Professional” shall mean a
+                          the term "Creative Professional" shall mean a
                           professional hired for his creative skills, the term
-                          “User” shall mean any person who intends to hire any
+                          "User" shall mean any person who intends to hire any
                           Creative Professional for a particular service.The
                           Website also provides certain services without
                           registration/acceptance, and such provision of
                           services does not absolve You of this contractual
                           relationship. The term "We", "Us", "Our" shall mean
-                          the LLP. “Agreement” shall mean and refer to this
+                          the LLP. "Agreement" shall mean and refer to this
                           Terms of Service, including any amendments that may be
-                          incorporated into it. “Services” shall mean and refer
+                          incorporated into it. "Services" shall mean and refer
                           to the services offered by the LLP to the Users,
                           including but not limited toan online market place
-                          connecting Users with Creative Professionals.“Third
-                          Party” shall mean and refer to any individual(s),
+                          connecting Users with Creative Professionals."Third
+                          Party" shall mean and refer to any individual(s),
                           company or entity apart from the User and the LLP. The
                           headings of each section in this Agreement are only
                           for the purpose of organising the various provisions
@@ -135,7 +136,7 @@ class Terms extends Component {
                           The Website is an online market place that enables
                           Users and Creative Professionals around India to
                           collaborate for mutual benefits (hereinafter referred
-                          to as “Services”). Users in need of skilled and
+                          to as "Services"). Users in need of skilled and
                           Creative Professionals for short term or long term
                           purpose can get in touch with such professionals. The
                           Website acts as intermediary between the Users and the
@@ -165,7 +166,7 @@ class Terms extends Component {
                           User plan his project better. The Website allows the
                           Creative Professionals to recommend other Creative
                           Professionals and vice versa. The Website gives a
-                          special “FC Recommendation” to a Creative Professional
+                          special "FC Recommendation" to a Creative Professional
                           based on performance, reviews and interaction with
                           Users.
                         </p>
@@ -219,8 +220,8 @@ class Terms extends Component {
                           and/or other actions of any third party site or
                           service that may be enabled within the Service.
                           Membership of this website is available only to those
-                          above the age of 18 years.Barring those “Incompetent
-                          to Contract” which inter alia include insolvents. If
+                          above the age of 18 years.Barring those "Incompetent
+                          to Contract" which inter alia include insolvents. If
                           You are a minor and wish to use the Website, You may
                           do so through Your legal guardian and Us.We reserve
                           the right to terminate Your account on knowledge of
@@ -312,23 +313,26 @@ class Terms extends Component {
                           case You wish to stop receiving notifications from Us
                           with regard to marketing and promotional calls,and any
                           communication from Us, You are required to send an
-                          email to support@findcreative.in. The LLP holds the
-                          right to all content published on the Website, as well
-                          as its distribution, dissemination and republishing
-                          for promotional purposes. You may also be contacted by
-                          Service Providers with whom We have entered into a
-                          contract in furtherance of our rights, duties and
-                          obligations under this document and other policies
-                          followed by Us and with whom You have become friends
-                          via the website. Such contact shall be made only in
-                          pursuance of such objectives, and no other calls shall
-                          be made. In addition, You may also be contacted by
-                          Third Parties who may have access to the information
-                          disclosed by You or to whom We may have disclosed Your
-                          information for purposes such as, but not limited to,
-                          statistical compilations.The sharing of the
-                          information provided by You shall be governed by our
-                          Privacy Policy.
+                          email to{" "}
+                          <a href="mailto:hello@findcreative.in">
+                            hello@findcreative.in
+                          </a>
+                          . The LLP holds the right to all content published on
+                          the Website, as well as its distribution,
+                          dissemination and republishing for promotional
+                          purposes. You may also be contacted by Service
+                          Providers with whom We have entered into a contract in
+                          furtherance of our rights, duties and obligations
+                          under this document and other policies followed by Us
+                          and with whom You have become friends via the website.
+                          Such contact shall be made only in pursuance of such
+                          objectives, and no other calls shall be made. In
+                          addition, You may also be contacted by Third Parties
+                          who may have access to the information disclosed by
+                          You or to whom We may have disclosed Your information
+                          for purposes such as, but not limited to, statistical
+                          compilations.The sharing of the information provided
+                          by You shall be governed by our Privacy Policy.
                         </p>
                       </div>
 
@@ -875,8 +879,8 @@ class Terms extends Component {
                           to the LLP by the User reducing the same to writing,
                           and sending the same to the registered office of the
                           LLP by Registered Post, or the email address{" "}
-                          <a href="mailto:support@findcreative.in">
-                            support@findcreative.in
+                          <a href="mailto:hello@findcreative.in">
+                            hello@findcreative.in
                           </a>
                         </p>
                       </div>
@@ -926,8 +930,8 @@ class Terms extends Component {
                           If you have any questions about this Agreement, the
                           practices of the Website, or your experience with the
                           Service, you can e-mail us at{" "}
-                          <a href="mailto:support@findcreative.in">
-                            support@findcreative.in
+                          <a href="mailto:hello@findcreative.in">
+                            hello@findcreative.in
                           </a>{" "}
                           .
                         </p>

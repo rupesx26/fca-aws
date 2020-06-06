@@ -75,15 +75,17 @@ class Policy extends Component {
                         collection or use of your information, please do not use
                         or access the Website. If you have any questions or
                         concerns regarding this privacy policy, you should
-                        contact our customer support desk at
-                        support@findcreative.in. ANY CAPITALIZED WORDS USED
-                        HENCEFORTH SHALL HAVE THE MEANING ACCORDED TO THEM UNDER
-                        THIS AGREEMENT. FURTHER, ALL HEADINGS USED HEREIN ARE
-                        ONLY FOR THE PURPOSE OF ARRANGING THE VARIOUS PROVISIONS
-                        OF THE AGREEMENT IN ANY MANNER. NEITHER THE USER NOR THE
-                        CREATERS OF THIS PRIVACY POLICY MAY USE THE HEADING TO
-                        INTERPRET THE PROVISIONS CONTAINED WITHIN IT IN ANY
-                        MANNER.
+                        contact our customer support desk at{" "}
+                        <a href="mailto:hello@findcreative.in">
+                          hello@findcreative.in
+                        </a>
+                        . ANY CAPITALIZED WORDS USED HENCEFORTH SHALL HAVE THE
+                        MEANING ACCORDED TO THEM UNDER THIS AGREEMENT. FURTHER,
+                        ALL HEADINGS USED HEREIN ARE ONLY FOR THE PURPOSE OF
+                        ARRANGING THE VARIOUS PROVISIONS OF THE AGREEMENT IN ANY
+                        MANNER. NEITHER THE USER NOR THE CREATERS OF THIS
+                        PRIVACY POLICY MAY USE THE HEADING TO INTERPRET THE
+                        PROVISIONS CONTAINED WITHIN IT IN ANY MANNER.
                       </p>
 
                       <h5>DEFINITIONS</h5>
@@ -571,8 +573,8 @@ class Policy extends Component {
                           If you have any questions or concerns regarding this
                           privacy policy, you should contact us by sending an
                           email to{" "}
-                          <a href="mailto:support@findcreative.in">
-                            support@findcreative.in
+                          <a href="mailto:hello@findcreative.in">
+                            hello@findcreative.in
                           </a>
                           .
                         </p>

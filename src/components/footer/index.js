@@ -118,12 +118,17 @@ class Footer extends Component {
               </div>
 
               <span className="copy-writes">
-                © <span>{new Date().getFullYear()}</span>
+                ©{" "}
+                <span>
+                  2017
+                  {/* {new Date().getFullYear()} */}
+                </span>
                 <span className="space"></span>
                 <span>FINDCreative Avenues LLP. </span>
                 <span className="space"></span>
                 <span>
-                  <Link to="/policy">Privacy Policy</Link>
+                  <Link to="/terms">Terms</Link> &&nbsp;
+                  <Link to="/policy">Privacy Policy</Link>.
                 </span>
               </span>
 
