@@ -75,8 +75,10 @@ class ContextMenu extends React.Component {
           }}
           className="contextMenu"
         >
-          {/* <div className="contextMenu--option">Share this</div>
-                <div className="contextMenu--option">New window</div>
+          <div className="contextMenu--option">
+            © 2017 FINDCreative Avenues LLP.{" "}
+          </div>
+          {/*  <div className="contextMenu--option">New window</div>
                 <div className="contextMenu--option">Visit official site</div>
                 <div className="contextMenu--option contextMenu--option__disabled">View full version</div>
                 <div className="contextMenu--option">Settings</div>
