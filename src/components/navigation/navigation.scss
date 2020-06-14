@@ -7,10 +7,10 @@
     top: 0;
     left: 0;
     height: 0;
-    overflow: hidden;
     .nav-view {
         position: relative;
         height: inherit;
+        overflow: hidden;
     }
     &.menu-open {
         background: #000;
@@ -78,6 +78,7 @@
         top: 56px;
         right: 52px;
         cursor: pointer;
+        z-index: 20;
         @include respond-until(sm) {
             top: 38px;
             right: 32px;
