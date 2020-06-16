@@ -86,7 +86,7 @@ class Login extends Component {
     let location = this.props.location;
 
     let { from } = location.state || { from: { pathname: "/" } };
-    if (username === "josh" && password === "josh") {
+    if (username === "find" && password === "josh") {
       this.props.handleLogin.authenticate(() => {
         history.replace(from);
       });
