@@ -1,16 +1,41 @@
 @import '../../styles/mixins';
+@import '../../styles/work-details';
 
 .login-page {
     .full-page-wrapper {
         align-items: unset;
         min-height: unset;
     }
+    .next-project, .prev-project {
+        a {
+            color: #000;
+        }
+        bottom: 25%;
+        z-index: 10;
+        @include respond-until(sm) {
+            bottom: 8%;
+        }
+    }
     .login-wrapper {
         margin: 100px auto;
     }
     
     + .page-footer {
-    	height: 20vh;
+    	@include respond-from(md) {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            height: auto;
+        }
+        @include respond-until(sm) {
+            height: auto;
+            #footer-view {
+                position: unset;
+                .common-footer {
+                    position: unset;
+                }
+            }
+        }
 	}
     h1 {
         font-size: 3.5em;
@@ -25,6 +50,9 @@
         font-size: 1.4em;
         font-weight: 300;
         line-height: 1.7;
+        @include respond-until(sm) {
+            font-size: 1em;
+        }
     }
     a {
         text-decoration: none;
@@ -42,6 +70,9 @@
             display: flex;
             align-items: baseline;
             position: relative;
+            @include respond-until(sm) {
+                flex-direction: column;
+            }
         }
         label {
             font-size: 1.2em;
@@ -52,6 +83,12 @@
             font-weight: 300;
             height: 41px;
             flex-basis: 150px;
+            @include respond-until(sm) {
+                flex-basis: unset;
+                font-size: 1em;
+                line-height: 1;
+                height: 30px;
+            }
         }
         input.field {
             width: 100%;
@@ -60,6 +97,9 @@
             padding: 8px;
             font-size: 20px;
             flex-basis: 300px;
+            @include respond-until(sm) {
+                flex-basis: unset;
+            }
         }
 
         .submit-button {
@@ -79,6 +119,9 @@
             text-align: left;
             cursor: pointer;
             transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            @include respond-until(sm) {
+                margin-top: 80px;
+            }
             &:disabled {
                 color: #ccc;
                 cursor: not-allowed;
@@ -157,6 +200,9 @@
                 display: inline-block;
                    font-size: 15px;
                    padding-left: 30px;
+                   @include respond-until(sm) {
+                    line-height: 1.5;
+                }
             }
         }
     }

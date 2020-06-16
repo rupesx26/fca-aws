@@ -103,3 +103,11 @@ $breakpoints: (
        }
   }
 }
+
+@mixin respond-from($media) {
+  @each $breakpoint in $breakpoints {
+       @if $media == nth($breakpoint, 1) {
+            @media screen and (min-width: #{nth($breakpoint, 2)})  { @content; }
+       }
+  }
+}

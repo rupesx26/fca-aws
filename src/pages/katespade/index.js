@@ -335,8 +335,8 @@ class KateSpade extends Component {
                 <img src={this.KateHero} alt="katespade" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/nihar-gold"
-                nextLink="/work/thambbi"
+                prevLink="/work/hrithik-roshan"
+                nextLink="/work/nihar-gold"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -520,11 +520,11 @@ class KateSpade extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/thambbi"
-              data-text="Thambbi"
+              to="/work/nihar-gold"
+              data-text="Nihar Gold"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Thambbi
+              Nihar Gold
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

@@ -48,7 +48,6 @@ app.use(todoRoutes());
 
 app.post("/send", (req, res) => {
   nodemailer.createTestAccount((err, account) => {
-    console.log("account", account);
     const htmlEmail = `
       <p>name : ${req.body.data.fname}</p>
       <p>email : ${req.body.data.email}</p>
@@ -79,7 +78,6 @@ app.post("/send", (req, res) => {
     };
 
     transporter.sendMail(mailOption, (err, info) => {
-      console.log(info);
       if (err) {
         res.json({
           msg: "fail"

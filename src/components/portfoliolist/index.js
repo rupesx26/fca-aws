@@ -23,6 +23,8 @@ class PortfolioList extends Component {
     this.SussegadoCoffeeTile = workImagePath("sussegado-tile.jpg");
     this.RapidRupeeTile = workImagePath("rapidrupee-tile.jpg");
     this.GravityTile = workImagePath("gravity-tile.jpg");
+    this.LifebuoyTile = workImagePath("lifebuoy-tile.jpg");
+    this.SetwetTile = workImagePath("setwet-tile.jpg");
     this.state = {
       data: [
         {
@@ -35,38 +37,57 @@ class PortfolioList extends Component {
           tile: this.HrithikRoshanTile
         },
         {
-          _id: "1",
-          color: "#fff",
-          title: "Nihar Gold",
-          subtitle: "Packaging Design",
-          row: 0,
-          route: "nihar-gold",
-          tile: this.NiharGoldTile
-        },
-        {
           _id: "2",
           color: "#fff",
           title: "Kate Spade",
           subtitle: "Digital Audit",
-          row: 1,
+          row: 0,
           route: "kate-spade",
           tile: this.KateSpadeTile
+        },
+        {
+          _id: "1",
+          color: "#fff",
+          title: "Nihar Gold",
+          subtitle: "Packaging Design",
+          row: 1,
+          route: "nihar-gold",
+          tile: this.NiharGoldTile
+        },
+
+        {
+          _id: "9",
+          color: "#fff",
+          title: "Lifebuoy",
+          subtitle: "Audit & Research",
+          row: 1,
+          route: "lifebuoy",
+          tile: this.LifebuoyTile
         },
         {
           _id: "3",
           color: "#fff",
           title: "Thambbi",
           subtitle: "Branding & Communication Design",
-          row: 1,
+          row: 2,
           route: "thambbi",
           tile: this.ThambbiTile
+        },
+        {
+          _id: "10",
+          color: "#fff",
+          title: "Setwet",
+          subtitle: "Audit & Research",
+          row: 2,
+          route: "setwet",
+          tile: this.SetwetTile
         },
         {
           _id: "4",
           color: "#fff",
           title: "HERO Talkies",
           subtitle: "Brand Design",
-          row: 2,
+          row: 3,
           route: "hero-talkies",
           tile: this.HeroTalkiesTile
         },
@@ -75,7 +96,7 @@ class PortfolioList extends Component {
           color: "#fff",
           title: "Coco Soul",
           subtitle: "Digital Content",
-          row: 2,
+          row: 3,
           route: "cocosoul",
           tile: this.CocoSoulTile
         },
@@ -84,7 +105,7 @@ class PortfolioList extends Component {
           color: "#fff",
           title: "Sussegado",
           subtitle: "Product & Package Design",
-          row: 3,
+          row: 4,
           route: "sussegado-coffee",
           tile: this.SussegadoCoffeeTile
         },
@@ -93,7 +114,7 @@ class PortfolioList extends Component {
           color: "#fff",
           title: "Rapid Rupee",
           subtitle: "Brand Strategy & Communication",
-          row: 3,
+          row: 4,
           route: "rapid-rupee",
           tile: this.RapidRupeeTile
         },
@@ -102,7 +123,7 @@ class PortfolioList extends Component {
           color: "#fff",
           title: "Socranos Gravity",
           subtitle: "Strategy & Packaging Design",
-          row: 4,
+          row: 5,
           route: "socranos-gravity",
           tile: this.GravityTile
         }

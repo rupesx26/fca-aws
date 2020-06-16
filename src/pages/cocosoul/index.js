@@ -43,7 +43,7 @@ class Cocosoul extends Component {
     this.SbbSlide4 = cocoImagePath("sbb-4.jpg");
     this.SbbSlide5 = cocoImagePath("sbb-5.jpg");
     this.SbbSlide6 = cocoImagePath("sbb-6.jpg");
-    this.SbbSlide7 = cocoImagePath("sbb-7.jpg");
+    //this.SbbSlide7 = cocoImagePath("sbb-7.jpg");
 
     this.state = {
       toggleHeader: true,
@@ -139,7 +139,7 @@ class Cocosoul extends Component {
         1,
         { opacity: 0, y: 100 },
         { opacity: 1, y: 0, ease: Power4.easeOut },
-        "-=.95"
+        "-=0"
       );
       new this.ScrollMagic.Scene({
         triggerElement: outers[i],
@@ -391,10 +391,10 @@ class Cocosoul extends Component {
                         slide4={this.SbbSlide4}
                         slide5={this.SbbSlide5}
                         slide6={this.SbbSlide6}
-                        slide7={this.SbbSlide7}
-                        slide8={this.SbbSlide1}
-                        slide9={this.SbbSlide2}
-                        slide10={this.SbbSlide3}
+                        // slide7={this.SbbSlide7}
+                        // slide8={this.SbbSlide1}
+                        // slide9={this.SbbSlide2}
+                        // slide10={this.SbbSlide3}
                       />
                     </div>
                   </div>

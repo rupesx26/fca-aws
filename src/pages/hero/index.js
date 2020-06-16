@@ -332,7 +332,7 @@ class Hero extends Component {
                 <img src={this.Hero} alt="herotalkies" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/thambbi"
+                prevLink="/work/setwet"
                 nextLink="/work/cocosoul"
               />
             </div>

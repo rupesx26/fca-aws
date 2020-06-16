@@ -104,6 +104,16 @@ const LoadableLogin = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableLifeBuoy = Loadable({
+  loader: () => import(/* webpackChunkName: 'lifebuoy' */ "./pages/lifebuoy"),
+  loading: () => <PageLoader />
+});
+
+const LoadableSetWet = Loadable({
+  loader: () => import(/* webpackChunkName: 'setwet' */ "./pages/setwet"),
+  loading: () => <PageLoader />
+});
+
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
@@ -154,7 +164,8 @@ const Routes = () => {
         component={LoadableLogin}
         component={props => <LoadableLogin {...props} handleLogin={fakeAuth} />}
       />
-      {/* <PrivateRoute exact path="/work/hrithik-roshan" component={LoadableHrx}/> */}
+      <PrivateRoute exact path="/work/lifebuoy" component={LoadableLifeBuoy} />
+      <PrivateRoute exact path="/work/setwet" component={LoadableSetWet} />
       <Route
         exact
         path="/work/sussegado-coffee"

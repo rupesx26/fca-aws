@@ -34,8 +34,11 @@ class About extends Component {
     this.RR = differImagePath("RR.png");
     this.TBWA = differImagePath("TBWA.png");
     this.Thambbi = differImagePath("Thambbi.png");
-    this.TLC = differImagePath("TLC.png");
+    this.TLC = differImagePath("L2.png");
     this.adgaonkar = differImagePath("adgaonkar.png");
+    this.brandfactory = differImagePath("L1.png");
+    this.lifebuoy = differImagePath("L3.png");
+    this.kotak = differImagePath("L4.png");
     this.handleKnowMore = this.handleKnowMore.bind(this);
     // this.addLineBreaks = this.addLineBreaks.bind(this);
     this.state = {
@@ -397,7 +400,11 @@ class About extends Component {
                         <div className="box-row">
                           <div className="box-cell"></div>
                           <div className="box-cell">
-                            <img src={this.Marico} alt="client" />
+                            <img
+                              src={this.Marico}
+                              alt="client"
+                              style={{ width: "84px" }}
+                            />
                           </div>
                           <div className="box-cell">
                             <img src={this.RR} alt="client" />
@@ -428,13 +435,21 @@ class About extends Component {
                         <div className="box-row">
                           <div className="box-cell"></div>
                           <div className="box-cell tbwa">
-                            <img src={this.TBWA} alt="client" />
+                            <img
+                              src={this.kotak}
+                              alt="client"
+                              style={{ width: "135px" }}
+                            />
                           </div>
                           <div className="box-cell adgaonkar">
-                            <img src={this.adgaonkar} alt="client" />
+                            <img src={this.lifebuoy} alt="client" />
                           </div>
                           <div className="box-cell">
-                            <img src={this.Humsafar} alt="client" />
+                            <img
+                              src={this.brandfactory}
+                              alt="client"
+                              style={{ width: "135px" }}
+                            />
                           </div>
                           <div className="box-cell"></div>
                         </div>

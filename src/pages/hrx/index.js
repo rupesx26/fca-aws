@@ -283,7 +283,7 @@ class About extends Component {
               </div>
               <WorkPageNavigation
                 prevLink="/work/socranos-gravity"
-                nextLink="/work/nihar-gold"
+                nextLink="/work/kate-spade"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -529,11 +529,11 @@ class About extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/nihar-gold"
-              data-text="Nihar Gold"
+              to="/work/kate-spade"
+              data-text="Kate Spade"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Nihar Gold
+              Kate Spade
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import PageAnimWrapper from "../../components/pagetransition";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
+import WorkPageNavigation from "../../components/workpagenav";
+
 import "./login.scss";
 //Validation function for validate field
 const ValidationMessage = props => {
@@ -20,7 +22,7 @@ class Login extends Component {
     this.state = {
       isActive: false,
       toggleHeader: false,
-      showSayHello: true,
+      showSayHello: false,
       footerBgColor: "light",
       footerActive: false,
       fullpageAnimation: false,
@@ -30,7 +32,9 @@ class Login extends Component {
       buttonText: "Submit",
       usernameValidate: false,
       passwordValidate: false,
-      isChecked: false
+      isChecked: false,
+      prevLink: "",
+      nextLink: ""
     };
   }
   validateForm = () => {
@@ -90,13 +94,29 @@ class Login extends Component {
   }
 
   componentDidMount() {
+    let location = this.props.location;
+    let history = this.props.history;
+    if (location.state === undefined) {
+      history.replace("/work");
+    } else if (location.state.from.pathname === "/work/lifebuoy") {
+      this.setState({
+        prevLink: "/work/nihar-gold",
+        nextLink: "/work/thambbi"
+      });
+    } else if (location.state.from.pathname === "/work/setwet") {
+      this.setState({
+        prevLink: "/work/thambbi",
+        nextLink: "/work/hero-talkies"
+      });
+    }
+
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
   }
 
   render() {
-    const { buttonText, isChecked } = this.state;
+    const { buttonText, isChecked, prevLink, nextLink } = this.state;
     const projectSummaryContent = {
       workTitle: `Login`,
       brief: `Login`
@@ -120,6 +140,10 @@ class Login extends Component {
                   <div className="col-md-10 col-xs-12 col-offset-md-2">
                     <div className="col-md-10 col-xs-12">
                       <div className="content login-wrapper">
+                        <WorkPageNavigation
+                          prevLink={prevLink}
+                          nextLink={nextLink}
+                        />
                         <p>
                           Hello Guys! Happy to know you’re interested in this
                           project. <br />

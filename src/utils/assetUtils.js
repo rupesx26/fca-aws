@@ -57,3 +57,11 @@ export function fontPath(assetName) {
 export function blobImagePath(assetName) {
   return `${ImageUrl}/blob/${assetName}`;
 }
+
+export function lifeBuoyImagePath(assetName) {
+  return `${ImageUrl}/lifebuoy/${assetName}`;
+}
+
+export function setWetImagePath(assetName) {
+  return `${ImageUrl}/setwet/${assetName}`;
+}

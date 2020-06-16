@@ -209,8 +209,8 @@ class NiharGold extends Component {
               style={{ backgroundImage: `url(${this.HeroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/hrithik-roshan"
-                nextLink="/work/kate-spade"
+                prevLink="/work/kate-spade"
+                nextLink="/work/lifebuoy"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -291,11 +291,11 @@ class NiharGold extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/kate-spade"
-              data-text="Kate Spade"
+              to="/work/lifebuoy"
+              data-text="Lifebuoy"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Kate Spade
+              Lifebuoy
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

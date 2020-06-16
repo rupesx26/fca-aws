@@ -1,0 +1,168 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+
+.setwet {
+	img {
+		max-width: 100%;
+    }
+    .next-project a, .prev-project a {
+        color: #000;
+    }
+	.bg{
+		background-size: cover; 
+		background-position: bottom;
+		background-repeat: no-repeat;
+		@include respond-until(sm) {
+			min-height: 25vh;
+		}
+	}
+	.darkbg {
+		background-color: #ff3c39;
+	}
+	&.work-details-page {
+		.work-description {
+			padding-bottom: 50px;
+			@include respond-until(sm) {
+				padding-bottom: 0;
+			}
+		}
+	} 
+	.img-tiles {
+		display: flex;
+		@include respond-until(sm) {
+			flex-direction: column;
+		}
+		img {
+			width: 50%;
+			@include respond-until(sm) {
+				width: 100%;
+			}
+		}
+	}
+	
+    .fold-1{
+		width: 100%;
+        position: relative;
+		margin-top: 150px;
+		margin-bottom: 250px;
+		@include respond-until(sm) {
+			margin-bottom: 80px;
+		}
+		.darkbg {
+			position: absolute;
+			top: 180px;
+			left: 0;
+			width: 100%;
+			height: 92%;
+			@include respond-until(sm) {
+				bottom: 83px;
+				top: auto;
+			}
+		}
+		&.is-active {
+			background: #44a26e;
+		}
+		img {
+			 max-width: 100%;
+		}
+		.project-image-container {
+			display: flex;
+			position: relative;
+			z-index: 5;
+			min-height: 55.5vh;
+			margin-bottom: -40px;
+			@include respond-until(sm) {
+				min-height: auto;
+				margin-bottom: -10px;
+			}
+			&.text {
+				color: #000;
+				font-size: 1.10em;
+				min-height: auto;
+			}
+			&.custom-img {
+				@include respond-from(md) {
+					margin-bottom: 0;
+					min-height: 45.4vh;
+				}
+			}
+		}
+	}
+	
+	.setwet-slider-bg-1 {
+		background-color: #9fe5e9;
+	}
+	.setwet-slider-bg-2 {
+		background-color: #ff15aa;
+	}
+    .setwet-slider {
+        width: 100%;
+        position: relative;
+        height: inherit;
+        overflow: hidden;
+		margin-bottom: 0;
+		z-index: 5;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		@include respond-until(sm) {
+			padding-top: 50px;
+		   padding-bottom: 50px;
+		}
+		.project-image-container {
+			display: flex;
+		}
+		
+		.slick-next, .slick-prev {
+			width: 80px;
+			height: 80px;
+			top: 50%;
+			@include respond-until(sm) {
+				top: 55%;
+			}
+			svg {
+				fill: #fff;
+				@include respond-until(sm) {
+					fill: #ccc;
+				}
+			}
+			&:before {
+				display: none;
+			}
+		}
+		.slick-prev {
+			@include respond-until(sm) {
+				left: -5px;
+				z-index: 1;
+			}
+		}
+		.slick-next {
+			@include respond-until(sm) {
+				right: 0;
+			}
+			svg {
+				margin-left: 50px;
+				width: 80px;
+			}
+		}
+		.slick-slider {
+			width: 100%;
+		}
+        .slide {
+            background: transparent;
+        }
+        .slideBg {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 90%;
+            // height: 90vh;
+            margin: 0 auto;
+            @include respond-until(sm) {
+				height: auto;
+				width: 100%;
+            }
+        }
+    }
+
+}

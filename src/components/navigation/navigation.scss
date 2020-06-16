@@ -16,6 +16,11 @@
         background: #000;
         color: #fff;
     }
+    &.menu-close {
+        .menu-social-icons {
+            display: none;
+        }
+    }
     .logo{
         height: 64px;
         width: 59px;

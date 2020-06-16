@@ -314,8 +314,8 @@ class Thambbi extends Component {
             >
               <div className="banner-img-container"></div>
               <WorkPageNavigation
-                prevLink="/work/kate-spade"
-                nextLink="/work/hero-talkies"
+                prevLink="/work/lifebuoy"
+                nextLink="/work/setwet"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -454,11 +454,11 @@ class Thambbi extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/hero-talkies"
-              data-text="HERO Talkies"
+              to="/work/setwet"
+              data-text="Setwet"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              HERO Talkies
+              Setwet
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
