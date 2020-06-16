@@ -14,7 +14,7 @@
 		background-position: bottom;
 		background-repeat: no-repeat;
 		@include respond-until(sm) {
-			min-height: 25vh;
+			min-height: 32vh;
 		}
 	}
 	.darkbg {
@@ -48,6 +48,7 @@
 		margin-bottom: 250px;
 		@include respond-until(sm) {
 			margin-bottom: 80px;
+			margin-top: 80px;
 		}
 		.darkbg {
 			position: absolute;

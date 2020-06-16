@@ -42,7 +42,7 @@ class About extends Component {
     this.handleKnowMore = this.handleKnowMore.bind(this);
     // this.addLineBreaks = this.addLineBreaks.bind(this);
     this.state = {
-      isActive: false,
+      isActive: true,
       activeText: "Know More",
       toggleHeader: false,
       showSayHello: true,
