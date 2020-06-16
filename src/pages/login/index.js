@@ -57,7 +57,7 @@ class Login extends Component {
     console.log(username);
     let usernameValidate = true;
     let errorMsg = { ...this.state.errorMsg };
-    if (username !== "josh") {
+    if (username !== "find") {
       usernameValidate = false;
       errorMsg.username = "invalid login name";
     }
