@@ -196,6 +196,9 @@
   .founders-wrapper {
       flex-direction: column;
       font-family: $font-work-sans;
+      .section-5 {
+         width: 100%;
+        }
       .founders {
           width: 100%;
           img {

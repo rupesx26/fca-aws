@@ -43,17 +43,17 @@ class Lifebuoy extends Component {
     this.Img1 = lifeBuoyImagePath("1.png");
     this.Img2 = lifeBuoyImagePath("2.png");
     this.Img3 = lifeBuoyImagePath("3.png");
-    this.Img4 = lifeBuoyImagePath("4.jpg");
-    this.Img5 = lifeBuoyImagePath("5.jpg");
-    this.Img6 = lifeBuoyImagePath("6.jpg");
-    this.Img8 = lifeBuoyImagePath("8.png");
+    this.Img4 = lifeBuoyImagePath("slide8.png");
+    this.Img5 = lifeBuoyImagePath("slide9.png");
+    this.Img6 = lifeBuoyImagePath("slide10.png");
+    this.Img8 = lifeBuoyImagePath("slide11.png");
     this.Img9 = lifeBuoyImagePath("9.png");
     this.Img10 = lifeBuoyImagePath("10.png");
 
     this.slide1 = lifeBuoyImagePath("11.png");
     this.slide2 = lifeBuoyImagePath("12.png");
     this.slide3 = lifeBuoyImagePath("13.png");
-    this.slide4 = lifeBuoyImagePath("14.png");
+    this.slide4 = lifeBuoyImagePath("slide17.png");
     this.slide5 = lifeBuoyImagePath("15.png");
     this.slide6 = lifeBuoyImagePath("16.png");
     this.slide7 = lifeBuoyImagePath("17.png");
@@ -77,7 +77,7 @@ class Lifebuoy extends Component {
     this.slide25 = lifeBuoyImagePath("35.png");
     this.slide26 = lifeBuoyImagePath("36.png");
     this.slide27 = lifeBuoyImagePath("37.png");
-    this.Img38 = lifeBuoyImagePath("38.png");
+    this.Img38 = lifeBuoyImagePath("slide40.png");
 
     this.state = {
       toggleHeader: false,
