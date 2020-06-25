@@ -220,10 +220,10 @@ class ResumeForm extends Component {
     const { company } = this.state;
     let companyValidate = true;
     let errorMsg = { ...this.state.errorMsg };
-    // if(company === 'N' || company === 'NA') {
-    //   companyValidate = true;
-    //   errorMsg.company = "If you have any work experience please mentioned company name and experience."
-    // }
+    if (company === "N" || company === "NA") {
+      companyValidate = true;
+      //errorMsg.company = "If you have any work experience please mentioned company name and experience."
+    }
     if (company === "") {
       companyValidate = false;
       errorMsg.company =
@@ -242,8 +242,45 @@ class ResumeForm extends Component {
     });
   }
 
+  static getDerivedStateFromProps(props, state) {
+    console.log("state", state);
+    if (state.storeExperiece === 0) {
+      return {
+        company: "NA",
+        companyValidate: true
+      };
+    }
+    if (state.storeExperiece > 0) {
+      console.log(state.company);
+      if (state.company !== "NA") {
+        console.log("herer");
+        return {
+          errorMsg: (state.errorMsg = {
+            company: ""
+          })
+        };
+      }
+      return {
+        companyValidate: false,
+        company: state.company,
+        errorMsg: (state.errorMsg = {
+          company:
+            "You can add company name with (,) separate. for e.g. ABC Ltd, IBM etc"
+        })
+      };
+    }
+    return true;
+  }
+
   render() {
-    const { buttonText, buttonClass, isChecked, storeExperiece } = this.state;
+    const {
+      buttonText,
+      buttonClass,
+      isChecked,
+      storeExperiece,
+      company
+    } = this.state;
+
     return (
       <div className="resumeForm">
         <form
@@ -347,7 +384,7 @@ class ResumeForm extends Component {
                   <label>Company</label>
                   <input
                     onChange={e => this.updateCompany(e.target.value)}
-                    value={storeExperiece === 0 ? "NA" : this.state.company}
+                    value={company}
                     name="compant"
                     type="text"
                     className="field"
