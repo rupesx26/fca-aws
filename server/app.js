@@ -113,8 +113,7 @@ app.post("/cvsend", (req, res) => {
       to: "support@makemelive.in",
       cc: "rupesh@makemelive.in, sharik@makemelive.in",
       replyTo: req.body.email,
-      subject:
-        "Job enquiry for " + req.body.data.fname + "" + req.body.data.jobtitle,
+      subject: "Job enquiry for " + req.body.data.jobtitle,
       text: req.body.message,
       html: htmlEmail
     };
