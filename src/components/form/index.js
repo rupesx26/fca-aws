@@ -243,7 +243,6 @@ class ResumeForm extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log("state", state);
     if (state.storeExperiece === 0) {
       return {
         company: "NA",
@@ -251,9 +250,7 @@ class ResumeForm extends Component {
       };
     }
     if (state.storeExperiece > 0) {
-      console.log(state.company);
       if (state.company !== "NA") {
-        console.log("herer");
         return {
           errorMsg: (state.errorMsg = {
             company: ""
