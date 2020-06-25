@@ -8,6 +8,7 @@ import bodyParser from "body-parser";
 import {
   USER,
   TYPE,
+  PASSWORD,
   CLIENTID,
   CLIENTSECRET,
   REFRESHTOKEN,
@@ -55,24 +56,71 @@ app.post("/send", (req, res) => {
       <p>message : ${req.body.data.message}</p>
     `;
     let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
+      service: "gmail",
       auth: {
-        type: TYPE,
-        user: USER,
-        clientId: CLIENTID,
-        clientSecret: CLIENTSECRET,
-        refreshToken: REFRESHTOKEN,
-        accessToken: ACCESSTOKEN
+        user: "support@findcreative.in",
+        pass: "Support@f1nd" // naturally, replace both with your real credentials or an application-specific password
       }
     });
 
     let mailOption = {
       from: req.body.email,
-      to: "hello@findcreative.in",
+      to: "support@findcreative.in",
       cc: "rupesh@makemelive.in, sharik@makemelive.in",
       replyTo: req.body.email,
       subject: "Contact form enquiry",
+      text: req.body.message,
+      html: htmlEmail
+    };
+
+    transporter.sendMail(mailOption, (err, info) => {
+      if (err) {
+        res.json({
+          msg: "fail"
+        });
+        return console.log(err);
+      } else {
+        res.json({
+          msg: "success"
+        });
+      }
+      console.log("Message sent: %s", info.message);
+      console.log("Message url : %s", nodemailer.getTestMessageUrl(info));
+    });
+  });
+});
+
+app.post("/cvsend", (req, res) => {
+  nodemailer.createTestAccount((err, account) => {
+    const htmlEmail = `
+      <p>name : ${req.body.data.fname}</p>
+      <p>email : ${req.body.data.email}</p>
+      <p>mobile : ${req.body.data.mobile}</p>
+      <p>experience : ${req.body.data.experience}</p>
+      <p>company : ${req.body.data.company}</p>
+      <p>portfolio : ${req.body.data.portfolio}</p>
+    `;
+    let transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      auth: {
+        //type: TYPE,
+        user: USER,
+        pass: PASSWORD
+        // clientId: CLIENTID,
+        // clientSecret: CLIENTSECRET,
+        // refreshToken: REFRESHTOKEN,
+        // accessToken: ACCESSTOKEN
+      }
+    });
+
+    let mailOption = {
+      from: req.body.email,
+      to: "support@makemelive.in",
+      cc: "rupesh@makemelive.in, sharik@makemelive.in",
+      replyTo: req.body.email,
+      subject:
+        "Job enquiry for " + req.body.data.fname + "" + req.body.data.jobtitle,
       text: req.body.message,
       html: htmlEmail
     };
