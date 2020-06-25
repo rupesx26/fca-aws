@@ -58,8 +58,8 @@ app.post("/send", (req, res) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "support@findcreative.in",
-        pass: "Support@f1nd" // naturally, replace both with your real credentials or an application-specific password
+        user: USER,
+        pass: PASSWORD // naturally, replace both with your real credentials or an application-specific password
       }
     });
 
@@ -101,16 +101,10 @@ app.post("/cvsend", (req, res) => {
       <p>portfolio : ${req.body.data.portfolio}</p>
     `;
     let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
+      service: "gmail",
       auth: {
-        //type: TYPE,
         user: USER,
-        pass: PASSWORD
-        // clientId: CLIENTID,
-        // clientSecret: CLIENTSECRET,
-        // refreshToken: REFRESHTOKEN,
-        // accessToken: ACCESSTOKEN
+        pass: PASSWORD // naturally, replace both with your real credentials or an application-specific password
       }
     });
 

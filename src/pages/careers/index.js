@@ -53,7 +53,7 @@ class Careers extends Component {
                       {playersData.map((x, y) => {
                         return (
                           <li key={x.jobId}>
-                            <Link to={`/careers/${x.jobId}`}>
+                            <Link to={`/careers/${x.route}`}>
                               {x.jobDescription}
                               <div className="cta-apply">APPLY</div>
                             </Link>

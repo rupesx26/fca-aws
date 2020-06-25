@@ -6,6 +6,7 @@ import Head from "../Head";
 import PageAnimWrapper from "../../components/pagetransition";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
+import ResumeForm from "../../components/form";
 import "./careers.scss";
 
 class CareersInternal extends Component {
@@ -30,7 +31,14 @@ class CareersInternal extends Component {
   }
 
   internalPages(param) {
-    const player = OpeningAPI.get(parseInt(param.id, 10));
+    let job_id = "";
+    OpeningAPI.players.map((key, value) => {
+      if (key.route.toString() === param.id) {
+        job_id = key.jobId;
+      }
+      return job_id;
+    });
+    const player = OpeningAPI.get(job_id);
     const jobRole = player.jobRole ? player.jobRole : null;
     return !player ? (
       <div style={{ padding: "0px 20px" }}>
@@ -38,11 +46,11 @@ class CareersInternal extends Component {
       </div>
     ) : (
       <div>
-        {player.jobTitle && <h1> {player.jobTitle} </h1>}
+        {player.jobDescription && <h1> {player.jobDescription} </h1>}
 
         {player.jobIntro && (
           <div className="job-intro">
-            <div className="col-md-9">
+            <div className="">
               <p>{player.jobIntro}</p>
             </div>
           </div>
@@ -83,6 +91,10 @@ class CareersInternal extends Component {
           </div>
         )}
 
+        <div>
+          <ResumeForm jobTitle={player.jobDescription} />
+        </div>
+
         <div className="back-btn">
           <Link to="/careers">Back</Link>
         </div>
@@ -94,9 +106,9 @@ class CareersInternal extends Component {
       <PageAnimWrapper>
         <div>
           <Head
-            title="new react ssr about page"
-            description="about page description"
-            content="about us page content"
+            title="FINDCreative Ave | Careers"
+            description="Look at this! It's a full time job."
+            content="Look at this! It's a full time job."
           />
           <Navigation
             toggleHeader={this.state.toggleHeader}

@@ -1,6 +1,7 @@
 module.exports = {
   TYPE: "OAuth2",
-  USER: "hello@findcreative.in",
+  USER: "support@findcreative.in",
+  PASSWORD: "Support@f1nd",
   CLIENTID:
     "265539373667-s5ojlbabq1qmmebletnvl6pe1dnsjti9.apps.googleusercontent.com",
   CLIENTSECRET: "cdIiH7oAU5WbfXovLOQ2SiJS",
