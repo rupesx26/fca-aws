@@ -66,7 +66,7 @@ app.post("/send", (req, res) => {
     let mailOption = {
       from: req.body.email,
       to: "support@findcreative.in",
-      cc: "rupesh@makemelive.in, sharik@makemelive.in",
+      cc: "hello@findcreative.in",
       replyTo: req.body.email,
       subject: "Contact form enquiry",
       text: req.body.message,
@@ -110,8 +110,8 @@ app.post("/cvsend", (req, res) => {
 
     let mailOption = {
       from: req.body.email,
-      to: "support@makemelive.in",
-      cc: "rupesh@makemelive.in, sharik@makemelive.in",
+      to: "support@findcreative.in",
+      cc: "hello@findcreative.in",
       replyTo: req.body.email,
       subject: "Job enquiry for " + req.body.data.jobtitle,
       text: req.body.message,
