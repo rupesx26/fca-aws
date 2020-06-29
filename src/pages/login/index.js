@@ -72,7 +72,7 @@ class Login extends Component {
     const { password } = this.state;
     let passwordValidate = true;
     let errorMsg = { ...this.state.errorMsg };
-    if (password !== "find") {
+    if (password !== "f1nd@2468") {
       passwordValidate = false;
       errorMsg.password = "invalid password";
     }
@@ -86,7 +86,7 @@ class Login extends Component {
     let location = this.props.location;
 
     let { from } = location.state || { from: { pathname: "/" } };
-    if (username === "hello" && password === "find") {
+    if (username === "hello" && password === "f1nd@2468") {
       this.props.handleLogin.authenticate(() => {
         history.replace(from);
       });
