@@ -63,11 +63,11 @@ class HeadingSlider extends Component {
     subtitleTimeline
       .fromTo(
         ".head-slide-1 div",
-        { opacity: 0, y: 50, filter: "blur(9px)" },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
+
           duration: 2.5,
           stagger: { amount: 0.5 },
           ease: Expo.easeOut
@@ -87,7 +87,7 @@ class HeadingSlider extends Component {
         {
           opacity: 0,
           y: 50,
-          filter: "blur(2px)",
+
           duration: 1.2,
           stagger: { amount: 0.25 },
           ease: Expo.easeIn
@@ -97,11 +97,11 @@ class HeadingSlider extends Component {
 
       .fromTo(
         ".head-slide-2 div",
-        { opacity: 0, y: 50, filter: "blur(9px)" },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
+
           duration: 2.5,
           stagger: { amount: 0.5 },
           ease: Expo.easeOut
@@ -121,7 +121,7 @@ class HeadingSlider extends Component {
         {
           opacity: 0,
           y: 50,
-          filter: "blur(2px)",
+
           duration: 1.2,
           stagger: { amount: 0.25 },
           ease: Expo.easeIn
@@ -131,11 +131,11 @@ class HeadingSlider extends Component {
 
       .fromTo(
         ".head-slide-3 div",
-        { opacity: 0, y: 50, filter: "blur(9px)" },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
+
           duration: 2.5,
           stagger: { amount: 0.5 },
           ease: Expo.easeOut
@@ -155,7 +155,7 @@ class HeadingSlider extends Component {
         {
           opacity: 0,
           y: 50,
-          filter: "blur(2px)",
+
           duration: 1.2,
           stagger: { amount: 0.25 },
           ease: Expo.easeIn
@@ -165,11 +165,11 @@ class HeadingSlider extends Component {
 
       .fromTo(
         ".head-slide-4 div",
-        { opacity: 0, y: 50, filter: "blur(9px)" },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
+
           duration: 2.5,
           stagger: { amount: 0.5 },
           ease: Expo.easeOut
@@ -189,7 +189,7 @@ class HeadingSlider extends Component {
         {
           opacity: 0,
           y: 50,
-          filter: "blur(2px)",
+
           duration: 1.2,
           stagger: { amount: 0.25 },
           ease: Expo.easeIn
@@ -199,11 +199,11 @@ class HeadingSlider extends Component {
 
       .fromTo(
         ".head-slide-5 div",
-        { opacity: 0, y: 50, filter: "blur(9px)" },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
+
           duration: 2.5,
           stagger: { amount: 0.5 },
           ease: Expo.easeOut
@@ -383,8 +383,8 @@ class HeadingSlider extends Component {
     blob.fromTo(
       ".banner-blob",
       2,
-      { opacity: 0, x: 0, filter: "blur(9px)" },
-      { opacity: 1, x: 0, filter: "blur(0px)", ease: Power0.inOut },
+      { opacity: 0, x: 0 },
+      { opacity: 1, x: 0, ease: Power0.inOut },
       "+=4"
     );
   }

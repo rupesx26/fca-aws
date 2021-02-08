@@ -43,7 +43,7 @@ class About extends Component {
     // this.addLineBreaks = this.addLineBreaks.bind(this);
     this.state = {
       isActive: true,
-      activeText: "Know More",
+      activeText: "Know Less",
       toggleHeader: false,
       showSayHello: true,
       footerBgColor: "light",
