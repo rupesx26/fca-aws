@@ -39,7 +39,6 @@ class HeadingSlider extends Component {
       blobMobile.to(".banner-blob", 2, {
         opacity: 1,
         x: 0,
-        filter: "blur(0px)",
         ease: Power0.inOut
       });
     }
@@ -108,14 +107,7 @@ class HeadingSlider extends Component {
         },
         "+=1.5"
       )
-      // .fromTo(
-      //   '.head-slide-2 .uniq',
-      //   0.7,
-      //   { scale: 1 },
-      //   { scale: 1.03, ease: Power0.easeInOut },
-      //   '+=1'
-      // )
-      // .to('.head-slide-2 .uniq', 0.7, { scale: 1 }, '+=.2')
+
       .to(
         ".head-slide-2 div",
         {
@@ -142,14 +134,7 @@ class HeadingSlider extends Component {
         },
         "+=1.5"
       )
-      // .fromTo(
-      //   '.head-slide-3 .uniq',
-      //   0.7,
-      //   { scale: 1 },
-      //   { scale: 1.03, ease: Power0.easeInOut },
-      //   '+=1'
-      // )
-      // .to('.head-slide-3 .uniq', 0.7, { scale: 1 }, '+=.2')
+
       .to(
         ".head-slide-3 div",
         {
@@ -176,14 +161,7 @@ class HeadingSlider extends Component {
         },
         "+=1.5"
       )
-      // .fromTo(
-      //   '.head-slide-4 .uniq',
-      //   0.7,
-      //   { scale: 1 },
-      //   { scale: 1.03, ease: Power0.easeInOut },
-      //   '+=1'
-      // )
-      // .to('.head-slide-4 .uniq', 0.7, { scale: 1 }, '+=.2')
+
       .to(
         ".head-slide-4 div",
         {
@@ -210,162 +188,18 @@ class HeadingSlider extends Component {
         },
         "+=1.5"
       )
-      // .fromTo(
-      //   '.head-slide-5 .uniq',
-      //   0.7,
-      //   { scale: 1 },
-      //   { scale: 1.03, ease: Power0.easeInOut },
-      //   '+=1'
-      // )
-      // .to('.head-slide-5 .uniq', 0.7, { scale: 1 }, '+=.2')
+
       .to(
         ".head-slide-5 div",
         {
           opacity: 0,
           y: 50,
-          filter: "blur(2px)",
           duration: 2.5,
           stagger: { amount: 0.25 },
           ease: Expo.easeIn
         },
         "+=1"
       );
-
-    // .fromTo(
-    //   '.head-slide-6 div',
-    //   { opacity: 0, y: 50, filter: 'blur(9px)' },
-    //   {
-    //     opacity: 1,
-    //     y: 0,
-    //     filter: 'blur(0px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.5 },
-    //     ease: Expo.easeOut
-    //   },
-    //   '+=1.5'
-    // )
-    // .fromTo(
-    //   '.head-slide-6 .uniq',
-    //   0.7,
-    //   { scale: 1 },
-    //   { scale: 1.03, ease: Power0.easeInOut },
-    //   '+=1'
-    // )
-    // .to('.head-slide-6 .uniq', 0.7, { scale: 1 }, '+=.2')
-    // .to(
-    //   '.head-slide-6 div',
-    //   {
-    //     opacity: 0,
-    //     y: 50,
-    //     filter: 'blur(2px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.25 },
-    //     ease: Expo.easeIn
-    //   },
-    //   '+=1'
-    // )
-
-    // .fromTo(
-    //   '.head-slide-7 div',
-    //   { opacity: 0, y: 50, filter: 'blur(9px)' },
-    //   {
-    //     opacity: 1,
-    //     y: 0,
-    //     filter: 'blur(0px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.5 },
-    //     ease: Expo.easeOut
-    //   },
-    //   '+=1.5'
-    // )
-    // .fromTo(
-    //   '.head-slide-7 .uniq',
-    //   0.7,
-    //   { scale: 1 },
-    //   { scale: 1.03, ease: Power0.easeInOut },
-    //   '+=1'
-    // )
-    // .to('.head-slide-7 .uniq', 0.7, { scale: 1 }, '+=.2')
-    // .to(
-    //   '.head-slide-7 div',
-    //   {
-    //     opacity: 0,
-    //     y: 50,
-    //     filter: 'blur(2px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.25 },
-    //     ease: Expo.easeIn
-    //   },
-    //   '+=1'
-    // )
-
-    // .fromTo(
-    //   '.head-slide-8 div',
-    //   { opacity: 0, y: 50, filter: 'blur(9px)' },
-    //   {
-    //     opacity: 1,
-    //     y: 0,
-    //     filter: 'blur(0px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.5 },
-    //     ease: Expo.easeOut
-    //   },
-    //   '+=1.5'
-    // )
-    // .fromTo(
-    //   '.head-slide-8 .uniq',
-    //   0.7,
-    //   { scale: 1 },
-    //   { scale: 1.03, ease: Power0.easeInOut },
-    //   '+=1'
-    // )
-    // .to('.head-slide-8 .uniq', 0.7, { scale: 1 }, '+=.2')
-    // .to(
-    //   '.head-slide-8 div',
-    //   {
-    //     opacity: 0,
-    //     y: 50,
-    //     filter: 'blur(2px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.25 },
-    //     ease: Expo.easeIn
-    //   },
-    //   '+=1'
-    // )
-
-    // .fromTo(
-    //   '.head-slide-9 div',
-    //   { opacity: 0, y: 50, filter: 'blur(9px)' },
-    //   {
-    //     opacity: 1,
-    //     y: 0,
-    //     filter: 'blur(0px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.5 },
-    //     ease: Expo.easeOut
-    //   },
-    //   '+=1.5'
-    // )
-    // .fromTo(
-    //   '.head-slide-9 .uniq',
-    //   0.7,
-    //   { scale: 1 },
-    //   { scale: 1.03, ease: Power0.easeInOut },
-    //   '+=1'
-    // )
-    // .to('.head-slide-9 .uniq', 0.7, { scale: 1 }, '+=.2')
-    // .to(
-    //   '.head-slide-9 div',
-    //   {
-    //     opacity: 0,
-    //     y: 50,
-    //     filter: 'blur(2px)',
-    //     duration: 1.2,
-    //     stagger: { amount: 0.25 },
-    //     ease: Expo.easeIn
-    //   },
-    //   '+=1'
-    // );
 
     tl.add(subtitleTimeline);
 
@@ -450,32 +284,6 @@ class HeadingSlider extends Component {
                 <div>is&nbsp;</div>
                 <div>everything&nbsp;</div>
               </div>
-
-              {/* <div className="slide-wrap head-slide-7">
-                <div>our&nbsp;</div>
-                <div>approach&nbsp;</div>
-                <div>is&nbsp;</div>
-                <div>audit,&nbsp;</div>
-                <div>research&nbsp;</div>
-                <div>&amp;&nbsp;</div>
-                <div className="uniq">execute</div>
-              </div> */}
-              {/* <div className="slide-wrap head-slide-8">
-                <div>branding&nbsp;</div>
-                <div>is&nbsp;</div>
-                <br />
-                <div>our&nbsp;</div>
-                <div className="uniq">middle&nbsp;</div>
-                <div>name</div>
-              </div> */}
-              {/* <div className="slide-wrap head-slide-9">
-                <div>crazy&nbsp;</div>
-                <div>client&nbsp;</div>
-                <div>brings&nbsp;</div>
-                <br />
-                <div className="uniq">crazy&nbsp;</div>
-                <div>ideas.</div>
-              </div> */}
             </h1>
           </div>
         </div>

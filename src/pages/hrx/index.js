@@ -10,10 +10,10 @@ import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { hrxImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
-import HrxSlider from "../../components/pageslider";
 import * as meta from "../../components/meta.json";
 import "./hrx.scss";
-
+import HrxImgSlider from "./hrxslider";
+import "../../components/simpleslider/slider.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 
@@ -244,7 +244,9 @@ class About extends Component {
       para3: ` `
     };
     const metakeywords = meta.hrithikroshan;
-
+    const settings = {
+      slidesToScroll: -1
+    };
     return (
       <PageAnimWrapper>
         <div>
@@ -406,10 +408,67 @@ class About extends Component {
                 </div>
               </div>
 
-              <div className="fold-3" id="fold-3">
+              <div
+                className="fold-3"
+                id="fold-3"
+                style={{ width: "100vw", marginBottom: "10em" }}
+              >
+                <div className="container">
+                  <div className="row no-gutters">
+                    <div className="view" data-slide="1">
+                      <HrxImgSlider
+                        slides={[
+                          this.SbbSlide1,
+                          this.SbbSlide2,
+                          this.SbbSlide3,
+                          this.SbbSlide4,
+                          this.SbbSlide5,
+                          this.SbbSlide6
+                        ]}
+                        settings={settings}
+                      />
+                      <HrxImgSlider
+                        slides={[
+                          this.SbbSlide12,
+                          this.SbbSlide11,
+                          this.SbbSlide10,
+                          this.SbbSlide9,
+                          this.SbbSlide8,
+                          this.SbbSlide7
+                        ]}
+                      />
+                      <HrxImgSlider
+                        slides={[
+                          this.SbbSlide13,
+                          this.SbbSlide14,
+                          this.SbbSlide15,
+                          this.SbbSlide16,
+                          this.SbbSlide17,
+                          this.SbbSlide18
+                        ]}
+                        settings={settings}
+                      />
+                      <HrxImgSlider
+                        slides={[
+                          this.SbbSlide24,
+                          this.SbbSlide23,
+                          this.SbbSlide22,
+                          this.SbbSlide21,
+                          this.SbbSlide20,
+                          this.SbbSlide19
+                        ]}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="fold-3" id="fold-3" style={{width: '100vw', marginBottom: '10em'}}>
                 <div className="container row no-gutters">
                   <div className="row no-gutters">
                     <div className="view" data-slide="1">
+
+                   
+
                       <HrxSlider
                         dots={false}
                         infinite={true}
@@ -496,7 +555,7 @@ class About extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div
                 className="fold-4 fold-5-bg"
