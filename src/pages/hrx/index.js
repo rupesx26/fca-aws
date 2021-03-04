@@ -408,11 +408,7 @@ class About extends Component {
                 </div>
               </div>
 
-              <div
-                className="fold-3"
-                id="fold-3"
-                style={{ width: "100vw", marginBottom: "10em" }}
-              >
+              <div className="fold-3" id="fold-3" style={{ width: "100vw" }}>
                 <div className="container">
                   <div className="row no-gutters">
                     <div className="view" data-slide="1">
@@ -462,100 +458,6 @@ class About extends Component {
                   </div>
                 </div>
               </div>
-              {/* <div className="fold-3" id="fold-3" style={{width: '100vw', marginBottom: '10em'}}>
-                <div className="container row no-gutters">
-                  <div className="row no-gutters">
-                    <div className="view" data-slide="1">
-
-                   
-
-                      <HrxSlider
-                        dots={false}
-                        infinite={true}
-                        speed={4000}
-                        slidesToShow={2}
-                        slidesToScroll={1}
-                        fade={false}
-                        autoplay={true}
-                        autoplaySpeed={2000}
-                        pauseOnHover={false}
-                        centerMode={false}
-                        variableWidth={true}
-                        slide1={this.SbbSlide1}
-                        slide2={this.SbbSlide2}
-                        slide3={this.SbbSlide3}
-                        slide4={this.SbbSlide4}
-                        slide5={this.SbbSlide5}
-                        slide6={this.SbbSlide6}
-                      />
-                    </div>
-                    <div className="view" data-slide="2">
-                      <HrxSlider
-                        dots={false}
-                        infinite={true}
-                        speed={4000}
-                        slidesToShow={2}
-                        slidesToScroll={-1}
-                        fade={false}
-                        autoplay={true}
-                        autoplaySpeed={2000}
-                        pauseOnHover={false}
-                        centerMode={false}
-                        variableWidth={true}
-                        slide1={this.SbbSlide12}
-                        slide2={this.SbbSlide11}
-                        slide3={this.SbbSlide10}
-                        slide4={this.SbbSlide9}
-                        slide5={this.SbbSlide8}
-                        slide6={this.SbbSlide7}
-                      />
-                    </div>
-                    <div className="view" data-slide="3">
-                      <HrxSlider
-                        dots={false}
-                        infinite={true}
-                        speed={4000}
-                        slidesToShow={2}
-                        slidesToScroll={1}
-                        fade={false}
-                        autoplay={true}
-                        autoplaySpeed={2000}
-                        pauseOnHover={false}
-                        centerMode={false}
-                        variableWidth={true}
-                        slide1={this.SbbSlide13}
-                        slide2={this.SbbSlide14}
-                        slide3={this.SbbSlide15}
-                        slide4={this.SbbSlide16}
-                        slide5={this.SbbSlide17}
-                        slide6={this.SbbSlide18}
-                      />
-                    </div>
-
-                    <div className="view" data-slide="4">
-                      <HrxSlider
-                        dots={false}
-                        infinite={true}
-                        speed={4000}
-                        slidesToShow={2}
-                        slidesToScroll={-1}
-                        fade={false}
-                        autoplay={true}
-                        autoplaySpeed={2000}
-                        pauseOnHover={false}
-                        centerMode={false}
-                        variableWidth={true}
-                        slide1={this.SbbSlide24}
-                        slide2={this.SbbSlide23}
-                        slide3={this.SbbSlide22}
-                        slide4={this.SbbSlide21}
-                        slide5={this.SbbSlide20}
-                        slide6={this.SbbSlide19}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
 
               <div
                 className="fold-4 fold-5-bg"

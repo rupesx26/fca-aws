@@ -30,60 +30,61 @@ class PortfolioList extends Component {
         {
           _id: "0",
           color: "#fff",
-          title: "Hrithik Roshan's",
-          subtitle: "Graphic Novel",
+          title: "Nihar Gold",
+          subtitle: "Packaging Design",
           row: 0,
-          route: "hrithik-roshan",
-          tile: this.HrithikRoshanTile
-        },
-        {
-          _id: "2",
-          color: "#fff",
-          title: "Kate Spade",
-          subtitle: "Digital Audit",
-          row: 0,
-          route: "kate-spade",
-          tile: this.KateSpadeTile
+          route: "nihar-gold",
+          tile: this.NiharGoldTile
         },
         {
           _id: "1",
           color: "#fff",
-          title: "Nihar Gold",
-          subtitle: "Packaging Design",
-          row: 1,
-          route: "nihar-gold",
-          tile: this.NiharGoldTile
+          title: "Coco Soul",
+          subtitle: "Digital Content",
+          row: 0,
+          route: "cocosoul",
+          tile: this.CocoSoulTile
         },
 
         {
-          _id: "9",
-          color: "#fff",
-          title: "Lifebuoy",
-          subtitle: "Audit & Research",
-          row: 1,
-          route: "lifebuoy",
-          tile: this.LifebuoyTile
-        },
-        {
-          _id: "3",
+          _id: "2",
           color: "#fff",
           title: "Thambbi",
           subtitle: "Branding & Communication Design",
-          row: 2,
+          row: 1,
           route: "thambbi",
           tile: this.ThambbiTile
         },
         {
-          _id: "10",
+          _id: "3",
           color: "#fff",
-          title: "Setwet",
-          subtitle: "Audit & Research",
-          row: 2,
-          route: "setwet",
-          tile: this.SetwetTile
+          title: "Rapid Rupee",
+          subtitle: "Brand Strategy & Communication",
+          row: 1,
+          route: "rapid-rupee",
+          tile: this.RapidRupeeTile
         },
         {
           _id: "4",
+          color: "#fff",
+          title: "Sussegado",
+          subtitle: "Product & Package Design",
+          row: 2,
+          route: "sussegado-coffee",
+          tile: this.SussegadoCoffeeTile
+        },
+
+        {
+          _id: "5",
+          color: "#fff",
+          title: "Socranos Gravity",
+          subtitle: "Strategy & Packaging Design",
+          row: 2,
+          route: "socranos-gravity",
+          tile: this.GravityTile
+        },
+        {
+          _id: "6",
           color: "#fff",
           title: "HERO Talkies",
           subtitle: "Brand Design",
@@ -92,41 +93,42 @@ class PortfolioList extends Component {
           tile: this.HeroTalkiesTile
         },
         {
-          _id: "5",
-          color: "#fff",
-          title: "Coco Soul",
-          subtitle: "Digital Content",
-          row: 3,
-          route: "cocosoul",
-          tile: this.CocoSoulTile
-        },
-        {
-          _id: "6",
-          color: "#fff",
-          title: "Sussegado",
-          subtitle: "Product & Package Design",
-          row: 4,
-          route: "sussegado-coffee",
-          tile: this.SussegadoCoffeeTile
-        },
-        {
           _id: "7",
           color: "#fff",
-          title: "Rapid Rupee",
-          subtitle: "Brand Strategy & Communication",
-          row: 4,
-          route: "rapid-rupee",
-          tile: this.RapidRupeeTile
+          title: "Kate Spade",
+          subtitle: "Digital Audit",
+          row: 3,
+          route: "kate-spade",
+          tile: this.KateSpadeTile
         },
         {
           _id: "8",
           color: "#fff",
-          title: "Socranos Gravity",
-          subtitle: "Strategy & Packaging Design",
-          row: 5,
-          route: "socranos-gravity",
-          tile: this.GravityTile
+          title: "Hrithik Roshan's",
+          subtitle: "Graphic Novel",
+          row: 4,
+          route: "hrithik-roshan",
+          tile: this.HrithikRoshanTile
+        },
+        {
+          _id: "9",
+          color: "#fff",
+          title: "Setwet",
+          subtitle: "Audit & Research",
+          row: 4,
+          route: "setwet",
+          tile: this.SetwetTile
         }
+
+        // {
+        //   _id: "9",
+        //   color: "#fff",
+        //   title: "Lifebuoy",
+        //   subtitle: "Audit & Research",
+        //   row: 5,
+        //   route: "lifebuoy",
+        //   tile: this.LifebuoyTile
+        // },
       ]
     };
   }
