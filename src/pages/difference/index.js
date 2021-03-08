@@ -39,6 +39,11 @@ class About extends Component {
     this.brandfactory = differImagePath("L1.png");
     this.lifebuoy = differImagePath("L3.png");
     this.kotak = differImagePath("L4.png");
+    this.zandu = differImagePath("Zandu.png");
+    this.wildstone = differImagePath("wildstone.png");
+    this.hersheys = differImagePath("hersheys.png");
+    this.kratos = differImagePath("kratos.png");
+    this.nrikitchen = differImagePath("nrikitchen.png");
     this.handleKnowMore = this.handleKnowMore.bind(this);
     // this.addLineBreaks = this.addLineBreaks.bind(this);
     this.state = {
@@ -398,7 +403,6 @@ class About extends Component {
                       </div>
                       <div className="partner-wrapper">
                         <div className="box-row">
-                          <div className="box-cell"></div>
                           <div className="box-cell">
                             <img
                               src={this.Marico}
@@ -412,20 +416,24 @@ class About extends Component {
                           <div className="box-cell">
                             <img src={this.TLC} alt="client" />
                           </div>
-                          <div className="box-cell"></div>
+                          <div className="box-cell">
+                            <img src={this.zandu} alt="client" />
+                          </div>
                         </div>
                         <div className="box-row">
                           <div className="box-cell jsw">
-                            <img src={this.jSW} alt="client" />
+                            <img
+                              src={this.wildstone}
+                              alt="client"
+                              style={{ width: "100px" }}
+                            />
                           </div>
-                          <div className="box-cell">
-                            <img src={this.Hritik} alt="client" />
-                          </div>
+
                           <div className="box-cell">
                             <img src={this.Thambbi} alt="client" />
                           </div>
                           <div className="box-cell">
-                            <img src={this.Kratos} alt="client" />
+                            <img src={this.hersheys} alt="client" />
                           </div>
                           <div className="box-cell">
                             <img src={this.Hero} alt="client" />
@@ -433,7 +441,6 @@ class About extends Component {
                         </div>
 
                         <div className="box-row">
-                          <div className="box-cell"></div>
                           <div className="box-cell tbwa">
                             <img
                               src={this.kotak}
@@ -441,17 +448,23 @@ class About extends Component {
                               style={{ width: "135px" }}
                             />
                           </div>
-                          <div className="box-cell adgaonkar">
-                            <img src={this.lifebuoy} alt="client" />
+                          <div className="box-cell">
+                            <img
+                              src={this.kratos}
+                              alt="client"
+                              style={{ width: "135px" }}
+                            />
                           </div>
                           <div className="box-cell">
                             <img
                               src={this.brandfactory}
                               alt="client"
-                              style={{ width: "135px" }}
+                              style={{ width: "80px" }}
                             />
                           </div>
-                          <div className="box-cell"></div>
+                          <div className="box-cell">
+                            <img src={this.nrikitchen} alt="client" />
+                          </div>
                         </div>
                       </div>
                     </div>
