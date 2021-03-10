@@ -133,7 +133,7 @@
                 @include respond-until(sm) {
                 .box-cell {
                     &:first-child, &:last-child {
-                        display: none;
+                        border-right: 1px solid #e2e2e2;
                     }
                     &:nth-child(4) {
                         border-bottom: 1px solid #e2e2e2;
