@@ -1,7 +1,7 @@
 // We can use "process.env.VAR_NAME" on both the server and the client.
 // See config/env.js and server/indexHtml.js
 
-const ImageUrl = "https://d2qj18ujwk1hn4.cloudfront.net";
+const ImageUrl = "http://dqwpk0oa16wlh.cloudfront.net";
 export function imagePath(assetName) {
   return `${ImageUrl}/${assetName}`;
 }
