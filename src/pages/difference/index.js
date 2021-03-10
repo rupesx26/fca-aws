@@ -450,7 +450,7 @@ class About extends Component {
                           </div>
                           <div className="box-cell">
                             <img
-                              src={this.kratos}
+                              src={this.Kratos}
                               alt="client"
                               style={{ width: "135px" }}
                             />
