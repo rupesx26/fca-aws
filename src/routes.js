@@ -114,6 +114,12 @@ const LoadableSetWet = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableNiharShanti = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: 'niharshanti' */ "./pages/niharshanti"),
+  loading: () => <PageLoader />
+});
+
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
@@ -166,6 +172,7 @@ const Routes = () => {
       />
       <PrivateRoute exact path="/work/lifebuoy" component={LoadableLifeBuoy} />
       <PrivateRoute exact path="/work/setwet" component={LoadableSetWet} />
+      <Route exact path="/work/nihar-shanti" component={LoadableNiharShanti} />
       <Route
         exact
         path="/work/sussegado-coffee"

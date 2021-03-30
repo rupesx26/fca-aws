@@ -210,7 +210,7 @@ class NiharGold extends Component {
             >
               <WorkPageNavigation
                 prevLink="/work/kate-spade"
-                nextLink="/work/lifebuoy"
+                nextLink="/work/thambbi"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -291,11 +291,11 @@ class NiharGold extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/lifebuoy"
-              data-text="Lifebuoy"
+              to="/work/thabbi"
+              data-text="Thambbi"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Lifebuoy
+              Thambbi
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
