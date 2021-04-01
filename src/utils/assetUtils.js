@@ -22,6 +22,10 @@ export function niharImagePath(assetName) {
   return `${ImageUrl}/nihar-gold/${assetName}`;
 }
 
+export function niharShantiImagePath(assetName) {
+  return `${process.env.PUBLIC_URL}/images/nihar-shanti/${assetName}`;
+}
+
 export function kateImagePath(assetName) {
   return `${ImageUrl}/kate/${assetName}`;
 }
