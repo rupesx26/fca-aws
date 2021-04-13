@@ -123,25 +123,25 @@ class NiharShanti extends Component {
         2,
         { opacity: 0, y: 100 },
         { y: 0, opacity: 1, ease: Power4.easeOut },
-        "-=.90"
-      )
-      .fromTo(
-        ".flower-bg-1",
-        2,
-        { opacity: 0 },
-        { opacity: 1, ease: Power4.easeOut },
-        "-=.90"
+        "-=1"
       )
       .fromTo(
         ".flower-bg-2",
-        1.5,
+        0.8,
+        { opacity: 0 },
+        { opacity: 1, ease: Power4.easeOut },
+        "-=.70"
+      )
+      .fromTo(
+        ".flower-bg-1",
+        1,
         { opacity: 0 },
         { opacity: 1, ease: Power4.easeOut },
         "-=.50"
       )
       .fromTo(
         ".flower-bg-3",
-        1.5,
+        0.7,
         { opacity: 0 },
         { opacity: 1, ease: Power4.easeOut },
         "-=.50"
@@ -167,14 +167,14 @@ class NiharShanti extends Component {
       )
       .fromTo(
         ".flower-bg-9",
-        2,
+        1,
         { opacity: 0 },
         { opacity: 1, ease: Power4.easeOut },
         "-=.90"
       )
       .fromTo(
         ".flower-bg-10",
-        1.5,
+        1,
         { opacity: 0 },
         { opacity: 1, ease: Power4.easeOut },
         "-=.50"
@@ -306,8 +306,8 @@ class NiharShanti extends Component {
                           <img src={this.product2} alt="nihar shanti" />
                         </div>
                       </div>
-                      <div className="col-md-6"></div>
-                      <div className="col-md-6">
+                      <div className="col-md-6 col-xs-12"></div>
+                      <div className="col-md-6 col-xs-12">
                         <div className="fold-1-text">
                           <p>
                             Nihar coconut oil is the market leader in East
@@ -331,38 +331,44 @@ class NiharShanti extends Component {
                     <img src={this.flower3} alt="flower3" />
                   </div>
                   <div className="container">
-                    <div className="row align-item-center">
-                      <div className="col-md-6">
-                        <div className="product-info">
-                          <h3>SARSO</h3>
-                          <p>
-                            Nihar coconut oil is the market leader in East
-                            India, especially in Bihar. They wanted to launch a
-                            premium sub-brand called Nihar Gold. For this, Nihar
-                            coconut oil is the market leader in East India,
-                            especially in Bihar. They wanted to launch a premium
-                            sub-brand called Nihar Gold. For this,{" "}
-                          </p>
-                          <ul>
-                            <li>
-                              <img src={this.flower7} alt="sarso" />
-                            </li>
-                            <li>
-                              <img src={this.almond} alt="almond" />
-                            </li>
-                            <li>
-                              <img src={this.amla} alt="amla" />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="product-3-wrap">
-                          <img className="flower-bg-1" src={this.flower4} />
-                          <img className="flower-bg-2" src={this.flower5} />
-                          <img className="flower-bg-3" src={this.flower6} />
-                          <div className="product-3">
-                            <img src={this.product3} alt="nihar-shanti" />
+                    <div className="row justify-content-center no-gutters">
+                      <div className="col-md-10 col-xs-12">
+                        <div className="row align-item-center">
+                          <div className="col-md-6">
+                            <div className="product-info">
+                              <h3>SARSO</h3>
+                              <p>
+                                Nihar coconut oil is the market leader in East
+                                India, especially in Bihar. They wanted to
+                                launch a premium sub-brand called Nihar Gold.
+                                For this, Nihar coconut oil is the market leader
+                                in East India, especially in Bihar. They wanted
+                                to launch a premium sub-brand called Nihar Gold.
+                                For this,{" "}
+                              </p>
+                              {/* <ul>
+                                <li>
+                                  <img src={this.flower7} alt="sarso" />
+                                </li>
+                                <li>
+                                  <img src={this.almond} alt="almond" />
+                                </li>
+                                <li>
+                                  <img src={this.amla} alt="amla" />
+                                </li>
+                              </ul> */}
+                            </div>
+                          </div>
+
+                          <div className="col-md-6">
+                            <div className="product-3-wrap">
+                              <img className="flower-bg-1" src={this.flower4} />
+                              <img className="flower-bg-2" src={this.flower5} />
+                              <img className="flower-bg-3" src={this.flower6} />
+                              <div className="product-3">
+                                <img src={this.product3} alt="nihar-shanti" />
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -378,44 +384,49 @@ class NiharShanti extends Component {
                     <img src={this.flower8} alt="flower8" />
                   </div>
                   <div className="container">
-                    <div className="row align-item-center">
-                      <div className="col-md-6">
-                        <div className="product-4-wrap">
-                          <img
-                            className="flower-bg-9"
-                            src={this.flower9}
-                            alt="flower9"
-                          />
-                          <img
-                            className="flower-bg-10"
-                            src={this.flower10}
-                            alt="flower10"
-                          />
-                          <div className="product-4">
-                            <img src={this.product4} alt="nihar-shanti" />
+                    <div className="row justify-content-center no-gutters">
+                      <div className="col-md-10 col-xs-12">
+                        <div className="row align-item-center">
+                          <div className="col-md-6">
+                            <div className="product-4-wrap">
+                              <img
+                                className="flower-bg-9"
+                                src={this.flower9}
+                                alt="flower9"
+                              />
+                              <img
+                                className="flower-bg-10"
+                                src={this.flower10}
+                                alt="flower10"
+                              />
+                              <div className="product-4">
+                                <img src={this.product4} alt="nihar-shanti" />
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
 
-                      <div className="col-md-6">
-                        <div className="product-info">
-                          <h3>JASMINE</h3>
-                          <p>
-                            Nihar coconut oil is the market leader in East
-                            India, especially in Bihar. They wanted to launch a
-                            premium sub-brand called Nihar Gold. For this, Nihar
-                            coconut oil is the market leader in East India,
-                            especially in Bihar. They wanted to launch a premium
-                            sub-brand called Nihar Gold. For this,{" "}
-                          </p>
-                          <ul>
+                          <div className="col-md-6">
+                            <div className="product-info">
+                              <h3>JASMINE</h3>
+                              <p>
+                                Nihar coconut oil is the market leader in East
+                                India, especially in Bihar. They wanted to
+                                launch a premium sub-brand called Nihar Gold.
+                                For this, Nihar coconut oil is the market leader
+                                in East India, especially in Bihar. They wanted
+                                to launch a premium sub-brand called Nihar Gold.
+                                For this,{" "}
+                              </p>
+                              {/* <ul>
                             <li>
                               <img src={this.coconut} alt="coconut" />
                             </li>
                             <li>
                               <img src={this.flower11} alt="flower11" />
                             </li>
-                          </ul>
+                          </ul> */}
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

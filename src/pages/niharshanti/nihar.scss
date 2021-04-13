@@ -8,7 +8,7 @@
 	}
 	.bg{
 		background-size: cover; 
-		background-position: bottom;
+		background-position: top center;
 		background-repeat: no-repeat;
     }
     &.work-details-page {
@@ -19,9 +19,13 @@
 	
 	.page-header {
 		position: relative;
+		min-height: 140vh;
 		.banner-img-container {
 			width: 80vh;
 			text-align: center;
+		}
+		@include respond-until(sm) {
+			min-height: 70vh;
 		}
 	}
 	
@@ -41,18 +45,34 @@
 		width: 300px;
 		top: 140px;
 		left: -50px;
+
+		@include respond-until(sm) {
+			width: 150px;
+		}
 	}
 
 	.fold-1 {
 		position: relative;
 		.product-1 {
-			width: 460px;
+			width: 400px;
 			margin-top: 180px;
 			margin-left: 200px;
+			@include respond-until(sm) {
+				width: 300px;
+				margin-top: 60px;
+				margin-left: 12%;
+				transform: rotate(14deg);
+			}
 		}
 		.product-2 {
-			width: 460px;
+			width: 400px;
 			margin-left: 100px;
+
+			@include respond-until(sm) {
+				width: 300px;
+				margin-left: 0%;
+				transform: rotate(-14deg);
+			}
 		}
 
 		.flower2 {
@@ -60,9 +80,18 @@
 			right: 0;
 			bottom: 0;
 			width: 220px;
+
+			@include respond-until(sm) {
+				width: 150px;
+				bottom: 8em;
+			}
 		}
 		.fold-1-text {
 			width: 70%;
+			@include respond-until(sm) {
+				width: 100%;
+				margin-top: 5em;
+			}
 		}
 	}
 
@@ -70,23 +99,30 @@
 		position: relative;
 		margin-top: 250px;
 		padding-bottom: 250px;
+		@include respond-until(sm) {
+			margin-top: 80px;
+			padding-bottom: 80px;
+		}
 		.flower3 {
 			position: absolute;
 			left: -40px;
 			top: 20%;
 			width: 200px;
+			@include respond-until(sm) {
+				top: -3em;
+			}
 		}
 		.align-item-center {
 			align-items: center;
 		}
 		.product-3 {
-			width: 350px;
+			width: 280px;
 			margin: auto;
 			position: relative;
 		}
 		.product-info {
 			width: 70%;
-			margin: 150px auto 0;
+			margin: 90px auto 0;
 			ul {
 				display: flex;
 				margin-top: 20px;
@@ -109,30 +145,51 @@
 			width: 100px;
 		}
 		.flower-bg-1 {
-			left: 320px;
-			width: 300px;
+			left: 240px;
+			width: 250px;
 			top: 150px;
+			transform: rotate(5deg);
+			@include respond-until(sm) {
+				left: 150px;
+				width: 200px;
+				top: 170px;
+			}
 		}
 		.flower-bg-2 {
-			left: 100px;
-			width: 300px;
-			top: -115px;
+			left: 23px;
+			width: 280px;
+			top: -85px;
+			@include respond-until(sm) {
+				left: -37px;
+				width: 200px;
+				top: -55px;
+			}
 		}
 		.flower-bg-3 {
 			top: 230px;
-			left: 70px;
-			width: 280px;
+			left: 40px;
+			width: 230px;
+			@include respond-until(sm) {
+				left: -60px;
+    			width: 200px;
+			}
 		}
 	}
 
 	.fold-3 {
 		position: relative;
 		padding-bottom: 250px;
+		@include respond-until(sm) {
+			padding-bottom: 100px;
+		}
 		.flower12 {
 			position: absolute;
 			left: -40px;
 			bottom: 20%;
 			width: 150px;
+			@include respond-until(sm) {
+				bottom: 0;
+			}
 		}
 
 		.flower8 {
@@ -140,6 +197,10 @@
 			right: -33px;
 			top: -178px;
 			width: 180px;
+			@include respond-until(sm) {
+				top: -98px;
+    			width: 130px;
+			}
 		}
 
 		.align-item-center {
@@ -149,7 +210,7 @@
 			position: relative;
 		}
 		.product-4 {
-			width: 350px;
+			width: 280px;
 			margin: auto;
 			position: relative;
 		}
@@ -175,13 +236,21 @@
 		}
 		.flower-bg-9 {
 			width: 250px;
-			left: 80px;
+			left: 10px;
 			top: 50px;
+			@include respond-until(sm) {
+				width: 150px;
+    			left: -27px;
+			}
 		}
 		.flower-bg-10 {
 			width: 200px;
-			right: 110px;
+			right: 52px;
 			top: 250px;
+			@include respond-until(sm) {
+				width: 150px;
+   				right: -38px;
+			}
 		}
 	}
 	
