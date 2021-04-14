@@ -11,7 +11,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { gravityImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 import "./gravity.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -51,15 +51,9 @@ class Gravity extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -208,8 +202,8 @@ class Gravity extends Component {
               style={{ backgroundImage: `url(${this.HeroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/rapid-rupee"
-                nextLink="/work/hrithik-roshan"
+                prevLink="/work/nihar-shanti"
+                nextLink="/work/hero-talkies"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -292,11 +286,11 @@ class Gravity extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/hrithik-roshan"
-              data-text="Hrithik Roshan's"
+              to="/work/hero-talkies"
+              data-text="Hero Talkies"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Hrithik Roshan's
+              Hero Talkies
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

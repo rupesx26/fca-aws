@@ -11,6 +11,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { niharShantiImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
+import { colorClassList } from "../../components/colorconfig";
 import "./nihar.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -48,7 +49,7 @@ class NiharShanti extends Component {
     this.almond = niharShantiImagePath("almond.png");
     this.amla = niharShantiImagePath("amla.png");
     this.coconut = niharShantiImagePath("coconut.png");
-
+    this.niharTextureBg = niharShantiImagePath("nihar-texture-bg.jpg");
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -67,15 +68,9 @@ class NiharShanti extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -265,8 +260,8 @@ class NiharShanti extends Component {
               style={{ backgroundImage: `url(${this.heroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/kate-spade"
-                nextLink="/work/thambbi"
+                prevLink="/work/sussegado-coffee"
+                nextLink="/work/socranos-gravity"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -287,7 +282,7 @@ class NiharShanti extends Component {
             >
               <div
                 className="page-bg-top"
-                style={{ backgroundImage: `url(${this.pageBgTop})` }}
+                style={{ backgroundImage: `url(${this.niharTextureBg})` }}
               >
                 <div className="flower1">
                   <img src={this.flower1} alt="flower1" />
@@ -295,28 +290,33 @@ class NiharShanti extends Component {
 
                 <div className="fold-1">
                   <div className="container">
-                    <div className="row">
-                      <div className="col-md-6">
-                        <div className="product-1">
-                          <img src={this.product1} alt="nihar shanti" />
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="product-2">
-                          <img src={this.product2} alt="nihar shanti" />
-                        </div>
-                      </div>
-                      <div className="col-md-6 col-xs-12"></div>
-                      <div className="col-md-6 col-xs-12">
-                        <div className="fold-1-text">
-                          <p>
-                            Nihar coconut oil is the market leader in East
-                            India, especially in Bihar. They wanted to launch a
-                            premium sub-brand called Nihar Gold. For this, Nihar
-                            coconut oil is the market leader in East India,
-                            especially in Bihar. They wanted to launch a premium
-                            sub-brand called Nihar Gold. For this,{" "}
-                          </p>
+                    <div className="row justify-content-center no-gutters">
+                      <div className="col-md-10 col-xs-12">
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="product-1">
+                              <img src={this.product1} alt="nihar shanti" />
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="product-2">
+                              <img src={this.product2} alt="nihar shanti" />
+                            </div>
+                          </div>
+                          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12"></div>
+                          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div className="fold-1-text">
+                              <p>
+                                Nihar coconut oil is the market leader in East
+                                India, especially in Bihar. They wanted to
+                                launch a premium sub-brand called Nihar Gold.
+                                For this, Nihar coconut oil is the market leader
+                                in East India, especially in Bihar. They wanted
+                                to launch a premium sub-brand called Nihar Gold.
+                                For this,{" "}
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -334,7 +334,7 @@ class NiharShanti extends Component {
                     <div className="row justify-content-center no-gutters">
                       <div className="col-md-10 col-xs-12">
                         <div className="row align-item-center">
-                          <div className="col-md-6 col-xs-12">
+                          <div className="col-md-6 col-sm-6 col-xs-12">
                             <div className="product-info">
                               <h3>SARSO</h3>
                               <p>
@@ -360,7 +360,7 @@ class NiharShanti extends Component {
                             </div>
                           </div>
 
-                          <div className="col-md-6 col-xs-12">
+                          <div className="col-md-6 col-sm-6 col-xs-12">
                             <div className="product-3-wrap">
                               <img className="flower-bg-1" src={this.flower4} />
                               <img className="flower-bg-2" src={this.flower5} />
@@ -387,7 +387,7 @@ class NiharShanti extends Component {
                     <div className="row justify-content-center no-gutters">
                       <div className="col-md-10 col-xs-12">
                         <div className="row align-item-center">
-                          <div className="col-md-6">
+                          <div className="col-md-6 col-sm-6 col-xs-12">
                             <div className="product-4-wrap">
                               <img
                                 className="flower-bg-9"
@@ -405,7 +405,7 @@ class NiharShanti extends Component {
                             </div>
                           </div>
 
-                          <div className="col-md-6 col-xs-12">
+                          <div className="col-md-6 col-sm-6 col-xs-12">
                             <div className="product-info">
                               <h3>JASMINE</h3>
                               <p>
@@ -447,11 +447,11 @@ class NiharShanti extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/thabbi"
-              data-text="Thambbi"
+              to="/work/socranos-gravity"
+              data-text="Socranos Gravity"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Thambbi
+              Socranos Gravity
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

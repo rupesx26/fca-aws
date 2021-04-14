@@ -11,7 +11,7 @@ import { TimelineMax, TimelineLite, TweenMax, Power2, CSSPlugin } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import { differImagePath } from "../../utils/assetUtils";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 
@@ -69,15 +69,9 @@ class About extends Component {
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });

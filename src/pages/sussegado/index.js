@@ -13,7 +13,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { sussegadoImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 import "./sussegado.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -70,15 +70,9 @@ class Sussegado extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -249,8 +243,8 @@ class Sussegado extends Component {
                 <img src={this.JarsHero} alt="sussegado" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/cocosoul"
-                nextLink="/work/rapid-rupee"
+                prevLink="/work/rapid-rupee"
+                nextLink="/work/nihar-shanti"
               />
             </div>
 
@@ -463,11 +457,11 @@ class Sussegado extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/rapid-rupee"
-              data-text="Rapid Rupee"
+              to="/work/nihar-shanti"
+              data-text="Nihar Shanti"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Rapid Rupee
+              Nihar Shanti
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

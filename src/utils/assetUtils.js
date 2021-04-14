@@ -7,7 +7,7 @@ export function imagePath(assetName) {
 }
 
 export function workImagePath(assetName) {
-  return `${ImageUrl}/work/${assetName}`;
+  return `${process.env.PUBLIC_URL}/images/work/${assetName}`;
 }
 
 export function differImagePath(assetName) {

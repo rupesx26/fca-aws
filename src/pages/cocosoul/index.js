@@ -14,7 +14,7 @@ import WorkPageNavigation from "../../components/workpagenav";
 import VideoSection from "../../components/videosection";
 import "./cocosoul.scss";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 
@@ -63,15 +63,9 @@ class Cocosoul extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -263,8 +257,8 @@ class Cocosoul extends Component {
               style={{ backgroundImage: `url(${this.HeroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/hero-talkies"
-                nextLink="/work/sussegado-coffee"
+                prevLink="/work/nihar-gold"
+                nextLink="/work/thambbi"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -427,11 +421,11 @@ class Cocosoul extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/sussegado-coffee"
-              data-text="Sussegado Coffee"
+              to="/work/thambbi"
+              data-text="Thambbi"
               className={`title footer-title coco-soul-footer-link ${this.state.footerColor} `}
             >
-              Sussegado Coffee
+              Thambbi
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

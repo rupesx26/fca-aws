@@ -11,6 +11,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { kateImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
+import { colorClassList } from "../../components/colorconfig";
 
 import "./kate.scss";
 /* eslint-disable no-console */
@@ -63,15 +64,9 @@ class KateSpade extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -335,8 +330,8 @@ class KateSpade extends Component {
                 <img src={this.KateHero} alt="katespade" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/hrithik-roshan"
-                nextLink="/work/nihar-gold"
+                prevLink="/work/hero-talkies"
+                nextLink="/work/hrithik-roshan"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -520,11 +515,11 @@ class KateSpade extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/nihar-gold"
-              data-text="Nihar Gold"
+              to="/work/hrithik-roshan"
+              data-text="Hrithik Roshan's"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Nihar Gold
+              Hrithik Roshan's
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

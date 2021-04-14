@@ -11,6 +11,11 @@
 		background-position: top center;
 		background-repeat: no-repeat;
     }
+	.full-page-wrapper {
+		@include respond-until(sm) {
+			min-height: auto;
+		}
+	}
     &.work-details-page {
 		.work-description {
 			padding-bottom: 50px;
@@ -56,22 +61,26 @@
 		.product-1 {
 			width: 400px;
 			margin-top: 180px;
-			margin-left: 200px;
+			margin-left: 10vh;
+			@include respond-until(s) {
+				transform: rotate(14deg);
+			}
 			@include respond-until(sm) {
 				width: 300px;
 				margin-top: 60px;
 				margin-left: 12%;
-				transform: rotate(14deg);
 			}
+
 		}
 		.product-2 {
 			width: 400px;
-			margin-left: 100px;
-
+			margin-left: 10vh;
+			@include respond-until(s) {
+				transform: rotate(-14deg);
+			}
 			@include respond-until(sm) {
 				width: 300px;
 				margin-left: 0%;
-				transform: rotate(-14deg);
 			}
 		}
 
@@ -88,7 +97,7 @@
 		}
 		.fold-1-text {
 			width: 70%;
-			@include respond-until(sm) {
+			@include respond-until(md) {
 				width: 100%;
 				margin-top: 5em;
 			}
@@ -121,11 +130,11 @@
 			position: relative;
 		}
 		.product-info {
-			width: 70%;
-			margin: 90px auto 0;
-			@include respond-until(sm) { 
+			width: 80%;
+			margin-top: 100px;
+			@include respond-until(md) { 
 				width: 100%;
-				margin: 100px auto;
+				margin-bottom: 100px;
 			}
 
 			ul {
@@ -150,33 +159,50 @@
 			width: 100px;
 		}
 		.flower-bg-1 {
-			left: 240px;
-			width: 250px;
-			top: 150px;
+			left: 32vh;
+			width: 22vw;
+			top: 23vh;
 			transform: rotate(5deg);
+			@include respond-until(md) {
+				left: 25vh;
+			}
 			@include respond-until(sm) {
-				left: 150px;
-				width: 200px;
-				top: 170px;
+				left: 18vh;
+			}
+			@include respond-until(s) {
+				width: 42vw;
+				left: 25vh;
 			}
 		}
 		.flower-bg-2 {
-			left: 23px;
-			width: 280px;
-			top: -85px;
+			left: 5vh;
+			width: 20vw;
+			top: -13vh;
+			@include respond-until(md) {
+				left: 1vh;
+   				top: -9vh;
+			}
 			@include respond-until(sm) {
-				left: -37px;
-				width: 200px;
-				top: -55px;
+				left: 2vh;
+				top: -5vh;
+			}
+			@include respond-until(s) {
+				left: 0vh;
+				top: -8vh;
+				width: 25vh;
 			}
 		}
 		.flower-bg-3 {
-			top: 230px;
-			left: 40px;
-			width: 230px;
-			@include respond-until(sm) {
-				left: -60px;
-    			width: 200px;
+			top: 23vh;
+			left: 3vh;
+			width: 20vw;
+			@include respond-until(md) {
+				left: 0;
+			}
+			@include respond-until(s) {
+				top: 26vh;
+				left: -3vh;
+				width: 40vw;
 			}
 		}
 	}
@@ -210,6 +236,9 @@
 
 		.align-item-center {
 			align-items: center;
+			@include respond-until(s) {
+				flex-direction: column-reverse;
+			}
 		}
 		.product-4-wrap {
 			position: relative;
@@ -220,9 +249,9 @@
 			position: relative;
 		}
 		.product-info {
-			width: 70%;
+			width: 80%;
 			margin: 150px auto 0;
-			@include respond-until(sm) {
+			@include respond-until(md) {
 				width: 100%;
 				margin: 90px auto;
 			}
@@ -244,21 +273,36 @@
 			position: absolute;
 		}
 		.flower-bg-9 {
-			width: 250px;
-			left: 10px;
-			top: 50px;
+			width: 16vw;
+			left: 6vh;
+			top: 4vh;
+			@include respond-until(md) {
+				left: 1vh;
+			}
 			@include respond-until(sm) {
-				width: 150px;
-    			left: -27px;
+				left: 1vh;
+			}
+			@include respond-until(s) {
+				left: 1vh;
+				width: 30vw;
 			}
 		}
 		.flower-bg-10 {
-			width: 200px;
-			right: 52px;
-			top: 250px;
+			width: 14vw;
+			right: 9vh;
+			top: 35vh;
+			@include respond-until(md) {
+				right: 2vh;
+				top: 25vh;
+			}
 			@include respond-until(sm) {
-				width: 150px;
-   				right: -38px;
+				right: 2vh;
+				top: 18vh;
+			}
+			@include respond-until(s) {
+				right: 0vh;
+				top: 28vh;
+				width: 30vw;
 			}
 		}
 	}

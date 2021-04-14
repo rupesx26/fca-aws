@@ -18,7 +18,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { thambbiImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 import "./thambbi.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -66,15 +66,9 @@ class Thambbi extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -314,8 +308,8 @@ class Thambbi extends Component {
             >
               <div className="banner-img-container"></div>
               <WorkPageNavigation
-                prevLink="/work/nihar-gold"
-                nextLink="/work/setwet"
+                prevLink="/work/cocosoul"
+                nextLink="/work/rapid-rupee"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -454,11 +448,11 @@ class Thambbi extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/setwet"
-              data-text="Setwet"
+              to="/work/rapid-rupee"
+              data-text="Rapid Rupee"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Setwet
+              Rapid Rupee
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

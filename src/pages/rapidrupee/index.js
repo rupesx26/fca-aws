@@ -11,7 +11,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { rapidrupeeImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 import "./rapidrupee.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -55,15 +55,9 @@ class Rapidrupee extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -216,8 +210,8 @@ class Rapidrupee extends Component {
                 <img src={this.Hero} alt="rapidrupee" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/sussegado-coffee"
-                nextLink="/work/socranos-gravity"
+                prevLink="/work/thambbi"
+                nextLink="/work/sussegado-coffee"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -359,11 +353,11 @@ class Rapidrupee extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/socranos-gravity"
-              data-text="Socranos Gravity"
+              to="/work/sussegado-coffee"
+              data-text="Sussegado Coffee"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Socranos Gravity
+              Sussegado Coffee
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

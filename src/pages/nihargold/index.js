@@ -11,6 +11,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { niharImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
+import { colorClassList } from "../../components/colorconfig";
 
 import "./nihar.scss";
 /* eslint-disable no-console */
@@ -52,15 +53,9 @@ class NiharGold extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -209,8 +204,8 @@ class NiharGold extends Component {
               style={{ backgroundImage: `url(${this.HeroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/kate-spade"
-                nextLink="/work/thambbi"
+                prevLink="/work/setwet"
+                nextLink="/work/cocosoul"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -291,11 +286,11 @@ class NiharGold extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/thabbi"
-              data-text="Thambbi"
+              to="/work/cocosoul"
+              data-text="Cocosoul"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Thambbi
+              Cocosoul
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

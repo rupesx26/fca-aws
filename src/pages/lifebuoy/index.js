@@ -19,6 +19,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { lifeBuoyImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
+import { colorClassList } from "../../components/colorconfig";
 
 import "./lifebuoy.scss";
 /* eslint-disable no-console */
@@ -98,15 +99,9 @@ class Lifebuoy extends Component {
       // require('debug.addIndicators');
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });

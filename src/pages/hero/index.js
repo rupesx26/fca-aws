@@ -11,7 +11,7 @@ import ProjectPageSummary from "../../components/workdetailsanim";
 import { heroImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
-
+import { colorClassList } from "../../components/colorconfig";
 import "./hero.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
@@ -62,15 +62,9 @@ class Hero extends Component {
     if (!isMobile) {
       this.pageAnimation();
     }
-    const classArray = [
-      "color1",
-      "color2",
-      "color3",
-      "color4",
-      "color5",
-      "color6"
-    ];
-    const random = classArray[Math.floor(Math.random() * classArray.length)];
+
+    const random =
+      colorClassList[Math.floor(Math.random() * colorClassList.length)];
     this.setState({
       footerColor: random
     });
@@ -332,8 +326,8 @@ class Hero extends Component {
                 <img src={this.Hero} alt="herotalkies" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/setwet"
-                nextLink="/work/cocosoul"
+                prevLink="/work/socranos-gravity"
+                nextLink="/work/kate-spade"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -474,11 +468,11 @@ class Hero extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/cocosoul"
-              data-text="Coco Soul"
+              to="/work/kate-spade"
+              data-text="Kate Spade"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Coco Soul
+              Kate Spade
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

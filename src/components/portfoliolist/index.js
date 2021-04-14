@@ -25,6 +25,7 @@ class PortfolioList extends Component {
     this.GravityTile = workImagePath("gravity-tile.jpg");
     this.LifebuoyTile = workImagePath("lifebuoy-tile.jpg");
     this.SetwetTile = workImagePath("setwet-tile.jpg");
+    this.NiharShantiTile = workImagePath("nihar-shanti-tile.png");
     this.state = {
       data: [
         {
@@ -73,13 +74,21 @@ class PortfolioList extends Component {
           route: "sussegado-coffee",
           tile: this.SussegadoCoffeeTile
         },
-
+        {
+          _id: "5",
+          color: "#fff",
+          title: "Nihar Shanti",
+          subtitle: "Packaging Design",
+          row: 2,
+          route: "nihar-shanti",
+          tile: this.NiharShantiTile
+        },
         {
           _id: "5",
           color: "#fff",
           title: "Socranos Gravity",
           subtitle: "Strategy & Packaging Design",
-          row: 2,
+          row: 3,
           route: "socranos-gravity",
           tile: this.GravityTile
         },
@@ -97,7 +106,7 @@ class PortfolioList extends Component {
           color: "#fff",
           title: "Kate Spade",
           subtitle: "Digital Audit",
-          row: 3,
+          row: 4,
           route: "kate-spade",
           tile: this.KateSpadeTile
         },
@@ -115,7 +124,7 @@ class PortfolioList extends Component {
           color: "#fff",
           title: "Setwet",
           subtitle: "Audit & Research",
-          row: 4,
+          row: 5,
           route: "setwet",
           tile: this.SetwetTile
         }
