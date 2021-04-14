@@ -334,7 +334,7 @@ class NiharShanti extends Component {
                     <div className="row justify-content-center no-gutters">
                       <div className="col-md-10 col-xs-12">
                         <div className="row align-item-center">
-                          <div className="col-md-6">
+                          <div className="col-md-6 col-xs-12">
                             <div className="product-info">
                               <h3>SARSO</h3>
                               <p>
@@ -360,7 +360,7 @@ class NiharShanti extends Component {
                             </div>
                           </div>
 
-                          <div className="col-md-6">
+                          <div className="col-md-6 col-xs-12">
                             <div className="product-3-wrap">
                               <img className="flower-bg-1" src={this.flower4} />
                               <img className="flower-bg-2" src={this.flower5} />
@@ -405,7 +405,7 @@ class NiharShanti extends Component {
                             </div>
                           </div>
 
-                          <div className="col-md-6">
+                          <div className="col-md-6 col-xs-12">
                             <div className="product-info">
                               <h3>JASMINE</h3>
                               <p>

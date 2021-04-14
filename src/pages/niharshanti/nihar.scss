@@ -123,6 +123,11 @@
 		.product-info {
 			width: 70%;
 			margin: 90px auto 0;
+			@include respond-until(sm) { 
+				width: 100%;
+				margin: 100px auto;
+			}
+
 			ul {
 				display: flex;
 				margin-top: 20px;
@@ -188,7 +193,7 @@
 			bottom: 20%;
 			width: 150px;
 			@include respond-until(sm) {
-				bottom: 0;
+				bottom: -6em;
 			}
 		}
 
@@ -217,6 +222,10 @@
 		.product-info {
 			width: 70%;
 			margin: 150px auto 0;
+			@include respond-until(sm) {
+				width: 100%;
+				margin: 90px auto;
+			}
 			ul {
 				display: flex;
 				margin-top: 20px;
