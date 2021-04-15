@@ -71,8 +71,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 
 //Import Components
 import Head from "./Head";
-import Banner from "../components/homebanner";
 import HomeCarousel from "../components/homecarousel";
+import Banner from "../components/homebanner";
 import PageAnimWrapper from "../components/pagetransition";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
