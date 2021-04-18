@@ -27,7 +27,7 @@ class NiharShanti extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.heroBanner = niharShantiImagePath("hero-banner.jpg");
+    this.heroBanner = niharShantiImagePath("hero-banner-4.jpg");
     this.product1 = niharShantiImagePath("nihar-oil1.png");
     this.product2 = niharShantiImagePath("nihar-oil2.png");
     this.product3 = niharShantiImagePath("nihar-oil3.png");
@@ -227,12 +227,12 @@ class NiharShanti extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Nihar Shanti`,
+      workTitle: `Marico, Nihar Shanti`,
       client: `Marico, Nihar Shanti`,
-      project: `Packaging Design`,
-      brief: `Design a label for Nihar Gold for Bihar market`,
-      para1: `Nihar coconut oil is the market leader in East India, especially in Bihar. They wanted to launch a premium sub-brand called Nihar Gold. For this, we partnered them with packaging design.`,
-      para2: `Our approach was to create something new without losing the familiarity built by the brand over \n so many years. The coconut halves and the hair silhouette announce that it’s a Nihar coconut hair oil product from a mile.  We added a pop of parallel gold streaks to convey that this is a premium sub-brand.`,
+      project: `Packaging`,
+      brief: `Packaging-refresh for Nihar Shanti – Jasmine & Sarso variants`,
+      para1: `Hair oil as a category is cluttered with too many low-priced players and outdated designs. Nihar Shanti reached out to us for redesigning the labels that would help them not just stand out, but also convey a sense of modernity and premium-ness. While we aimed to go for a completely new look, we were also careful to ensure that it stayed relevant to the category and the Nihar Naturals family.`,
+      para2: ` `,
       para3: ` `
     };
     const metakeywords = meta.nihargold;
@@ -305,7 +305,7 @@ class NiharShanti extends Component {
                           </div>
                           <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12"></div>
                           <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                            <div className="fold-1-text">
+                            {/* <div className="fold-1-text">
                               <p>
                                 Nihar coconut oil is the market leader in East
                                 India, especially in Bihar. They wanted to
@@ -315,7 +315,7 @@ class NiharShanti extends Component {
                                 to launch a premium sub-brand called Nihar Gold.
                                 For this,{" "}
                               </p>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -338,13 +338,16 @@ class NiharShanti extends Component {
                             <div className="product-info">
                               <h3>SARSO</h3>
                               <p>
-                                Nihar coconut oil is the market leader in East
-                                India, especially in Bihar. They wanted to
-                                launch a premium sub-brand called Nihar Gold.
-                                For this, Nihar coconut oil is the market leader
-                                in East India, especially in Bihar. They wanted
-                                to launch a premium sub-brand called Nihar Gold.
-                                For this,{" "}
+                                The Sarso variant was lacking a premium appeal,
+                                and the ingredients too were not being showcased
+                                well enough. To solve this, we pushed the
+                                ingredients to the fore, placing them along with
+                                the oil swoosh, so they became visible at the
+                                very first glance. We also used foiling to
+                                highlight the name of the oil, as well as the
+                                key ingredients, that not just gave these
+                                elements their due prominence, but also gave the
+                                products an instantly richer look.{" "}
                               </p>
                               {/* <ul>
                                 <li>
@@ -409,13 +412,19 @@ class NiharShanti extends Component {
                             <div className="product-info">
                               <h3>JASMINE</h3>
                               <p>
-                                Nihar coconut oil is the market leader in East
-                                India, especially in Bihar. They wanted to
-                                launch a premium sub-brand called Nihar Gold.
-                                For this, Nihar coconut oil is the market leader
-                                in East India, especially in Bihar. They wanted
-                                to launch a premium sub-brand called Nihar Gold.
-                                For this,{" "}
+                                The relevance to the brand was maintained with
+                                the familiar blue and green background and
+                                elements like the oil swoosh and the
+                                protagonist. We also brought out the USP of the
+                                product with an aesthetic placement of the
+                                Jasmine flower along with the oil swoosh, along
+                                with coconut – the oil’s key ingredients. In
+                                just three weeks, we managed to deliver an
+                                all-in-all label that has been working wonders
+                                for the brand. In the words of our client, “The
+                                oil has been flying off the shelves” and we
+                                believe there cannot be a better testament to
+                                our work.{" "}
                               </p>
                               {/* <ul>
                             <li>
