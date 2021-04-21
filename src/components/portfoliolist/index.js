@@ -127,17 +127,17 @@ class PortfolioList extends Component {
           row: 5,
           route: "setwet",
           tile: this.SetwetTile
-        }
+        },
 
-        // {
-        //   _id: "9",
-        //   color: "#fff",
-        //   title: "Lifebuoy",
-        //   subtitle: "Audit & Research",
-        //   row: 5,
-        //   route: "lifebuoy",
-        //   tile: this.LifebuoyTile
-        // },
+        {
+          _id: "9",
+          color: "#fff",
+          title: "Lifebuoy",
+          subtitle: "Audit & Research",
+          row: 5,
+          route: "lifebuoy",
+          tile: this.LifebuoyTile
+        }
       ]
     };
   }

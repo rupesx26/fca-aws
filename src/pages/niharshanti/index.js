@@ -27,7 +27,7 @@ class NiharShanti extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.heroBanner = niharShantiImagePath("hero-banner-4.jpg");
+    this.heroBanner = niharShantiImagePath("hero-banner-6.jpg");
     this.product1 = niharShantiImagePath("nihar-oil1.png");
     this.product2 = niharShantiImagePath("nihar-oil2.png");
     this.product3 = niharShantiImagePath("nihar-oil3.png");
