@@ -227,8 +227,8 @@ class NiharShanti extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Marico, Nihar Shanti`,
-      client: `Marico, Nihar Shanti`,
+      workTitle: `Nihar Shanti`,
+      client: `Nihar Shanti`,
       project: `Packaging`,
       brief: `Packaging-refresh for Nihar Shanti – Jasmine & Sarso variants`,
       para1: `Hair oil as a category is cluttered with too many low-priced players and outdated designs. Nihar Shanti reached out to us for redesigning the labels that would help them not just stand out, but also convey a sense of modernity and premium-ness. While we aimed to go for a completely new look, we were also careful to ensure that it stayed relevant to the category and the Nihar Naturals family.`,
@@ -338,16 +338,11 @@ class NiharShanti extends Component {
                             <div className="product-info">
                               <h3>SARSO</h3>
                               <p>
-                                The Sarso variant was lacking a premium appeal,
-                                and the ingredients too were not being showcased
-                                well enough. To solve this, we pushed the
-                                ingredients to the fore, placing them along with
-                                the oil swoosh, so they became visible at the
-                                very first glance. We also used foiling to
-                                highlight the name of the oil, as well as the
-                                key ingredients, that not just gave these
-                                elements their due prominence, but also gave the
-                                products an instantly richer look.{" "}
+                                How could we make the humble ‘Sarso’ oil look
+                                premium while highlighting the ingredient story?
+                                Challenge accepted. We let the gold oil swoosh
+                                push the ingredients to the fore and used
+                                foiling to add a rich sheen to the pack.{" "}
                               </p>
                               {/* <ul>
                                 <li>
@@ -412,19 +407,10 @@ class NiharShanti extends Component {
                             <div className="product-info">
                               <h3>JASMINE</h3>
                               <p>
-                                The relevance to the brand was maintained with
-                                the familiar blue and green background and
-                                elements like the oil swoosh and the
-                                protagonist. We also brought out the USP of the
-                                product with an aesthetic placement of the
-                                Jasmine flower along with the oil swoosh, along
-                                with coconut – the oil’s key ingredients. In
-                                just three weeks, we managed to deliver an
-                                all-in-all label that has been working wonders
-                                for the brand. In the words of our client, “The
-                                oil has been flying off the shelves” and we
-                                believe there cannot be a better testament to
-                                our work.{" "}
+                                We helped Nihar launch their Jasmine variant.
+                                While retaining the familiar brand elements of
+                                Nihar, we used the oil swoosh to tell the
+                                ingredient story.{" "}
                               </p>
                               {/* <ul>
                             <li>
