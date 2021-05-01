@@ -7,7 +7,7 @@ export function imagePath(assetName) {
 }
 
 export function workImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/work/${assetName}`;
+  return `${ImageUrl}/work/${assetName}`;
 }
 
 export function differImagePath(assetName) {
@@ -23,7 +23,7 @@ export function niharImagePath(assetName) {
 }
 
 export function niharShantiImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/nihar-shanti/${assetName}`;
+  return `${ImageUrl}/nihar-shanti/${assetName}`;
 }
 
 export function kateImagePath(assetName) {

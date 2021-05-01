@@ -228,7 +228,7 @@ class NiharShanti extends Component {
   render() {
     const projectSummaryContent = {
       workTitle: `Nihar Shanti`,
-      client: `Nihar Shanti`,
+      client: `Marico, Nihar Shanti`,
       project: `Packaging`,
       brief: `Packaging-refresh for Nihar Shanti – Jasmine & Sarso variants`,
       para1: `Hair oil as a category is cluttered with too many low-priced players and outdated designs. Nihar Shanti reached out to us for redesigning the labels that would help them not just stand out, but also convey a sense of modernity and premium-ness. While we aimed to go for a completely new look, we were also careful to ensure that it stayed relevant to the category and the Nihar Naturals family.`,
