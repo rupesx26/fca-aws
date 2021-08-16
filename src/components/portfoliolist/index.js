@@ -26,6 +26,7 @@ class PortfolioList extends Component {
     this.LifebuoyTile = workImagePath("lifebuoy-tile.jpg");
     this.SetwetTile = workImagePath("setwet-tile.jpg");
     this.NiharShantiTile = workImagePath("nihar-shanti-tile.png");
+    this.Tlctile = workImagePath("tlc-tile.jpg");
     this.state = {
       data: [
         {
@@ -137,6 +138,16 @@ class PortfolioList extends Component {
           row: 5,
           route: "lifebuoy",
           tile: this.LifebuoyTile
+        },
+
+        {
+          _id: "10",
+          color: "#fff",
+          title: "TLC`",
+          subtitle: "Tlc & Search",
+          row: 6,
+          route: "tlc",
+          tile: this.Tlctile
         }
       ]
     };

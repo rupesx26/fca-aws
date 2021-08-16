@@ -1,0 +1,79 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.tlc {
+	img{
+		max-width: 100%;
+	}
+	&.work-details-page {
+		.work-description {
+			@include respond-until(sm) {
+				padding-bottom: 50px;
+			}
+		}
+	} 
+	.page-header {
+		.banner-img-container {
+			text-align: center;
+			@include respond-until(sm) {
+				width: 40vh;
+			}
+		}
+	}
+	.fold-2 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 0vh;
+
+		.project-image-container{
+			z-index: 10;
+			position: relative;
+		} 
+	}
+	.fold-3 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 30vh;
+		.diagonal-bg {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: #e7f9f9;
+			// transform: skewY(-35deg);
+			z-index: 0;
+			@include respond-until(sm) {
+				height: 20%;
+			}
+			&:after {
+				content: '';
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 3%;
+				background: #e7f9f9;
+				transform: skewY(-13deg);
+				z-index: 10;
+				height: 20%;
+			}
+		}
+
+		.project-image-container{
+			z-index: 10;
+			position: relative;
+			&.img-grid {
+				.right-img {
+					margin-top: 35vh;
+					@include respond-until(sm) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+		
+		
+	}
+}
