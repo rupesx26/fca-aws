@@ -143,7 +143,7 @@ class PortfolioList extends Component {
         {
           _id: "10",
           color: "#fff",
-          title: "TLC`",
+          title: "TLC",
           subtitle: "Tlc & Search",
           row: 6,
           route: "tlc",
