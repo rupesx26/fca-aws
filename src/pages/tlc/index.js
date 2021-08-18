@@ -71,13 +71,6 @@ class Tlc extends Component {
     this.controller = new this.ScrollMagic.Controller();
     ScrollMagicPluginGsap(this.ScrollMagic, TweenMax, TimelineLite, gsap);
 
-    // TweenMax.fromTo(
-    //   ".tlc-char-img",
-    //   2.8,
-    //   { y: 0 },
-    //   { y: 20, repeat: -1, yoyo: true, ease: Linear.easeNone }
-    // );
-
     const cardParallax = new TimelineLite();
     cardParallax
       .fromTo(
@@ -181,12 +174,11 @@ class Tlc extends Component {
   render() {
     const projectSummaryContent = {
       workTitle: `The Laughing Cow Sachet`,
-      client: ``,
-      Project: `Lorem ipsum dolor sit amet, consectetur adipiscing \n elit, sed do eiusmod tempor incididunt ut labore et \n dolore magna aliqua. Ut enim ad minim veniam, quis \n nostrud exercitation ullamco laboris nisi ut aliquip \n ex ea commodo consequat.`,
-      Brief: ``,
-      para1: `Lorem ipsum dolor sit amet, consectetur adipiscing \n elit, sed do eiusmod tempor incididunt ut labore et \n dolore magna aliqua. Ut enim ad minim veniam, quis \n nostrud exercitation ullamco laboris nisi ut aliquip \n ex ea commodo consequat.`,
-      para2: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-      para3: `Packaging Project`
+      client: `TLC, Creamy Cheese`,
+      project: `Packaging Design`,
+      brief: `Design a Sachet for the Indian Market`,
+      para1: `For the first time in the Indian market, The Laughing Cow Cheese launched a Creamy Cheese Sachet at Rs 10, to introduce masses to the yummy taste of cheese. So even with packaging design, we knew we had to get into the Indian mindset. To start off with, we broke away from the usual bread-cheese partnership and designed around desi tastes like Parathas and Dosas. We kept the design simple and self-explanatory and also played up the name of the pack- CREAMY, to bring alive the brand proposition of Deliciously Soft & Creamy Cheese.`,
+      para2: ` `
     };
     const metakeywords = meta.tlc;
     return (
@@ -206,13 +198,17 @@ class Tlc extends Component {
             className="page-wrapper work-details-page tlc tlc-page-wrapper"
             ref={this.mainWrapper}
           >
-            <div className="banner-img-container" ref={this.bannerWrapper}>
-              <img src={this.tlcHeaderbg} alt="tlc" />
+            <div
+              id="banner"
+              ref={this.bannerWrapper}
+              className="full-page-wrapper page-header bg"
+              style={{ backgroundImage: `url(${this.tlcHeaderbg})` }}
+            >
+              <WorkPageNavigation
+                prevLink="/work/thambbi"
+                nextLink="/work/sussegado-coffee"
+              />
             </div>
-            <WorkPageNavigation
-              prevLink="/work/thambbi"
-              nextLink="/work/sussegado-coffee"
-            />
             <div className="full-page-wrapper work-content">
               <ProjectPageSummary
                 title={projectSummaryContent.workTitle}
@@ -220,6 +216,8 @@ class Tlc extends Component {
                 para2={projectSummaryContent.para2}
                 para3={projectSummaryContent.para3}
                 client={projectSummaryContent.client}
+                project={projectSummaryContent.project}
+                brief={projectSummaryContent.brief}
                 location={projectSummaryContent.location}
                 team={projectSummaryContent.team}
               />

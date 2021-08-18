@@ -5,6 +5,13 @@
 	img{
 		max-width: 100%;
 	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		@include respond-until(sm) {
+			min-height: 50vh;
+		}
+	}
 	&.work-details-page {
 		.work-description {
 			@include respond-until(sm) {
@@ -95,52 +102,6 @@
 	}
 
 
-	// .page-header {
-	// 	position: relative;
-	
-	// 	.tlc-char-img {
-	// 		position: absolute;
-	// 		bottom: 0px;
-	// 		width: 70vw;
-	// 		margin-left: -8vw;
-	// 		left: 50%;
-	// 		@include respond-until(sm) {
-	// 			width: 100vh;
-	// 			margin-left: -35vh;
-	// 		}
-	// 	}
-	// 	.banner-text {
-	// 		width: 55vw;
-	// 		position: absolute;
-	// 		left: 50%;
-	// 		margin-left: -27.5vw;
-	// 		z-index: 1;
-	// 		font-size: 6em;
-	// 		color: #fff;
-	// 		text-transform: uppercase;
-	// 		font-weight: 600;
-	// 		font-family: $font-work-sans;
-	// 	}
-	// 	&.bg{
-	// 		background-size: cover; 
-	// 		background-position: bottom;
-	// 		background-repeat: repeat-x;
-	// 		animation: bgMoves 30s linear infinite;
-	// 		@include respond-until(sm) {
-	// 			animation: none;
-	// 		}
-	// 	}
-	// 	.tlc-bg {
-	// 		position: absolute;
-	// 		background-repeat: repeat-x;
-	// 		top: 0;
-	// 		left: 0;
-	// 		width: 100%;
-	// 		height: 100%; 
-	// 	}
-	// }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -157,5 +118,11 @@
     }
 	.tlc .fold-4 .project-image-container .cheese-pack{
 		margin-top: 1em;
+	}
+
+	.project-image-container.mobile-scrn-1.justify-content-left .cheese-pack {
+		width: 70%;
+		display: block;
+		margin: 0 auto;
 	}
 }
