@@ -29,7 +29,7 @@
 		}
 	}
 	.fold-2 {
-		min-height: 100vh;
+		min-height: 60vh;
 		position: relative;
 		width: 100%;
 		margin-top: 0vh;
@@ -79,7 +79,7 @@
 			position: relative;
 			&.img-grid {
 				.right-img {
-					margin-top: 35vh;
+					margin-top: 0vh;
 					@include respond-until(sm) {
 						margin-top: 0;
 					}
@@ -88,11 +88,11 @@
 		}
 
 		.project-image-container{
-			.tlc-pack1{
-				margin-top:-277px;
-			}
+			// .tlc-pack1{
+			// 	margin-top:-277px;
+			// }
 			.tlc-pack2{
-				margin-top:-205px;
+				//margin-top:-205px;
 				@include respond-until(sm) {
 					margin-top: 2em;
 				}
@@ -101,7 +101,9 @@
 	}
 
 	.fold-4{
+		margin-top: 30vh;
 		.project-image-container{
+			margin-bottom: 0;
 			.cheese-pack{
 				margin-top:-175px;
 				@include respond-until(sm) {

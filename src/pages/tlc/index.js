@@ -74,23 +74,23 @@ class Tlc extends Component {
     const cardParallax = new TimelineLite();
     cardParallax
       .fromTo(
-        ".mobile-scrn-2",
-        1.5,
-        { y: 20 },
-        { y: -180, ease: Power1.easeInOut },
-        "-=0.2"
+        ".mobile-scrn-1",
+        0.8,
+        { y: 40 },
+        { y: -250, ease: Power1.easeInOut },
+        "-=0.4"
       )
       .fromTo(
-        ".mobile-scrn-1",
-        1.5,
+        ".mobile-scrn-2",
+        0.7,
         { y: 20 },
-        { y: -80, ease: Power1.easeInOut },
-        "-=0.5"
+        { y: -250, ease: Power1.easeInOut },
+        "-=0.4"
       );
 
     new this.ScrollMagic.Scene({
-      triggerElement: ".fold-2",
-      triggerHook: 0.1,
+      triggerElement: ".fold-3",
+      triggerHook: 0.8,
       duration: "100%",
       reverse: true
     })
@@ -98,37 +98,38 @@ class Tlc extends Component {
       .setTween(cardParallax)
       .addTo(this.controller);
 
-    const outers = document.querySelectorAll(".fold-3-img");
-    for (let i = 0; i < outers.length; i++) {
-      const child = outers[i].childNodes[0].childNodes;
-      const fold3Animation = new TimelineLite();
-      fold3Animation.fromTo(
-        child,
-        1.5,
-        {
-          y: 20,
-          scale: 1.2,
-          clipPath: "polygon(0% 0%, 0% 10%, 0% 100%, 0% 100%)"
-        },
-        {
-          y: 50,
-          scale: 1,
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          ease: Power4.easeInOut
-        },
-        "-=.95"
-      );
+    // const outers = document.querySelectorAll(".fold-3-img");
+    // for (let i = 0; i < outers.length; i++) {
+    //   const child = outers[i].childNodes[0].childNodes;
+    //   console.log('child', child);
+    //   const fold3Animation = new TimelineLite();
+    //   fold3Animation.fromTo(
+    //     child,
+    //     1.5,
+    //     {
+    //       y: 20,
+    //       scale: 1.2,
+    //       clipPath: "polygon(0% 0%, 0% 10%, 0% 100%, 0% 100%)"
+    //     },
+    //     {
+    //       y: 50,
+    //       scale: 1,
+    //       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    //       ease: Power4.easeInOut
+    //     },
+    //     "-=.95"
+    //   );
 
-      new this.ScrollMagic.Scene({
-        triggerElement: outers[i],
-        reverse: false,
-        scrollEase: 0.1, // scroll speed
-        maxOffset: 500
-      })
-        //.addIndicators() // add indicators (requires plugin)
-        .setTween(fold3Animation)
-        .addTo(this.controller);
-    }
+    //   new this.ScrollMagic.Scene({
+    //     triggerElement: outers[i],
+    //     reverse: false,
+    //     scrollEase: 0.1, // scroll speed
+    //     maxOffset: 500
+    //   })
+    //     //.addIndicators() // add indicators (requires plugin)
+    //     .setTween(fold3Animation)
+    //     .addTo(this.controller);
+    // }
   }
 
   handleScroll() {
@@ -227,7 +228,7 @@ class Tlc extends Component {
                   <div className="row justify-content-center no-gutters">
                     <div className="col-md-4 col-xs-12 no-gutters">
                       <div className="project-image-container img-grid row">
-                        <div className="project-image-container mobile-scrn-1 justify-content-center">
+                        <div className="project-image-container justify-content-center">
                           <img src={this.tlccreamycheese} alt="tlc" />
                         </div>
                       </div>
