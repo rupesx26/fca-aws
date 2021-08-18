@@ -76,21 +76,21 @@ class Tlc extends Component {
       .fromTo(
         ".mobile-scrn-1",
         0.8,
-        { y: 40 },
+        { y: -50 },
         { y: -250, ease: Power1.easeInOut },
         "-=0.4"
       )
       .fromTo(
         ".mobile-scrn-2",
         0.7,
-        { y: 20 },
+        { y: 0 },
         { y: -250, ease: Power1.easeInOut },
         "-=0.4"
       );
 
     new this.ScrollMagic.Scene({
       triggerElement: ".fold-3",
-      triggerHook: 0.8,
+      triggerHook: 0.9,
       duration: "100%",
       reverse: true
     })
