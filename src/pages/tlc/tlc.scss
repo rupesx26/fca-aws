@@ -118,12 +118,13 @@
 		.project-image-container{
 			margin-bottom: 0;
 			.cheese-pack{
-				margin-top:-175px;
+				margin-top:-10px;
 				@include respond-until(sm) {
 					width: 90%;
 					display: block;
 					margin: 0 auto;
 					margin-bottom: 8em;
+					margin-left: -12px;
 				}
 			}
 		}
