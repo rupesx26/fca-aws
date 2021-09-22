@@ -27,6 +27,7 @@ class PortfolioList extends Component {
     this.SetwetTile = workImagePath("setwet-tile.jpg");
     this.NiharShantiTile = workImagePath("nihar-shanti-tile.png");
     this.Tlctile = workImagePath("tlc-tile.jpg");
+    this.OzivaTile = workImagePath("oziva-tile.jpg");
     this.state = {
       data: [
         {
@@ -148,6 +149,15 @@ class PortfolioList extends Component {
           row: 6,
           route: "tlc",
           tile: this.Tlctile
+        },
+        {
+          _id: "11",
+          color: "#fff",
+          title: "Oziva",
+          subtitle: "Oziva & Search",
+          row: 6,
+          route: "oziva",
+          tile: this.OzivaTile
         }
       ]
     };

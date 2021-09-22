@@ -1,0 +1,104 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.oziva {
+	img{
+		max-width: 100%;
+	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-position: bottom;
+		}
+	}
+
+	.page-header {
+			text-align: center;
+	}
+
+    .work-description {
+        @include respond-until(sm) {
+        padding-bottom: 0px !important; 
+        }
+    }
+	.fold-2 {
+		min-height: 60vh;
+		position: relative;
+		width: 100%;
+		margin-top: 0vh;
+		@include respond-until(sm) {
+			min-height: 45vh;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+		} 
+	}
+	.fold-3 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 38vh;
+        @include respond-until(sm) {
+            margin-top: 10vh;
+        }
+        .fold-3-img {
+            margin-bottom: -10px;
+        }
+		.mobile-scrn-1 {
+			@include respond-until(sm) {
+				transform: translate(0, -50%);
+			}
+		}
+		.mobile-scrn-2 {
+			@include respond-until(sm) {
+				transform: translate(0, -20%);
+			}
+		}
+		
+
+		
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+			&.img-grid {
+				.right-img {
+					margin-top: 0vh;
+					@include respond-until(sm) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.fold-4{
+		margin-top: 32em;
+		@include respond-until(sm) {
+			margin-top: 0;
+		}
+		.project-image-container{
+			margin-bottom: 0;
+				@include respond-until(sm) {
+					width: 100%;
+					display: block;
+					margin: 0 auto;
+                    margin-top: 4em;
+					margin-bottom: 0em;
+				}
+		}
+	}
+
+    .fold-5 {
+        margin-top: 4em;
+        @include respond-until(sm) {
+            margin-top: 4em;
+        }
+    }
+
+
+}
