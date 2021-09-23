@@ -73,3 +73,7 @@ export function setWetImagePath(assetName) {
 export function tlcImagePath(assetName) {
   return `${ImageUrl}/tlc/${assetName}`;
 }
+
+export function ozivaImagePath(assetName) {
+  return `${ImageUrl}/oziva/${assetName}`;
+}
