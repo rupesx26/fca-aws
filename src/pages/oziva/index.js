@@ -83,7 +83,10 @@ class Oziva extends Component {
       "-=1"
     );
 
-    new this.ScrollMagic.Scene({ triggerElement: ".changeColor" })
+    new this.ScrollMagic.Scene({
+      triggerElement: ".changeColor",
+      triggerHook: 0.9
+    })
       .setTween(bgAnimation1)
       //.addIndicators()
       .addTo(this.controller);
@@ -288,10 +291,10 @@ class Oziva extends Component {
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
                     <div className="col-md-8 col-xs-12">
-                      <div className="fold-3-img changeColor fold-6-img">
+                      <div className="fold-3-img fold-6-img">
                         <img src={this.oziva2} alt="oziva2" />
                       </div>
-                      <div className="fold-3-img fold-6-img">
+                      <div className="fold-3-img changeColor fold-6-img">
                         <img src={this.oziva3} alt="oziva3" />
                       </div>
                       <div className="fold-3-img fold-6-img">
