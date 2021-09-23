@@ -27,7 +27,7 @@ class Oziva extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.ozivaHeaderbg = ozivaImagePath("oziva-hero-banner.jpg");
+    this.ozivaHeaderbg = ozivaImagePath("oziva-hero-banner1.jpeg");
     this.oziva1 = ozivaImagePath("oziva1.jpg");
     this.oziva2 = ozivaImagePath("oziva2.jpg");
     this.oziva3 = ozivaImagePath("oziva3.jpg");
