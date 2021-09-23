@@ -44,6 +44,7 @@
 		margin-top: 7em;
         @include respond-until(sm) {
             margin-top: 10vh;
+			min-height: 0vh;
         }
         .fold-3-img {
             margin-bottom: -10px;
@@ -79,7 +80,22 @@
 	.fold-4{
 		margin-top: 10em;
 		@include respond-until(sm) {
-			margin-top: 0;
+			margin-top: -3em;
+		}
+		.slide {
+			background: #fff;
+			padding-bottom: 0vh;
+		}
+		.slideBg {
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			@include respond-until(sm) {
+				height: 34vh;
+			}
 		}
 		.project-image-container{
 			margin-bottom: 0;
@@ -97,7 +113,7 @@
         margin-top: 100px;
     	margin-bottom: 50px;
         @include respond-until(sm) {
-            margin-top: 4em;
+            margin-top: 0em;
         }
     }
 

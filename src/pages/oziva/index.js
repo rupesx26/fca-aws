@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { isMobile } from "react-device-detect"; //is for mobile devices
 import Head from "../Head";
 import PageAnimWrapper from "../../components/pagetransition";
+import SimpleSlider from "../../components/simpleslider";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
 import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { ozivaImagePath } from "../../utils/assetUtils";
+import { cocoImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
 import { colorClassList } from "../../components/colorconfig";
@@ -27,18 +29,32 @@ class Oziva extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.ozivaHeaderbg = ozivaImagePath("oziva-hero-banner1.jpg");
+    this.ozivaHeaderbg = ozivaImagePath("oziva-hero-banner2.jpg");
     this.oziva1 = ozivaImagePath("oziva1.jpg");
     this.oziva2 = ozivaImagePath("oziva2.jpg");
     this.oziva3 = ozivaImagePath("oziva3.jpg");
     this.oziva4 = ozivaImagePath("oziva4.jpg");
     this.oziva5 = ozivaImagePath("oziva5.jpg");
-    this.oziva6 = ozivaImagePath("oziva6.jpg");
     this.oziva7 = ozivaImagePath("oziva7.jpg");
     this.oziva8 = ozivaImagePath("oziva8.jpg");
     this.oziva9 = ozivaImagePath("oziva9.jpg");
     this.oziva10 = ozivaImagePath("oziva10.jpg");
     this.oziva11 = ozivaImagePath("oziva11.jpg");
+
+    this.SbbSlide1 = ozivaImagePath("sbb-13.jpg");
+    this.SbbSlide2 = ozivaImagePath("sbb-01.jpg");
+    this.SbbSlide3 = ozivaImagePath("sbb-02.jpg");
+    this.SbbSlide4 = ozivaImagePath("sbb-03.jpg");
+    this.SbbSlide5 = ozivaImagePath("sbb-04.jpg");
+    this.SbbSlide6 = ozivaImagePath("sbb-05.jpg");
+    this.SbbSlide7 = ozivaImagePath("sbb-06.jpg");
+    this.SbbSlide8 = ozivaImagePath("sbb-07.jpg");
+    this.SbbSlide9 = ozivaImagePath("sbb-08.jpg");
+    this.SbbSlide10 = ozivaImagePath("sbb-09.jpg");
+    this.SbbSlide11 = ozivaImagePath("sbb-10.jpg");
+    this.SbbSlide12 = ozivaImagePath("sbb-11.jpg");
+    this.SbbSlide13 = ozivaImagePath("sbb-12.jpg");
+
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -184,6 +200,15 @@ class Oziva extends Component {
         .setTween(foldImg3)
         .addTo(this.controller);
     }
+
+    const fold4Animation = new TimelineLite();
+    fold4Animation.fromTo(
+      ".oziva-slider",
+      1.5,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, ease: Power4.easeOut },
+      "-=.60"
+    );
   }
 
   handleScroll() {
@@ -308,15 +333,32 @@ class Oziva extends Component {
                 </div>
               </div>
 
-              <div className="fold-4">
-                <div className="project-image-container img-grid">
-                  <div className="project-image-container mobile-scrn-1 justify-content-center fold-6-img">
-                    <img
-                      className="oziva-pack"
-                      src={this.oziva6}
-                      alt="oziva6"
-                    />
-                  </div>
+              <div className="fold-4 full-width">
+                <div className="fold-3 oziva-slider">
+                  <SimpleSlider
+                    dots={false}
+                    infinite={true}
+                    speed={5000}
+                    slidesToShow={1}
+                    slidesToScroll={1}
+                    fade={true}
+                    autoplay={true}
+                    autoplaySpeed={50}
+                    pauseOnHover={false}
+                    slide1={this.SbbSlide1}
+                    slide2={this.SbbSlide2}
+                    slide3={this.SbbSlide3}
+                    slide4={this.SbbSlide4}
+                    slide5={this.SbbSlide5}
+                    slide6={this.SbbSlide6}
+                    slide7={this.SbbSlide7}
+                    slide8={this.SbbSlide8}
+                    slide9={this.SbbSlide9}
+                    slide10={this.SbbSlide10}
+                    slide11={this.SbbSlide11}
+                    slide12={this.SbbSlide12}
+                    slide13={this.SbbSlide13}
+                  />
                 </div>
               </div>
               <div className="fold-5">
