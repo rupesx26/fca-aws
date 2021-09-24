@@ -80,7 +80,7 @@
 	.fold-4{
 		margin-top: 10em;
 		@include respond-until(sm) {
-			margin-top: -3em;
+			margin-top: 2em;
 		}
 		.slide {
 			background: #fff;
