@@ -29,7 +29,7 @@ class Oziva extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.ozivaHeaderbg = ozivaImagePath("oziva-hero-banner2.jpg");
+    this.ozivaHeaderbg = ozivaImagePath("hero-banner2954.jpg");
     this.oziva1 = ozivaImagePath("oziva1.jpg");
     this.oziva2 = ozivaImagePath("oziva2.jpg");
     this.oziva3 = ozivaImagePath("oziva3.jpg");
@@ -95,7 +95,7 @@ class Oziva extends Component {
       ".oziva-page-wrapper",
       1,
       { backgroundColor: "#fff" },
-      { backgroundColor: "#b7b7b7", ease: Power4.easeOut },
+      { backgroundColor: "#f0f0f0", ease: Power4.easeOut },
       "-=1"
     );
 
@@ -217,6 +217,11 @@ class Oziva extends Component {
       document.body.scrollTop || document.documentElement.scrollTop;
     const bannerElement = this.bannerWrapper.current;
 
+    console.log(
+      "bannerElement.offsetHeight height",
+      bannerElement.offsetHeight
+    );
+    console.log("winScroll height", winScroll);
     if (mainWrapperElem.offsetHeight === winScroll) {
       this.setState({
         toggleHeader: true,
@@ -224,7 +229,7 @@ class Oziva extends Component {
       });
     } else if (bannerElement.offsetHeight > winScroll) {
       this.setState({
-        toggleHeader: true,
+        toggleHeader: false,
         showSayHello: false
       });
     } else if (bannerElement.offsetHeight < winScroll) {
@@ -315,7 +320,7 @@ class Oziva extends Component {
               <div className="fold-3">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-8 col-xs-12">
+                    <div className="col-md-9 col-xs-12">
                       <div className="fold-3-img fold-6-img">
                         <img src={this.oziva2} alt="oziva2" />
                       </div>
@@ -338,12 +343,12 @@ class Oziva extends Component {
                   <SimpleSlider
                     dots={false}
                     infinite={true}
-                    speed={5000}
+                    speed={3000}
                     slidesToShow={1}
                     slidesToScroll={1}
-                    fade={true}
+                    fade={false}
                     autoplay={true}
-                    autoplaySpeed={50}
+                    autoplaySpeed={2000}
                     pauseOnHover={false}
                     slide1={this.SbbSlide1}
                     slide2={this.SbbSlide2}
@@ -364,20 +369,20 @@ class Oziva extends Component {
               <div className="fold-5">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-8 col-xs-12">
-                      <div className="fold-5-img project-image-container pro fold-6-img">
+                    <div className="col-md-9 col-xs-12">
+                      <div className="fold-5-img fold-6-img">
                         <img src={this.oziva7} alt="oziva7" />
                       </div>
-                      <div className="fold-5-img project-image-container fold-6-img">
+                      <div className="fold-5-img changeColor fold-6-img">
                         <img src={this.oziva8} alt="oziva8" />
                       </div>
-                      <div className="fold-5-img project-image-container fold-6-img">
+                      <div className="fold-5-img fold-6-img">
                         <img src={this.oziva9} alt="oziva9" />
                       </div>
-                      <div className="fold-5-img project-image-container fold-6-img">
+                      <div className="fold-5-img fold-6-img">
                         <img src={this.oziva10} alt="oziva10" />
                       </div>
-                      <div className="fold-5-img project-image-container fold-6-img">
+                      <div className="fold-5-img fold-6-img mgbtm">
                         <img src={this.oziva11} alt="oziva11" />
                       </div>
                     </div>
