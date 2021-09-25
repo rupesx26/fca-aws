@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import { isMobile } from "react-device-detect"; //is for mobile devices
 import Head from "../Head";
 import PageAnimWrapper from "../../components/pagetransition";
-import SimpleSlider from "../../components/simpleslider";
+import OzivaSlider from "../../components/ozivaslider";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
 import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { ozivaImagePath } from "../../utils/assetUtils";
-import { cocoImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
 import { colorClassList } from "../../components/colorconfig";
@@ -29,8 +28,8 @@ class Oziva extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.ozivaHeaderbg = ozivaImagePath("hero-banner1418.jpg");
-    this.oziva1 = ozivaImagePath("oziva1.jpg");
+    this.ozivaHeaderbg = ozivaImagePath("hero-banner2954.jpg");
+    this.oziva1bg = ozivaImagePath("oziva1.jpg");
     this.oziva2 = ozivaImagePath("oziva2.jpg");
     this.oziva3 = ozivaImagePath("oziva3.jpg");
     this.oziva4 = ozivaImagePath("oziva4.jpg");
@@ -95,7 +94,7 @@ class Oziva extends Component {
       ".oziva-page-wrapper",
       1,
       { backgroundColor: "#fff" },
-      { backgroundColor: "#f0f0f0", ease: Power4.easeOut },
+      { backgroundColor: "#fff", ease: Power4.easeOut },
       "-=1"
     );
 
@@ -265,7 +264,7 @@ class Oziva extends Component {
       <PageAnimWrapper>
         <div>
           <Head
-            title={`FINDCreative Ave | ${projectSummaryContent.workTitle}`}
+            title={`FINDCreative Ave | ${projectSummaryContent.client}`}
             content={`${projectSummaryContent.team}`}
             keywordslist={`${metakeywords}`}
           />
@@ -285,8 +284,8 @@ class Oziva extends Component {
               style={{ backgroundImage: `url(${this.ozivaHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/thambbi"
-                nextLink="/work/sussegado-coffee"
+                prevLink="/work/tlc"
+                nextLink="/work/nihar-gold"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -302,15 +301,11 @@ class Oziva extends Component {
                 team={projectSummaryContent.team}
               />
 
-              <div className="fold-2">
-                <div className="no-gutters">
-                  <div className="project-image-container img-grid">
-                    <div className="project-image-container justify-content-center fold-2-img">
-                      <img src={this.oziva1} alt="oziva1" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div
+                className="fold2 full-page-wrapper page-header bg"
+                ref={this.bannerWrapper}
+                style={{ backgroundImage: `url(${this.oziva1bg})` }}
+              ></div>
 
               <div className="fold-3">
                 <div className="container">
@@ -335,7 +330,7 @@ class Oziva extends Component {
 
               <div className="fold-4 full-width">
                 <div className="oziva-slider">
-                  <SimpleSlider
+                  <OzivaSlider
                     dots={false}
                     infinite={true}
                     speed={3000}
@@ -345,6 +340,8 @@ class Oziva extends Component {
                     autoplay={true}
                     autoplaySpeed={2000}
                     pauseOnHover={false}
+                    customnextArrow={true}
+                    customprevArrow={true}
                     slide1={this.SbbSlide1}
                     slide2={this.SbbSlide2}
                     slide3={this.SbbSlide3}

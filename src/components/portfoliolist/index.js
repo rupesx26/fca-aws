@@ -145,7 +145,7 @@ class PortfolioList extends Component {
           _id: "10",
           color: "#fff",
           title: "TLC",
-          subtitle: "Tlc & Search",
+          subtitle: "Research & Package Design",
           row: 6,
           route: "tlc",
           tile: this.Tlctile
@@ -154,7 +154,7 @@ class PortfolioList extends Component {
           _id: "11",
           color: "#fff",
           title: "Oziva",
-          subtitle: "Oziva & Search",
+          subtitle: "Branding & Package Design",
           row: 6,
           route: "oziva",
           tile: this.OzivaTile

@@ -359,8 +359,8 @@ class SetWet extends Component {
             >
               <div className="banner-img-container"></div>
               <WorkPageNavigation
-                prevLink="/work/thambbi"
-                nextLink="/work/hero-talkies"
+                prevLink="/work/hrithik-roshan"
+                nextLink="/work/lifebuoy"
               />
             </div>
             <div className="full-page-wrapper work-content">

@@ -8,15 +8,16 @@
 	
 	.page-header {
 		@include respond-from(lg) {
-			min-height: 110vh;
+			// min-height: 110vh;
 		}
 	}
 	img{
-		max-width: 100%;
+		width: 100%;
 	}
 	.bg{
 		background-size: cover; 
 		background-repeat: no-repeat;
+		background-position: top center;
 		@include respond-until(sm) {
 			min-height: 50vh;
 			background-position: bottom;
@@ -50,9 +51,10 @@
 		min-height: 100vh;
 		position: relative;
 		width: 100%;
-		margin-top: 7em;
+		text-align: center;
+		margin-top: 2.1em;
         @include respond-until(sm) {
-            margin-top: 0.7em;
+            margin-top: 4.5em;
 			min-height: 0vh;
         }
         .fold-3-img {
@@ -88,6 +90,7 @@
 
 	.fold-4{
 		margin-top: 8.5em;
+		text-align: center;
 		@include respond-until(sm) {
 			margin-top: 4.7em;
 		}
@@ -124,13 +127,13 @@
 		position: relative;
 		width: 100%;
         @include respond-until(sm) {
-            margin-top: 3.7em;
+            margin-top: 4.4em;
         }
 
 		.fold-5-img{
-			margin-bottom: 70px;
+			margin-top: -10px;
 			@include respond-until(sm) {
-				margin-bottom: 3.7em;
+				margin-top: -10px;
 			}
 		}
 
@@ -144,5 +147,29 @@
 		}
     }
 
+	.oziva-slider{
+		.slick-arrow svg{
+			width: 100%;
+			height: 100%;
+			fill: #6d6969;
+		}
+		.slick-prev{
+			left: 25px;
+			z-index: 1;
+		}
+		.slick-next{
+			right: 25px;
+		}
+
+		.slick-next, .slick-prev{
+			width: 60px;
+			height: 290px;
+			top: 43%;
+		}
+
+		.slick-next:before, .slick-prev:before{
+			display: none;
+		}
+	}
 
 }

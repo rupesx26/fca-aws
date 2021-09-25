@@ -206,8 +206,8 @@ class Tlc extends Component {
               style={{ backgroundImage: `url(${this.tlcHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/thambbi"
-                nextLink="/work/sussegado-coffee"
+                prevLink="/work/lifebuoy"
+                nextLink="/work/oziva"
               />
             </div>
             <div className="full-page-wrapper work-content">
