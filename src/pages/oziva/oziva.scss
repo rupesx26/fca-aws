@@ -7,6 +7,9 @@
 	}
 	.work-title{
 		width: 80%;
+		@include respond-until(sm) {
+			width: 85%;
+		}
 	}
 	img{
 		max-width: 100%;
@@ -49,7 +52,7 @@
 		width: 100%;
 		margin-top: 7em;
         @include respond-until(sm) {
-            margin-top: 10vh;
+            margin-top: 8vh;
 			min-height: 0vh;
         }
         .fold-3-img {
@@ -86,7 +89,7 @@
 	.fold-4{
 		margin-top: 2.5em;
 		@include respond-until(sm) {
-			margin-top: 2em;
+			margin-top: -25px;
 		}
 		.slide {
 			background: #fff;
@@ -121,15 +124,21 @@
 		position: relative;
 		width: 100%;
         @include respond-until(sm) {
-            margin-top: 0em;
+            margin-top: 35px;
         }
 
 		.fold-5-img{
 			margin-bottom: 70px;
+			@include respond-until(sm) {
+				margin-bottom: 35px;
+			}
 		}
 
 		.mgbtm{
 			margin-bottom: 120px;
+			@include respond-until(sm) {
+				margin-bottom: 35px;
+			}
 		}
     }
 
