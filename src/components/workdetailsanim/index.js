@@ -129,10 +129,12 @@ class ProjectPageSummary extends Component {
         <div className="container">
           <div className="row justify-content-center no-gutters">
             <div className="col-md-8 col-xs-12">
-              <div className="work-title">
-                <h1>{this.props.title}</h1>
-              </div>
-
+              <div
+                className="work-title"
+                dangerouslySetInnerHTML={{
+                  __html: `<h1>${this.props.title}</h1>`
+                }}
+              ></div>
               <div className="work-description">
                 <div className="row no-gutters">
                   <div className="col-md-5 col-xs-11 no-gutters project-initial">

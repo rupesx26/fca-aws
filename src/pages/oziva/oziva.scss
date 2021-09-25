@@ -5,10 +5,10 @@
 	.next-project a, .prev-project a {
 		color: #000;
 	}
-	.work-title{
-		width: 80%;
-		@include respond-until(sm) {
-			width: 75%;
+	
+	.page-header {
+		@include respond-from(lg) {
+			min-height: 110vh;
 		}
 	}
 	img{
@@ -135,7 +135,7 @@
 		}
 
 		.mgbtm{
-			@include respond-until(md) {
+			@include respond-from(md) {
 				margin-bottom: 120px;
 			}
 			@include respond-until(sm) {

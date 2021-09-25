@@ -29,7 +29,7 @@ class Oziva extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.ozivaHeaderbg = ozivaImagePath("oziva-hero-banner2.jpg");
+    this.ozivaHeaderbg = ozivaImagePath("hero-banner1418.jpg");
     this.oziva1 = ozivaImagePath("oziva1.jpg");
     this.oziva2 = ozivaImagePath("oziva2.jpg");
     this.oziva3 = ozivaImagePath("oziva3.jpg");
@@ -101,7 +101,7 @@ class Oziva extends Component {
 
     new this.ScrollMagic.Scene({
       triggerElement: ".changeColor",
-      triggerHook: 0.9
+      triggerHook: 0.6
     })
       .setTween(bgAnimation1)
       //.addIndicators()
@@ -217,11 +217,6 @@ class Oziva extends Component {
       document.body.scrollTop || document.documentElement.scrollTop;
     const bannerElement = this.bannerWrapper.current;
 
-    console.log(
-      "bannerElement.offsetHeight height",
-      bannerElement.offsetHeight
-    );
-    console.log("winScroll height", winScroll);
     if (mainWrapperElem.offsetHeight === winScroll) {
       this.setState({
         toggleHeader: true,
@@ -258,7 +253,7 @@ class Oziva extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `OZiva Personal Care`,
+      workTitle: `OZiva <br /> Personal Care`,
       client: `OZiva Personal Care`,
       project: `Packaging Design`,
       brief: `Design the entire range of Personal Care for OZiva`,
