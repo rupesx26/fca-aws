@@ -339,7 +339,7 @@ class Oziva extends Component {
               </div>
 
               <div className="fold-4 full-width">
-                <div className="fold-3 oziva-slider">
+                <div className="oziva-slider">
                   <SimpleSlider
                     dots={false}
                     infinite={true}
