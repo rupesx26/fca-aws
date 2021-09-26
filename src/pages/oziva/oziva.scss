@@ -19,7 +19,7 @@
 		background-repeat: no-repeat;
 		background-position: top center;
 		@include respond-until(sm) {
-			min-height: 50vh;
+			min-height: 70vh;
 			background-position: bottom;
 		}
 	}
