@@ -42,20 +42,15 @@ class Oziva extends Component {
 
     this.SbbSlide1 = ozivaImagePath("sbb-13.jpg");
     this.SbbSlide2 = ozivaImagePath("sbb-01.jpg");
+    this.SbbSlide11 = ozivaImagePath("sbb-10.jpg");
+    this.SbbSlide6 = ozivaImagePath("sbb-05.jpg");
+    this.SbbSlide8 = ozivaImagePath("sbb-07.jpg");
+    this.SbbSlide10 = ozivaImagePath("sbb-09.jpg");
     this.SbbSlide3 = ozivaImagePath("sbb-02.jpg");
     this.SbbSlide4 = ozivaImagePath("sbb-03.jpg");
-    this.SbbSlide5 = ozivaImagePath("sbb-04.jpg");
-    this.SbbSlide6 = ozivaImagePath("sbb-05.jpg");
-    this.SbbSlide7 = ozivaImagePath("sbb-06.jpg");
-    this.SbbSlide8 = ozivaImagePath("sbb-07.jpg");
-    this.SbbSlide9 = ozivaImagePath("sbb-08.jpg");
-    this.SbbSlide10 = ozivaImagePath("sbb-09.jpg");
-    this.SbbSlide11 = ozivaImagePath("sbb-10.jpg");
-    this.SbbSlide12 = ozivaImagePath("sbb-11.jpg");
-    this.SbbSlide13 = ozivaImagePath("sbb-12.jpg");
 
     this.state = {
-      toggleHeader: true,
+      toggleHeader: false,
       showSayHello: false,
       footerBgColor: "dark",
       footerActive: false,
@@ -118,96 +113,96 @@ class Oziva extends Component {
       //.addIndicators()
       .addTo(this.controller);
 
-    const outers = document.querySelectorAll(".fold-3-img"),
-      outers2 = document.querySelectorAll(".fold-2-img"),
-      outers3 = document.querySelectorAll(".fold-6-img");
+    // const outers = document.querySelectorAll(".fold-3-img"),
+    //   outers2 = document.querySelectorAll(".fold-2-img"),
+    //   outers3 = document.querySelectorAll(".fold-6-img");
 
-    for (let i = 0; i < outers.length; i++) {
-      const child = outers[i].childNodes[0].childNodes;
-      const foldImg3 = new TimelineLite();
-      foldImg3.fromTo(
-        child,
-        1.5,
-        {
-          y: 20,
-          scale: 1.2,
-          clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
-        },
-        {
-          y: 50,
-          scale: 1,
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          ease: Power4.easeOut
-        },
-        "-=.95"
-      );
+    // for (let i = 0; i < outers.length; i++) {
+    //   const child = outers[i].childNodes[0].childNodes;
+    //   const foldImg3 = new TimelineLite();
+    //   foldImg3.fromTo(
+    //     child,
+    //     1.5,
+    //     {
+    //       y: 20,
+    //       scale: 1.2,
+    //       clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+    //     },
+    //     {
+    //       y: 50,
+    //       scale: 1,
+    //       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    //       ease: Power4.easeOut
+    //     },
+    //     "-=.95"
+    //   );
 
-      new this.ScrollMagic.Scene({ triggerElement: outers[i], reverse: false })
-        //.addIndicators() // add indicators (requires plugin)
-        .setTween(foldImg3)
-        .addTo(this.controller);
-    }
+    //   new this.ScrollMagic.Scene({ triggerElement: outers[i], reverse: false })
+    //     //.addIndicators() // add indicators (requires plugin)
+    //     .setTween(foldImg3)
+    //     .addTo(this.controller);
+    // }
 
-    for (let i = 0; i < outers2.length; i++) {
-      const child = outers2[i].childNodes[0];
-      const foldImg2 = new TimelineLite();
-      foldImg2.fromTo(
-        child,
-        1.5,
-        {
-          y: 20,
-          scale: 1.2,
-          clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
-        },
-        {
-          y: 50,
-          scale: 1,
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          ease: Power4.easeOut
-        },
-        "-=.95"
-      );
+    // for (let i = 0; i < outers2.length; i++) {
+    //   const child = outers2[i].childNodes[0];
+    //   const foldImg2 = new TimelineLite();
+    //   foldImg2.fromTo(
+    //     child,
+    //     1.5,
+    //     {
+    //       y: 20,
+    //       scale: 1.2,
+    //       clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+    //     },
+    //     {
+    //       y: 50,
+    //       scale: 1,
+    //       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    //       ease: Power4.easeOut
+    //     },
+    //     "-=.95"
+    //   );
 
-      new this.ScrollMagic.Scene({ triggerElement: outers2[i], reverse: false })
-        //.addIndicators() // add indicators (requires plugin)
-        .setTween(foldImg2)
-        .addTo(this.controller);
-    }
+    //   new this.ScrollMagic.Scene({ triggerElement: outers2[i], reverse: false })
+    //     //.addIndicators() // add indicators (requires plugin)
+    //     .setTween(foldImg2)
+    //     .addTo(this.controller);
+    // }
 
-    for (let i = 0; i < outers3.length; i++) {
-      const child = outers3[i].childNodes[0];
-      const foldImg3 = new TimelineLite();
-      foldImg3.fromTo(
-        child,
-        1.5,
-        {
-          y: 20,
-          scale: 1.2,
-          clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
-        },
-        {
-          y: 50,
-          scale: 1,
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          ease: Power4.easeOut
-        },
-        "-=.95"
-      );
+    // for (let i = 0; i < outers3.length; i++) {
+    //   const child = outers3[i].childNodes[0];
+    //   const foldImg3 = new TimelineLite();
+    //   foldImg3.fromTo(
+    //     child,
+    //     1.5,
+    //     {
+    //       y: 20,
+    //       scale: 1.2,
+    //       clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+    //     },
+    //     {
+    //       y: 50,
+    //       scale: 1,
+    //       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    //       ease: Power4.easeOut
+    //     },
+    //     "-=.95"
+    //   );
 
-      new this.ScrollMagic.Scene({ triggerElement: outers3[i], reverse: false })
-        //.addIndicators() // add indicators (requires plugin)
-        .setTween(foldImg3)
-        .addTo(this.controller);
-    }
+    //   new this.ScrollMagic.Scene({ triggerElement: outers3[i], reverse: false })
+    //     //.addIndicators() // add indicators (requires plugin)
+    //     .setTween(foldImg3)
+    //     .addTo(this.controller);
+    // }
 
-    const fold4Animation = new TimelineLite();
-    fold4Animation.fromTo(
-      ".oziva-slider",
-      1.5,
-      { opacity: 0, y: 100 },
-      { opacity: 1, y: 0, ease: Power4.easeOut },
-      "-=.60"
-    );
+    // const fold4Animation = new TimelineLite();
+    // fold4Animation.fromTo(
+    //   ".oziva-slider",
+    //   1.5,
+    //   { opacity: 0, y: 100 },
+    //   { opacity: 1, y: 0, ease: Power4.easeOut },
+    //   "-=.60"
+    // );
   }
 
   handleScroll() {
@@ -302,7 +297,7 @@ class Oziva extends Component {
               />
 
               <div
-                className="fold2 full-page-wrapper page-header bg"
+                className="fold2 full-page-wrapper page-header bg2"
                 ref={this.bannerWrapper}
                 style={{ backgroundImage: `url(${this.oziva1bg})` }}
               ></div>
@@ -344,17 +339,12 @@ class Oziva extends Component {
                     customprevArrow={true}
                     slide1={this.SbbSlide1}
                     slide2={this.SbbSlide2}
+                    slide11={this.SbbSlide11}
                     slide3={this.SbbSlide3}
                     slide4={this.SbbSlide4}
-                    slide5={this.SbbSlide5}
                     slide6={this.SbbSlide6}
-                    slide7={this.SbbSlide7}
                     slide8={this.SbbSlide8}
-                    slide9={this.SbbSlide9}
                     slide10={this.SbbSlide10}
-                    slide11={this.SbbSlide11}
-                    slide12={this.SbbSlide12}
-                    slide13={this.SbbSlide13}
                   />
                 </div>
               </div>
