@@ -217,7 +217,7 @@
         bottom: 20px;
         z-index: 10;
         @include respond-until(sm) { 
-            left: 35px;
+            left: 100px;
             right: auto;
             bottom: 70px;
         }
