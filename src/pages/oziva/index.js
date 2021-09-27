@@ -42,12 +42,12 @@ class Oziva extends Component {
 
     this.SbbSlide1 = ozivaImagePath("sbb-13.jpg");
     this.SbbSlide2 = ozivaImagePath("sbb-01.jpg");
-    this.SbbSlide11 = ozivaImagePath("sbb-10.jpg");
-    this.SbbSlide6 = ozivaImagePath("sbb-05.jpg");
-    this.SbbSlide8 = ozivaImagePath("sbb-07.jpg");
-    this.SbbSlide10 = ozivaImagePath("sbb-09.jpg");
-    this.SbbSlide3 = ozivaImagePath("sbb-02.jpg");
-    this.SbbSlide4 = ozivaImagePath("sbb-03.jpg");
+    this.SbbSlide3 = ozivaImagePath("sbb-10.jpg");
+    this.SbbSlide4 = ozivaImagePath("sbb-05.jpg");
+    this.SbbSlide5 = ozivaImagePath("sbb-07.jpg");
+    this.SbbSlide6 = ozivaImagePath("sbb-09.jpg");
+    this.SbbSlide7 = ozivaImagePath("sbb-03.jpg");
+    this.SbbSlide8 = ozivaImagePath("sbb-02.jpg");
 
     this.state = {
       toggleHeader: false,
@@ -339,12 +339,12 @@ class Oziva extends Component {
                     customprevArrow={true}
                     slide1={this.SbbSlide1}
                     slide2={this.SbbSlide2}
-                    slide11={this.SbbSlide11}
                     slide3={this.SbbSlide3}
                     slide4={this.SbbSlide4}
+                    slide5={this.SbbSlide5}
                     slide6={this.SbbSlide6}
+                    slide7={this.SbbSlide7}
                     slide8={this.SbbSlide8}
-                    slide10={this.SbbSlide10}
                   />
                 </div>
               </div>
