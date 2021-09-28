@@ -44,6 +44,10 @@ class About extends Component {
     this.hersheys = differImagePath("hersheys.png");
     this.kratos = differImagePath("kratos.png");
     this.nrikitchen = differImagePath("nrikitchen.png");
+    this.oziva = differImagePath("oziva.png");
+    this.unileverhindustan = differImagePath("unilever-hindustan.png");
+    this.emami = differImagePath("emami-logo-G.png");
+    this.mcnroe = differImagePath("Mcnroe logo-01.png");
     this.handleKnowMore = this.handleKnowMore.bind(this);
     // this.addLineBreaks = this.addLineBreaks.bind(this);
     this.state = {
@@ -405,49 +409,46 @@ class About extends Component {
                             />
                           </div>
                           <div className="box-cell">
-                            <img src={this.RR} alt="client" />
-                          </div>
-                          <div className="box-cell">
-                            <img src={this.TLC} alt="client" />
-                          </div>
-                          <div className="box-cell">
-                            <img src={this.zandu} alt="client" />
-                          </div>
-                        </div>
-                        <div className="box-row">
-                          <div className="box-cell jsw">
                             <img
-                              src={this.wildstone}
+                              src={this.unileverhindustan}
                               alt="client"
-                              style={{ width: "100px" }}
+                              style={{ width: "180px" }}
                             />
-                          </div>
-
-                          <div className="box-cell">
-                            <img src={this.Thambbi} alt="client" />
                           </div>
                           <div className="box-cell">
                             <img src={this.hersheys} alt="client" />
                           </div>
                           <div className="box-cell">
-                            <img src={this.Hero} alt="client" />
+                            <img src={this.oziva} alt="client" />
+                          </div>
+                        </div>
+                        <div className="box-row">
+                          <div className="box-cell jsw">
+                            <img
+                              src={this.mcnroe}
+                              alt="client"
+                              style={{ width: "137px" }}
+                            />
+                          </div>
+
+                          <div className="box-cell">
+                            <img src={this.emami} alt="client" />
+                          </div>
+                          <div className="box-cell">
+                            <img src={this.TLC} alt="client" />
+                          </div>
+                          <div className="box-cell">
+                            <img src={this.nrikitchen} alt="client" />
                           </div>
                         </div>
 
                         <div className="box-row">
                           <div className="box-cell tbwa">
-                            <img
+                            {/* <img
                               src={this.kotak}
                               alt="client"
                               style={{ width: "135px" }}
-                            />
-                          </div>
-                          <div className="box-cell">
-                            <img
-                              src={this.Kratos}
-                              alt="client"
-                              style={{ width: "135px" }}
-                            />
+                            /> */}
                           </div>
                           <div className="box-cell">
                             <img
@@ -457,7 +458,14 @@ class About extends Component {
                             />
                           </div>
                           <div className="box-cell">
-                            <img src={this.nrikitchen} alt="client" />
+                            <img
+                              src={this.RR}
+                              alt="client"
+                              style={{ width: "80px" }}
+                            />
+                          </div>
+                          <div className="box-cell">
+                            {/* <img src={this.nrikitchen} alt="client" /> */}
                           </div>
                         </div>
                       </div>
