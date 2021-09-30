@@ -104,11 +104,11 @@
                     .box-cell {
                         &:first-child {
                             display: flex;
-                            
-                        }
-                        &:nth-child(2) {
                             border-top: 1px solid #e2e2e2;
                         }
+                        // &:nth-child(2) {
+                        //     border-top: 1px solid #e2e2e2;
+                        // }
                         &:last-child {
                             display: flex;
                         }
@@ -131,14 +131,23 @@
             }
             }
             &:nth-child(3) { 
+                .box-cell {
+                    border-bottom: 0;
+                }
                 @include respond-until(sm) {
                 .box-cell {
+                    border-bottom: 1px solid #e2e2e2;
+                    &:nth-child(2) {
+                        border-bottom: unset;
+                    }
                     &:first-child, &:last-child {
-                            border-right: 1px solid #00f8ba;
+                            // border-right: 1px solid #e2e2e2;
+                            border: 0;
                             display: none;
                         }
                         &:nth-child(4) {
-                            border-bottom: 1px solid #4c00fd;
+                            // border-bottom: 1px solid #e2e2e2;
+                            border: 0;
                             display: none;
                         }
                     }
@@ -191,19 +200,12 @@
           &:first-child {
               .box-cell {
                 border-top: 0;
-                @include respond-until(sm) {
-                    border-top: 1px solid #e2e2e2;
-                }
               }
           }
 
           &:last-child {
-              .box-cell {
-                  border-bottom: 0;
-                  @include respond-until(sm) {
-                    border-bottom: 1px solid #e2e2e2;
-                  }
-              }
+            border-bottom: 0;
+              
           }
       }
   }
