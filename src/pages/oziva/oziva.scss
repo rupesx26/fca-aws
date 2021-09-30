@@ -167,14 +167,14 @@
 			}
 		}
 		.slick-prev{
-			left: 25px;
+			left: 35px;
 			z-index: 1;
 			@include respond-until(sm) {
 				left: 10px;
 			}
 		}
 		.slick-next{
-			right: 25px;
+			right: 35px;
 			@include respond-until(sm) {
 				right: 10px;
 			}
