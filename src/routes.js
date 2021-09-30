@@ -120,6 +120,16 @@ const LoadableNiharShanti = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableTlc = Loadable({
+  loader: () => import(/* webpackChunkName: 'tlcproduct' */ "./pages/tlc"),
+  loading: () => <PageLoader />
+});
+
+const LoadableOziva = Loadable({
+  loader: () => import(/* webpackChunkName: 'ozivaproduct' */ "./pages/oziva"),
+  loading: () => <PageLoader />
+});
+
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
@@ -164,6 +174,8 @@ const Routes = () => {
       <Route exact path="/work/thambbi" component={LoadableThambbi} />
       <Route exact path="/work/hero-talkies" component={LoadableHero} />
       <Route exact path="/work/cocosoul" component={LoadableCoco} />
+      <Route exact path="/work/tlc" component={LoadableTlc} />
+      <Route exact path="/work/oziva" component={LoadableOziva} />
       <Route
         exact
         path="/login"

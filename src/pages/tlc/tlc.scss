@@ -1,0 +1,134 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.tlc {
+	img{
+		max-width: 100%;
+	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-position: bottom;
+		}
+	}
+	&.work-details-page {
+		.work-description {
+			@include respond-until(sm) {
+				padding-bottom: 50px;
+			}
+		}
+	} 
+	.page-header {
+		.banner-img-container {
+			text-align: center;
+			@include respond-until(sm) {
+				width: 40vh;
+			}
+		}
+	}
+	.fold-2 {
+		min-height: 60vh;
+		position: relative;
+		width: 100%;
+		margin-top: 0vh;
+		@include respond-until(sm) {
+			min-height: 45vh;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+		} 
+	}
+	.fold-3 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 38vh;
+		.mobile-scrn-1 {
+			@include respond-until(sm) {
+				transform: translate(0, -50%);
+			}
+		}
+		.mobile-scrn-2 {
+			@include respond-until(sm) {
+				transform: translate(0, -20%);
+			}
+		}
+		.diagonal-bg {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: #e7f9f9;
+			// transform: skewY(-35deg);
+			z-index: 0;
+			@include respond-until(sm) {
+				height: 75vh;
+			}
+			&:after {
+				content: '';
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: -20%;
+				background: #e7f9f9;
+				transform: skewY(-13deg);
+				z-index: 10;
+				height: 55%;
+			}
+		}
+
+		
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+			&.img-grid {
+				.right-img {
+					margin-top: 0vh;
+					@include respond-until(sm) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
+		.project-image-container{
+			// .tlc-pack1{
+			// 	margin-top:-277px;
+			// }
+			.tlc-pack2{
+				//margin-top:-205px;
+				@include respond-until(sm) {
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+
+	.fold-4{
+		margin-top: 30vh;
+		@include respond-until(sm) {
+			margin-top: 0;
+		}
+		.project-image-container{
+			margin-bottom: 0;
+			.cheese-pack{
+				margin-top:-10px;
+				@include respond-until(sm) {
+					width: 90%;
+					display: block;
+					margin: 0 auto;
+					margin-bottom: 8em;
+					margin-left: -12px;
+				}
+			}
+		}
+	}
+
+
+}

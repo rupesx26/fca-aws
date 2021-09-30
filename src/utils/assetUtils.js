@@ -69,3 +69,11 @@ export function lifeBuoyImagePath(assetName) {
 export function setWetImagePath(assetName) {
   return `${ImageUrl}/setwet/${assetName}`;
 }
+
+export function tlcImagePath(assetName) {
+  return `${ImageUrl}/tlc/${assetName}`;
+}
+
+export function ozivaImagePath(assetName) {
+  return `${ImageUrl}/oziva/${assetName}`;
+}
