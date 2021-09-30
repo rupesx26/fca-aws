@@ -103,13 +103,14 @@
                 @include respond-until(sm) {
                     .box-cell {
                         &:first-child {
-                            display: none;
+                            display: flex;
+                            
                         }
                         &:nth-child(2) {
                             border-top: 1px solid #e2e2e2;
                         }
                         &:last-child {
-                            display: none
+                            display: flex;
                         }
                     }
                 }
@@ -133,13 +134,15 @@
                 @include respond-until(sm) {
                 .box-cell {
                     &:first-child, &:last-child {
-                        border-right: 1px solid #e2e2e2;
-                    }
-                    &:nth-child(4) {
-                        border-bottom: 1px solid #e2e2e2;
+                            border-right: 1px solid #00f8ba;
+                            display: none;
+                        }
+                        &:nth-child(4) {
+                            border-bottom: 1px solid #4c00fd;
+                            display: none;
+                        }
                     }
                 }
-            }
             }
 
           .box-cell {
@@ -157,9 +160,15 @@
               }
               &:first-child {
                   border-left: 0;
+                  @include respond-until(sm) {
+                      border-left: 1px solid #e2e2e2;
+                  }
               }
               &:last-child {
                   border-right: 0;
+                  @include respond-until(sm) {
+                      border-right: 1px solid #e2e2e2;
+                  }
               }
               &.jsw {
                  img {
@@ -181,13 +190,19 @@
 
           &:first-child {
               .box-cell {
-                  border-top: 0;
+                border-top: 0;
+                @include respond-until(sm) {
+                    border-top: 1px solid #e2e2e2;
+                }
               }
           }
 
           &:last-child {
               .box-cell {
                   border-bottom: 0;
+                  @include respond-until(sm) {
+                    border-bottom: 1px solid #e2e2e2;
+                  }
               }
           }
       }
