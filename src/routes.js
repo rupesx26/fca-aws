@@ -21,6 +21,11 @@ const LoadableWork = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableWorkNew = Loadable({
+  loader: () => import(/* webpackChunkName: 'workNew' */ "./pages/workNew"),
+  loading: () => <PageLoader />
+});
+
 const LoadableConnect = Loadable({
   loader: () => import(/* webpackChunkName: 'connect' */ "./pages/connect"),
   loading: () => <PageLoader />
@@ -167,6 +172,7 @@ const Routes = () => {
       <Route exact path="/" component={LoadableHome} />
       <Route exact path="/difference" component={LoadableDifference} />
       <Route exact path="/work" component={LoadableWork} />
+      <Route exact path="/workNew" component={LoadableWorkNew} />
       <Route exact path="/connect" component={LoadableConnect} />
       <Route exact path="/work/hrithik-roshan" component={LoadableHrx} />
       <Route exact path="/work/nihar-gold" component={LoadableNiharGold} />
