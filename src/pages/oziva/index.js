@@ -332,7 +332,7 @@ class Oziva extends Component {
                     slidesToShow={1}
                     slidesToScroll={1}
                     fade={false}
-                    autoplay={true}
+                    autoplay={false}
                     autoplaySpeed={2000}
                     pauseOnHover={false}
                     customnextArrow={true}

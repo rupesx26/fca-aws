@@ -27,7 +27,7 @@ class PortfolioList extends Component {
     this.SetwetTile = workImagePath("setwet-tile.jpg");
     this.NiharShantiTile = workImagePath("nihar-shanti-tile.png");
     this.Tlctile = workImagePath("tlc-tile.jpg");
-    this.OzivaTile = workImagePath("oziva-tile.jpg");
+    this.OzivaTile = workImagePath("oziva-tile-v2.jpg");
     this.state = {
       data: [
         {

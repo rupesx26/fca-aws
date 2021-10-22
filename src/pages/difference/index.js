@@ -44,8 +44,8 @@ class About extends Component {
     this.hersheys = differImagePath("hersheys.png");
     this.kratos = differImagePath("kratos.png");
     this.nrikitchen = differImagePath("nrikitchen.png");
-    this.oziva = differImagePath("oziva.png");
-    this.unileverhindustan = differImagePath("unilever-hindustan.png");
+    this.oziva = differImagePath("oziva-v2.png");
+    this.unileverhindustan = differImagePath("unilever-hindustan-v2.png");
     this.emami = differImagePath("emami-logo-G.png");
     this.mcnroe = differImagePath("Mcnroe logo-01.png");
     this.handleKnowMore = this.handleKnowMore.bind(this);
@@ -412,14 +412,18 @@ class About extends Component {
                             <img
                               src={this.unileverhindustan}
                               alt="client"
-                              style={{ width: "180px" }}
+                              style={{ width: "170px" }}
                             />
                           </div>
                           <div className="box-cell">
                             <img src={this.hersheys} alt="client" />
                           </div>
                           <div className="box-cell">
-                            <img src={this.oziva} alt="client" />
+                            <img
+                              src={this.oziva}
+                              alt="client"
+                              style={{ width: "140px" }}
+                            />
                           </div>
                         </div>
                         <div className="box-row">
@@ -438,7 +442,11 @@ class About extends Component {
                             <img src={this.TLC} alt="client" />
                           </div>
                           <div className="box-cell">
-                            <img src={this.nrikitchen} alt="client" />
+                            <img
+                              src={this.nrikitchen}
+                              alt="client"
+                              style={{ width: "90px" }}
+                            />
                           </div>
                         </div>
 
