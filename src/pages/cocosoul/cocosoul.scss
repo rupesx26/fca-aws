@@ -23,6 +23,7 @@
 		}
 	}
 	.coco-intro {
+		text-align: center;
 		.sec-title {
 			color: #4d985c;
 		}
@@ -44,6 +45,8 @@
 				width: 90%;
 				height: 90vh;
 				margin: 0 auto;
+				display: flex;
+				justify-content: center;
 				@include respond-until(sm) {
 					height: 34vh;
 				}
