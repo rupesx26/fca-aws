@@ -3,7 +3,7 @@
 .work-page {
   position: relative;
   z-index: 2;
-
+  background : #000;
   	.portfolio-list {
 		margin: 200px 0 200px;
 		position: relative;
@@ -65,18 +65,32 @@
 			img {
 			//	transform: scale(0.95)
 			}
+			.work-details {
+				opacity: 1;
+			}
 		}
 		.work-details {
 			width: 100%;
 			opacity: 0;
-			display: none;
+			position: absolute;
+			left: 0.8em;
+			top: 0.8em;
+			background: rgba(0,0,0,0.4);
+			color: #fff;
+			width: 70%;
+			padding:0.5em;
+			
+			transition-property: opacity;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0,.61,.57,.99);
+			//display: none;
 			@include respond-until(sm) {
 				opacity: 1;
 				padding: 1em 1em 1.8em;
 			}
 			.title {
 				font-family: $font-nexa-bdrg;
-				font-size: 2.2em;
+				font-size: 1.5em;
 				@include respond-until(sm) {
 					font-size: 1.8em;
 				}

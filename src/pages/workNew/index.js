@@ -24,7 +24,7 @@ class Work extends Component {
       boxPosition: 0,
       currentSlide: 0,
       currentDirection: "down",
-      toggleHeader: false,
+      toggleHeader: true,
       showSayHello: true,
       footerBgColor: "dark",
       inversionColor: false,
@@ -62,7 +62,7 @@ class Work extends Component {
       });
     } else {
       this.setState({
-        toggleHeader: false
+        toggleHeader: true
       });
     }
     if (isMobile) {
