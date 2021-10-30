@@ -206,7 +206,7 @@ class Tlc extends Component {
               style={{ backgroundImage: `url(${this.tlcHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/lifebuoy"
+                prevLink="/work/ozivakids"
                 nextLink="/work/oziva"
               />
             </div>
@@ -305,11 +305,11 @@ class Tlc extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/sussegado-coffee"
-              data-text="Sussegado Coffee"
+              to="/work/oziva"
+              data-text="Oziva"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Sussegado Coffee
+              Oziva
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

@@ -204,7 +204,7 @@ class NiharGold extends Component {
               style={{ backgroundImage: `url(${this.HeroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/setwet"
+                prevLink="/work/rapid-rupee"
                 nextLink="/work/cocosoul"
               />
             </div>

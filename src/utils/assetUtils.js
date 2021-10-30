@@ -7,7 +7,7 @@ export function imagePath(assetName) {
 }
 
 export function workImagePath(assetName) {
-  return `${ImageUrl}/work/${assetName}`;
+  return `${process.env.PUBLIC_URL}/images/work/${assetName}`;
 }
 
 export function differImagePath(assetName) {
@@ -76,4 +76,12 @@ export function tlcImagePath(assetName) {
 
 export function ozivaImagePath(assetName) {
   return `${ImageUrl}/oziva/${assetName}`;
+}
+
+export function hersheyImagePath(assetName) {
+  return `${process.env.PUBLIC_URL}/images/hershey/${assetName}`;
+}
+
+export function ozivakidsImagePath(assetName) {
+  return `${process.env.PUBLIC_URL}/images/ozivakids/${assetName}`;
 }

@@ -327,7 +327,7 @@ class Hero extends Component {
               </div>
               <WorkPageNavigation
                 prevLink="/work/socranos-gravity"
-                nextLink="/work/kate-spade"
+                nextLink="/work/sussegado-coffee"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -468,11 +468,11 @@ class Hero extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/kate-spade"
-              data-text="Kate Spade"
+              to="/work/sussegado-coffee"
+              data-text="Sussegado"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Kate Spade
+              Sussegado
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

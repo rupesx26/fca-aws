@@ -280,7 +280,7 @@ class Oziva extends Component {
             >
               <WorkPageNavigation
                 prevLink="/work/tlc"
-                nextLink="/work/nihar-gold"
+                nextLink="/work/setwet"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -385,11 +385,11 @@ class Oziva extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/sussegado-coffee"
-              data-text="Sussegado Coffee"
+              to="/work/setwet"
+              data-text="Setwet"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Sussegado Coffee
+              Setwet
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

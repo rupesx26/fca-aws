@@ -308,7 +308,7 @@ class Thambbi extends Component {
             >
               <div className="banner-img-container"></div>
               <WorkPageNavigation
-                prevLink="/work/cocosoul"
+                prevLink="/work/nihar-shanti"
                 nextLink="/work/rapid-rupee"
               />
             </div>

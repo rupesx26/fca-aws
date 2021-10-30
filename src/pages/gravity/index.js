@@ -202,7 +202,7 @@ class Gravity extends Component {
               style={{ backgroundImage: `url(${this.HeroBanner})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/nihar-shanti"
+                prevLink="/work/hrithik-roshan"
                 nextLink="/work/hero-talkies"
               />
             </div>

@@ -206,8 +206,8 @@ class Hershey extends Component {
               style={{ backgroundImage: `url(${this.hersheyHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/lifebuoy"
-                nextLink="/work/oziva"
+                prevLink="/work/cocosoul"
+                nextLink="/work/ozivakids"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -291,11 +291,11 @@ class Hershey extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/sussegado-coffee"
-              data-text="Sussegado Coffee"
+              to="/work/ozivakids"
+              data-text="Oziva Kids"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Sussegado Coffee
+              Oziva Kids
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
