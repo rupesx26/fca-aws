@@ -81,7 +81,3 @@ export function ozivaImagePath(assetName) {
 export function hersheyImagePath(assetName) {
   return `${process.env.PUBLIC_URL}/images/hershey/${assetName}`;
 }
-
-export function ozivakidsImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/ozivakids/${assetName}`;
-}
