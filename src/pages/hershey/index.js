@@ -30,9 +30,9 @@ class Hershey extends Component {
     this.hersheyHeaderbg = hersheyImagePath("hershey-hero-banner.jpg");
     this.hersheyBakingKitbg = hersheyImagePath("baking-kit-bg.jpg");
     this.hersheyBakingKittitle = hersheyImagePath("hershey-baking-title.png");
-    this.hersheyBakingKitBox = hersheyImagePath("baking-kit-box.png");
-    this.hersheyBakingKitBox1 = hersheyImagePath("baking-kit-box1.png");
-    this.hersheyBakingKitBox2 = hersheyImagePath("baking-kit-box2.png");
+    this.hersheyBakingKitBox = hersheyImagePath("hersheys-pack1.png");
+    this.hersheyBakingKitBox1 = hersheyImagePath("hersheys-pack2.png");
+    this.hersheyBakingKitBox2 = hersheyImagePath("hersheys-pack3.png");
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -229,8 +229,8 @@ class Hershey extends Component {
               >
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-8 col-xs-12">
-                      <div className="project-image-container justify-content-left">
+                    <div className="col-md-10 col-xs-12">
+                      <div className="justify-content-left">
                         <div className="col-md-6 col-xs-12">
                           <img
                             src={this.hersheyBakingKittitle}
@@ -239,7 +239,7 @@ class Hershey extends Component {
                         </div>
                       </div>
                       <div className="project-image-container justify-content-right">
-                        <div className="col-md-10 col-xs-12 align-right">
+                        <div className="col-md-11 col-xs-12 align-right">
                           <img
                             src={this.hersheyBakingKitBox}
                             alt="bakingkitbox"
@@ -254,8 +254,8 @@ class Hershey extends Component {
               <div className="fold-3">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-8 col-xs-12">
-                      <div className="project-image-container justify-content-left">
+                    <div className="col-md-10 col-xs-12">
+                      <div className="justify-content-left">
                         <div className="col-md-7 col-xs-12 no-gutters">
                           <img
                             className="hershey-pack1"
@@ -265,7 +265,7 @@ class Hershey extends Component {
                         </div>
                       </div>
                       <div className="project-image-container justify-content-right">
-                        <div className="col-md-7 col-xs-12 no-gutters">
+                        <div className="col-md-8 col-xs-12 no-gutters">
                           <img
                             className="hershey-pack1"
                             src={this.hersheyBakingKitBox2}

@@ -4,6 +4,9 @@
 .ozivakids {
 	.work-title{
 		font-size: 5.3em !important;
+		@include respond-until(sm) {
+			font-size: 2.3em !important;
+		}
 	}
 	img{
 		max-width: 100%;
@@ -42,6 +45,7 @@
 		padding: 10em 0;
 		@include respond-until(sm) {
 			min-height: 45vh;
+			padding: 5em 0;
 		}
 
 		.fold-2-img{
@@ -69,7 +73,7 @@
 		width: 100%;
 		margin-top: 25vh;
 			@include respond-until(sm) {
-				margin-top: 8em;
+				margin-top: 5em;
 			}
 
 		.fold3-imageitem{
@@ -96,7 +100,7 @@
 			right: -16em;
 			top: -152px;
 			@include respond-until(sm) {
-				right: -4em;
+				right: -2em;
     			top: -110px;
 			}
 		}
@@ -110,10 +114,9 @@
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
-
-		// .fol5-bg-color{
-		// 	background-color: #f6f6f6;
-		// }
+		@include respond-until(sm) {
+			min-height: 50vh;
+		}
 	}
 	
 

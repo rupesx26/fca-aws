@@ -43,6 +43,7 @@
 		margin-top: 0vh;
 		@include respond-until(sm) {
 			min-height: 45vh;
+			padding-top: 5em;
 		}
 
 		.project-image-container{
@@ -64,7 +65,7 @@
 		min-height: 100vh;
 		position: relative;
 		width: 100%;
-		margin-top: 25vh;
+		margin-top: 20vh;
 		.mobile-scrn-1 {
 			@include respond-until(sm) {
 				transform: translate(0, -50%);
@@ -78,6 +79,7 @@
 
 		@include respond-until(sm) {
 			margin-top: 10vh;
+			min-height: 50vh;
 		}
 
 		.project-image-container{
