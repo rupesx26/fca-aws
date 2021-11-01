@@ -30,7 +30,7 @@ class Hershey extends Component {
     this.hersheyHeaderbg = hersheyImagePath("hershey-hero-banner.jpg");
     this.hersheyBakingKitbg = hersheyImagePath("baking-kit-bg.jpg");
     this.hersheyBakingKittitle = hersheyImagePath("hershey-baking-title.png");
-    this.hersheyBakingKitBox = hersheyImagePath("hersheys-pack1.png");
+    this.hersheyBakingKitBox = hersheyImagePath("hersheys-pack01.png");
     this.hersheyBakingKitBox1 = hersheyImagePath("hersheys-pack2.png");
     this.hersheyBakingKitBox2 = hersheyImagePath("hersheys-pack3.png");
     this.state = {
