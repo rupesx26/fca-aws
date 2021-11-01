@@ -179,7 +179,8 @@ class Hershey extends Component {
       brief: `To design an e-com pack for Hershey's, to drive relevance amongst first-time bakers and homemakers.`,
       para1: `The pandemic led to everyone being confined to working from home. 
       This gave people the time to cook/bake for the family and experiment with new recipes.The brand leveraged on this trend to launch an exclusive e-commerce pack,  'HomeChef Baking Kit' ,to aid the novice baker at home and convey the ease of baking with this kit.`,
-      para2: `Since it is an e-com pack, we designed it in a way to showcase the Hershey's products that you get in this pack and the endless possibilities with Hershey's. All of this to drive higher perceived value around the pack and bring out the MasterChef in you.`
+      para2: `Since it is an e-com pack, we designed it in a way to showcase the Hershey's products that you get in this pack and the endless possibilities with Hershey's. All of this to drive higher perceived value around the pack and bring out the MasterChef in you.`,
+      para3: ` `
     };
     const metakeywords = meta.hershey;
     return (
