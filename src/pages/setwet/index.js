@@ -359,7 +359,7 @@ class SetWet extends Component {
             >
               <div className="banner-img-container"></div>
               <WorkPageNavigation
-                prevLink="/work/hrithik-roshan"
+                prevLink="/work/oziva"
                 nextLink="/work/lifebuoy"
               />
             </div>
@@ -542,11 +542,11 @@ class SetWet extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/hero-talkies"
-              data-text="HERO Talkies"
+              to="/work/lifebuoy"
+              data-text="Lifebuoy"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              HERO Talkies
+              Lifebuoy
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

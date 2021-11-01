@@ -1,0 +1,123 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.ozivakids {
+	.work-title{
+		font-size: 5.3em !important;
+		@include respond-until(sm) {
+			font-size: 2.3em !important;
+		}
+	}
+	img{
+		max-width: 100%;
+	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: center;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-position: bottom;
+		}
+	}
+	&.work-details-page {
+		.work-description {
+			@include respond-until(sm) {
+				padding-bottom: 50px;
+			}
+		}
+	} 
+	.page-header {
+		.banner-img-container {
+			text-align: center;
+			@include respond-until(sm) {
+				width: 40vh;
+			}
+		}
+	}
+	.fold-2 {
+		background-color: #52b1a4;
+		min-height: 60vh;
+		position: relative;
+		width: 100%;
+		display: flex;
+		vertical-align: middle;
+		padding: 10em 0;
+		@include respond-until(sm) {
+			min-height: 45vh;
+			padding: 5em 0;
+		}
+
+		.fold-2-img{
+			margin-bottom: 0;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+		} 
+	}
+
+	.project-image-container{
+		display: flex;
+		position: relative;
+		z-index: 5;
+		@include respond-until(sm) {
+			min-height: auto;
+		}
+	}
+
+	.fold-3 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 25vh;
+			@include respond-until(sm) {
+				margin-top: 5em;
+			}
+
+		.fold3-imageitem{
+			margin-bottom: 5em;
+
+			@include respond-until(sm) {
+				margin-bottom: 3em;
+				padding: 0 1em;
+			}
+		}
+		.mobile-scrn-2 {
+			@include respond-until(sm) {
+				transform: translate(0, -20%);
+			}
+		}
+	}
+
+	.fold-4{
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		.oziva-kids-chocolate{
+			position: absolute;
+			right: -16em;
+			top: -152px;
+			@include respond-until(sm) {
+				right: -2em;
+    			top: -110px;
+			}
+		}
+
+		@include respond-until(sm) {
+			min-height: 45vh;
+		}
+	}
+
+	.fold-5{
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		@include respond-until(sm) {
+			min-height: 50vh;
+		}
+	}
+	
+
+}

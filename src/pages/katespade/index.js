@@ -330,7 +330,7 @@ class KateSpade extends Component {
                 <img src={this.KateHero} alt="katespade" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/hero-talkies"
+                prevLink="/work/lifebuoy"
                 nextLink="/work/hrithik-roshan"
               />
             </div>

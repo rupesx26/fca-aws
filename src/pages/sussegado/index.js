@@ -243,7 +243,7 @@ class Sussegado extends Component {
                 <img src={this.JarsHero} alt="sussegado" />
               </div>
               <WorkPageNavigation
-                prevLink="/work/rapid-rupee"
+                prevLink="/work/hero-talkies"
                 nextLink="/work/nihar-shanti"
               />
             </div>

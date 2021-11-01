@@ -211,7 +211,7 @@ class Rapidrupee extends Component {
               </div>
               <WorkPageNavigation
                 prevLink="/work/thambbi"
-                nextLink="/work/sussegado-coffee"
+                nextLink="/work/nihar-gold"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -353,11 +353,11 @@ class Rapidrupee extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/sussegado-coffee"
-              data-text="Sussegado Coffee"
+              to="/work/nihar-gold"
+              data-text="Nihar Gold"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Sussegado Coffee
+              Nihar Gold
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

@@ -261,7 +261,7 @@ class NiharShanti extends Component {
             >
               <WorkPageNavigation
                 prevLink="/work/sussegado-coffee"
-                nextLink="/work/socranos-gravity"
+                nextLink="/work/thambbi"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -442,11 +442,11 @@ class NiharShanti extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/socranos-gravity"
-              data-text="Socranos Gravity"
+              to="/work/thambbi"
+              data-text="Thambbi"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Socranos Gravity
+              Thambbi
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

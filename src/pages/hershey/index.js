@@ -5,19 +5,18 @@ import Head from "../Head";
 import PageAnimWrapper from "../../components/pagetransition";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
-import { TimelineLite, TweenMax, Power4, CSSPlugin } from "gsap";
+import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
-import { niharImagePath } from "../../utils/assetUtils";
+import { hersheyImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
 import { colorClassList } from "../../components/colorconfig";
-
-import "./nihar.scss";
+import "./hershey.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 
-class NiharGold extends Component {
+class Hershey extends Component {
   constructor(props) {
     super(props);
     this.ScrollMagic = null;
@@ -28,13 +27,12 @@ class NiharGold extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.HeroBanner = niharImagePath("hero-background.jpg");
-    this.GoldLogo = niharImagePath("gold-logo-min.png");
-    this.Ribbon = niharImagePath("ribbon.jpg");
-    this.NiharGoldBack = niharImagePath("nihar-bottle-back.jpg");
-    this.NiharGoldFront = niharImagePath("nihar-bottle-front.jpg");
-    this.NiharGoldJar = niharImagePath("nihar-gold-jar.jpg");
-
+    this.hersheyHeaderbg = hersheyImagePath("hershey-hero-banner.jpg");
+    this.hersheyBakingKitbg = hersheyImagePath("baking-kit-bg.jpg");
+    this.hersheyBakingKittitle = hersheyImagePath("hershey-baking-title.png");
+    this.hersheyBakingKitBox = hersheyImagePath("hersheys-pack1.png");
+    this.hersheyBakingKitBox1 = hersheyImagePath("hersheys-pack2.png");
+    this.hersheyBakingKitBox2 = hersheyImagePath("hersheys-pack3.png");
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -66,68 +64,73 @@ class NiharGold extends Component {
   }
 
   pageAnimation() {
+    //require('debug.addIndicators');
+
     this.ScrollMagic = require("scrollmagic");
     this.controller = new this.ScrollMagic.Controller();
-    ScrollMagicPluginGsap(this.ScrollMagic, TweenMax, TimelineLite);
-    const niharProductAmination = new TimelineLite();
-    niharProductAmination
-      .fromTo(
-        ".nihar-gold-logo",
-        2,
-        { opacity: 0, y: 100 },
-        { y: 0, opacity: 1, ease: Power4.easeOut },
-        "-=1"
-      )
-      .fromTo(
-        ".nihar-front",
-        1.5,
-        { opacity: 0, x: 100 },
-        { x: 0, opacity: 1, ease: Power4.easeOut },
-        "-=.20"
-      )
-      .fromTo(
-        ".nihar-back",
-        1.5,
-        { opacity: 0, x: -100 },
-        { x: 0, opacity: 1, ease: Power4.easeOut },
-        "-=.90"
-      );
+    ScrollMagicPluginGsap(this.ScrollMagic, TweenMax, TimelineLite, gsap);
 
-    new this.ScrollMagic.Scene({
-      triggerElement: ".fold-2",
-      reverse: false,
-      triggerHook: 0.3
-    })
-      .setTween(niharProductAmination)
-      //.addIndicators()
-      .addTo(this.controller);
-
-    const niharJar = new TimelineLite();
-    niharJar
+    const cardParallax = new TimelineLite();
+    cardParallax
       .fromTo(
-        ".nihar-gold-jar",
-        2,
-        { opacity: 0, y: 100 },
-        { y: 0, opacity: 1, ease: Power4.easeOut },
-        "-=.90"
+        ".mobile-scrn-1",
+        0.8,
+        { y: -280 },
+        { y: -450, ease: Power1.easeInOut },
+        "-=0.4"
       )
       .fromTo(
-        ".nihar-gold-jar-text",
-        2,
-        { opacity: 0, y: 100 },
-        { y: 0, opacity: 1, ease: Power4.easeOut },
-        "-=.90"
+        ".mobile-scrn-2",
+        0.7,
+        { y: -150 },
+        { y: -280, ease: Power1.easeInOut },
+        "-=0.4"
       );
 
     new this.ScrollMagic.Scene({
       triggerElement: ".fold-3",
-      reverse: false,
-      triggerHook: 0.4
+      triggerHook: 0.9,
+      duration: "100%",
+      reverse: true
     })
-      .setTween(niharJar)
       //.addIndicators()
+      .setTween(cardParallax)
       .addTo(this.controller);
+
+    // const outers = document.querySelectorAll(".fold-3-img");
+    // for (let i = 0; i < outers.length; i++) {
+    //   const child = outers[i].childNodes[0].childNodes;
+    //   console.log('child', child);
+    //   const fold3Animation = new TimelineLite();
+    //   fold3Animation.fromTo(
+    //     child,
+    //     1.5,
+    //     {
+    //       y: 20,
+    //       scale: 1.2,
+    //       clipPath: "polygon(0% 0%, 0% 10%, 0% 100%, 0% 100%)"
+    //     },
+    //     {
+    //       y: 50,
+    //       scale: 1,
+    //       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    //       ease: Power4.easeInOut
+    //     },
+    //     "-=.95"
+    //   );
+
+    //   new this.ScrollMagic.Scene({
+    //     triggerElement: outers[i],
+    //     reverse: false,
+    //     scrollEase: 0.1, // scroll speed
+    //     maxOffset: 500
+    //   })
+    //     //.addIndicators() // add indicators (requires plugin)
+    //     .setTween(fold3Animation)
+    //     .addTo(this.controller);
+    // }
   }
+
   handleScroll() {
     const mainWrapperElem = this.mainWrapper.current;
     const winScroll =
@@ -155,7 +158,6 @@ class NiharGold extends Component {
         showSayHello: true
       });
     }
-
     if (isMobile) {
       const newWinScroll = Math.round(winScroll);
       if (
@@ -171,21 +173,21 @@ class NiharGold extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Nihar Gold`,
-      client: `Marico, Nihar Gold`,
-      project: `Packaging Design`,
-      brief: `Design a label for Nihar Gold for Bihar market`,
-      para1: `Nihar coconut oil is the market leader in East India, especially in Bihar. They wanted to launch a premium sub-brand called Nihar Gold. For this, we partnered them with packaging design.`,
-      para2: `Our approach was to create something new without losing the familiarity built by the brand over \n so many years. The coconut halves and the hair silhouette announce that it’s a Nihar coconut hair oil product from a mile.  We added a pop of parallel gold streaks to convey that this is a premium sub-brand.`,
-      para3: ` `
+      workTitle: `Hershey's Home Chef Baking Kit`,
+      client: `Marico, Nihar Shanti`,
+      project: `Audit and Research project`,
+      brief: `Design a Sachet for the Indian Market`,
+      para1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+      para2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+      para3: `Audit Project`
     };
-    const metakeywords = meta.nihargold;
+    const metakeywords = meta.hershey;
     return (
       <PageAnimWrapper>
         <div>
           <Head
             title={`FINDCreative Ave | ${projectSummaryContent.workTitle}`}
-            content={`${projectSummaryContent.brief}`}
+            content={`${projectSummaryContent.team}`}
             keywordslist={`${metakeywords}`}
           />
           <Navigation
@@ -194,18 +196,18 @@ class NiharGold extends Component {
           />
 
           <div
-            className="page-wrapper work-details-page nihar-gold"
+            className="page-wrapper work-details-page hershey hershey-page-wrapper"
             ref={this.mainWrapper}
           >
             <div
               id="banner"
               ref={this.bannerWrapper}
               className="full-page-wrapper page-header bg"
-              style={{ backgroundImage: `url(${this.HeroBanner})` }}
+              style={{ backgroundImage: `url(${this.hersheyHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/rapid-rupee"
-                nextLink="/work/cocosoul"
+                prevLink="/work/cocosoul"
+                nextLink="/work/ozivakids"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -217,31 +219,32 @@ class NiharGold extends Component {
                 client={projectSummaryContent.client}
                 project={projectSummaryContent.project}
                 brief={projectSummaryContent.brief}
+                location={projectSummaryContent.location}
+                team={projectSummaryContent.team}
               />
 
-              <div className="fold-2">
+              <div
+                className="fold-2"
+                style={{ backgroundImage: `url(${this.hersheyBakingKitbg})` }}
+              >
                 <div className="container">
-                  <div className="row justify-content-center no-gutters nihar-intro">
-                    <div
-                      className="nihar-ribbon-bg"
-                      style={{ backgroundImage: `url(${this.Ribbon})` }}
-                    >
-                      <div className="nihar-gold-logo align-center">
-                        <img src={this.GoldLogo} alt="nihar gold" />
-                      </div>
-                      <div className="row justify-content-center no-gutters nihar-product">
-                        <div className="col-md-10 col-xs-12">
-                          <div className="row">
-                            <div className="col-md-5 col-xs-12 nihar-front">
-                              <img src={this.NiharGoldFront} alt="nihar gold" />
-                            </div>
-                            <div className="col-md-2"></div>
-                            <div className="col-md-5 col-xs-12 nihar-back">
-                              <img src={this.NiharGoldBack} alt="nihar gold" />
-                            </div>
-                          </div>
+                  <div className="row justify-content-center no-gutters">
+                    <div className="col-md-10 col-xs-12">
+                      <div className="justify-content-left">
+                        <div className="col-md-6 col-xs-12">
+                          <img
+                            src={this.hersheyBakingKittitle}
+                            alt="bakingkittitle"
+                          />
                         </div>
-                        <div className="clear"></div>
+                      </div>
+                      <div className="project-image-container justify-content-right">
+                        <div className="col-md-11 col-xs-12 align-right">
+                          <img
+                            src={this.hersheyBakingKitBox}
+                            alt="bakingkitbox"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -250,22 +253,24 @@ class NiharGold extends Component {
 
               <div className="fold-3">
                 <div className="container">
-                  <div className="row justify-content-center no-gutters nihar-product-details">
+                  <div className="row justify-content-center no-gutters">
                     <div className="col-md-10 col-xs-12">
-                      <div className="row">
-                        <div className="col-md-5 col-xs-12 nihar-gold-jar">
-                          <img src={this.NiharGoldJar} alt="nihar gold" />
+                      <div className="justify-content-left">
+                        <div className="col-md-7 col-xs-12 no-gutters">
+                          <img
+                            className="hershey-pack1"
+                            src={this.hersheyBakingKitBox1}
+                            alt="hershey"
+                          />
                         </div>
-                        <div className="col-md-1"></div>
-                        <div className="col-md-6 col-xs-12 text nihar-gold-jar-text">
-                          <p>
-                            Along with the bottle design, we also designed the
-                            jar packaging. These jars are a boon especially{" "}
-                            <br />
-                            during the winters because their wide mouths make it
-                            easy to scoop out the oil which tends to <br />
-                            solidify when the temperature drops.
-                          </p>
+                      </div>
+                      <div className="project-image-container justify-content-right">
+                        <div className="col-md-8 col-xs-12 no-gutters">
+                          <img
+                            className="hershey-pack1"
+                            src={this.hersheyBakingKitBox2}
+                            alt="hershey"
+                          />
                         </div>
                       </div>
                     </div>
@@ -286,11 +291,11 @@ class NiharGold extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/cocosoul"
-              data-text="Cocosoul"
+              to="/work/ozivakids"
+              data-text="Oziva Kids"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Cocosoul
+              Oziva Kids
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
@@ -303,4 +308,5 @@ class NiharGold extends Component {
     );
   }
 }
-export default NiharGold;
+
+export default Hershey;

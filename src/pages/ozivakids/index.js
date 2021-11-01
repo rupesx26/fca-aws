@@ -8,15 +8,15 @@ import Navigation from "../../components/navigation";
 import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
-import { tlcImagePath } from "../../utils/assetUtils";
+import { ozivakidsImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
 import { colorClassList } from "../../components/colorconfig";
-import "./tlc.scss";
+import "./ozivakids.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 
-class Tlc extends Component {
+class OzivaKids extends Component {
   constructor(props) {
     super(props);
     this.ScrollMagic = null;
@@ -27,13 +27,18 @@ class Tlc extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.tlcHeaderbg = tlcImagePath("tlc-hero-banner.jpg");
-    // this.tlcModel = tlcImagePath("tlc-model.png");
-    this.tlccreamycheese = tlcImagePath("tlc-creamy-cheese.png");
-    this.tlcpack1 = tlcImagePath("tlc-product1.png");
-    this.tlcpack2 = tlcImagePath("tlc-product2.png");
-    this.tlcpack3 = tlcImagePath("tlc-cheese.png");
-    this.tlcfooterhero = tlcImagePath("tlc-paratha.jpg");
+    this.ozivakidsHeaderbg = ozivakidsImagePath("ozivakids-hero-banner.jpg");
+    this.ozivakidstitle = ozivakidsImagePath("ozivakids-text.png");
+    this.ozivakidsProducts = ozivakidsImagePath("ozivakids-products.png");
+    this.ozivakidsVisionGummies = ozivakidsImagePath(
+      "vision-multi-gummies.jpg"
+    );
+    this.ozivakidsBrainGummies = ozivakidsImagePath("brain-multi-gummies.jpg");
+    this.ozivakidsImmunityGummies = ozivakidsImagePath("immunity-gummies.jpg");
+    this.ozivakidsMixChoco = ozivakidsImagePath(
+      "oziva-kids-mix-chocolates.png"
+    );
+    this.ozivakidsStickers = ozivakidsImagePath("ozivakids-stickers.png");
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -174,14 +179,16 @@ class Tlc extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `The Laughing Cow Sachet`,
-      client: `TLC, Creamy Cheese`,
+      workTitle: `Oziva Kids <br/> Gummies`,
+      client: `OZiva Kids Nutrition`,
       project: `Packaging Design`,
-      brief: `Design a Sachet for the Indian Market`,
-      para1: `For the first time in the Indian market, The Laughing Cow Cheese launched a Creamy Cheese Sachet at Rs 10, to introduce masses to the yummy taste of cheese. So even with packaging design, we knew we had to get into the Indian mindset. To start off with, we broke away from the usual bread-cheese partnership and designed around desi tastes like Parathas and Dosas. We kept the design simple and self-explanatory and also played up the name of the pack- CREAMY, to bring alive the brand proposition of Deliciously Soft & Creamy Cheese.`,
-      para2: ` `
+      brief: `Design packaging for OZiva’s Kids’ Nutrition range`,
+      para1: `It sure takes a lot to get kids to consume anything healthy. So when OZiva wanted us to design packaging for their kids’ nutrition range (Gummies and Protein Powder), we put ourselves in the shoes of a 7-year old, to design around certain truths:`,
+      para2: `Kids love to feel grown-up. So, we introduced a simple gummy dispenser as part of the packaging. A tiny opening from which the kid can pull a gummy out each day. Kids love quirky characters. They could look up to elephants for their memory, chimps for their hunger for adventure, Tigers for strength and Owls for eyesight. And so, we got each animal to represent a product based on its main benefit.`,
+      para3: `Colour-colour which colour do you choose? Kids are intuitively drawn to interesting colours. So we didn’t shy away from using them well. Mamma makes everything more fun. Each box in the range comes with an engaging comic-style story with the OZiva characters. Something moms could read out to their little ones, creating magical moments between them. All along, while she makes sure her child is staying healthy.
+      `
     };
-    const metakeywords = meta.tlc;
+    const metakeywords = meta.ozivakids;
     return (
       <PageAnimWrapper>
         <div>
@@ -196,18 +203,18 @@ class Tlc extends Component {
           />
 
           <div
-            className="page-wrapper work-details-page tlc tlc-page-wrapper"
+            className="page-wrapper work-details-page ozivakids ozivakids-page-wrapper"
             ref={this.mainWrapper}
           >
             <div
               id="banner"
               ref={this.bannerWrapper}
               className="full-page-wrapper page-header bg"
-              style={{ backgroundImage: `url(${this.tlcHeaderbg})` }}
+              style={{ backgroundImage: `url(${this.ozivakidsHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/ozivakids"
-                nextLink="/work/oziva"
+                prevLink="/work/hershey"
+                nextLink="/work/tlc"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -226,10 +233,15 @@ class Tlc extends Component {
               <div className="fold-2">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-4 col-xs-12 no-gutters">
-                      <div className="project-image-container img-grid row">
-                        <div className="project-image-container justify-content-center">
-                          <img src={this.tlccreamycheese} alt="tlc" />
+                    <div className="col-md-8 col-xs-12 no-gutters">
+                      <div className="project-image-container justify-content-center img-grid row fold-2-img">
+                        <div className="project-image-container justify-content-center fold-2-img">
+                          <div className="col-md-6 col-xs-12">
+                            <img
+                              src={this.ozivakidstitle}
+                              alt="ozivakidstitle"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -240,43 +252,45 @@ class Tlc extends Component {
               <div className="fold-3">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-8 col-xs-12">
-                      <div className="project-image-container img-grid row">
-                        <div className="col-md-5 col-xs-12">
-                          <div className="project-image-container mobile-scrn-1">
-                            <img
-                              className="tlc-pack1"
-                              src={this.tlcpack1}
-                              alt="tlc"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-md-2"></div>
-                        <div className="col-md-5 col-xs-12">
-                          <div className="project-image-container mobile-scrn-2 right-img">
-                            <img
-                              className="tlc-pack2"
-                              src={this.tlcpack2}
-                              alt="tlc"
-                            />
-                          </div>
-                        </div>
+                    <div className="col-md-9 col-xs-12 no-gutters">
+                      <div className="fold3-imageitem">
+                        <img
+                          src={this.ozivakidsProducts}
+                          alt="ozivakidsproducts"
+                        />
+                      </div>
+                      <div className="fold3-imageitem">
+                        <img
+                          src={this.ozivakidsVisionGummies}
+                          alt="ozivakidsproducts"
+                        />
+                      </div>
+                      <div className="fold3-imageitem">
+                        <img
+                          src={this.ozivakidsBrainGummies}
+                          alt="ozivakidsproducts"
+                        />
+                      </div>
+                      <div className="fold3-imageitem">
+                        <img
+                          src={this.ozivakidsImmunityGummies}
+                          alt="ozivakidsproducts"
+                        />
                       </div>
                     </div>
                   </div>
-                  <div className="diagonal-bg"></div>
                 </div>
               </div>
+
               <div className="fold-4">
                 <div className="container">
-                  <div className="row justify-content-left no-gutters">
-                    <div className="col-md-7 col-xs-12 no-gutters">
-                      <div className="project-image-container img-grid">
-                        <div className="project-image-container mobile-scrn-1 justify-content-left">
+                  <div className="row justify-content-center no-gutters">
+                    <div className="col-md-9 col-xs-12">
+                      <div className="project-image-container justify-content-right">
+                        <div className="col-md-10 col-xs-12 no-gutters oziva-kids-chocolate">
                           <img
-                            className="cheese-pack"
-                            src={this.tlcpack3}
-                            alt="tlc"
+                            src={this.ozivakidsMixChoco}
+                            alt="ozivakidsproducts"
                           />
                         </div>
                       </div>
@@ -284,10 +298,18 @@ class Tlc extends Component {
                   </div>
                 </div>
               </div>
+
               <div className="fold-5">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <img src={this.tlcfooterhero} alt="tlc" />
+                    <div className="col-md-10 col-xs-12 no-gutters fol5-bg-color">
+                      <div className="fold5-imageitem">
+                        <img
+                          src={this.ozivakidsStickers}
+                          alt="ozivakidsproducts"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -305,11 +327,11 @@ class Tlc extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/oziva"
-              data-text="Oziva"
+              to="/work/tlc"
+              data-text="TLC"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Oziva
+              TLC
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
@@ -323,4 +345,4 @@ class Tlc extends Component {
   }
 }
 
-export default Tlc;
+export default OzivaKids;
