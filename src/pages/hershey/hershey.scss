@@ -2,6 +2,9 @@
 @import '../../styles/work-details';
 
 .hershey {
+	.next-project a, .prev-project a {
+		color: #000;
+	}
 	.work-title{
 		font-size: 5em !important;
 		@include respond-until(sm) {

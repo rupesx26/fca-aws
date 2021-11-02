@@ -150,7 +150,7 @@ class OzivaKids extends Component {
       });
     } else if (bannerElement.offsetHeight > winScroll) {
       this.setState({
-        toggleHeader: true,
+        toggleHeader: false,
         showSayHello: false
       });
     } else if (bannerElement.offsetHeight < winScroll) {

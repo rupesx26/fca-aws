@@ -295,10 +295,10 @@ class Hershey extends Component {
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
               to="/work/ozivakids"
-              data-text="Oziva Kids"
+              data-text="OZiva Kids"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Oziva Kids
+              OZiva Kids
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
