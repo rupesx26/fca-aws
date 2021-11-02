@@ -28,15 +28,15 @@ class OzivaKids extends Component {
     this.pageAnimation = this.pageAnimation.bind(this);
 
     this.ozivakidsHeaderbg = ozivakidsImagePath("ozivakids-hero-banner.jpg");
-    this.ozivakidstitle = ozivakidsImagePath("ozivakids-text.png");
+    this.ozivakidstitle = ozivakidsImagePath("ozivakids-text1.png");
     this.ozivakidsProducts = ozivakidsImagePath("ozivakids-products.png");
     this.ozivakidsVisionGummies = ozivakidsImagePath(
-      "vision-multi-gummies.jpg"
+      "vision-multi-gummies1.jpg"
     );
-    this.ozivakidsBrainGummies = ozivakidsImagePath("brain-multi-gummies.jpg");
-    this.ozivakidsImmunityGummies = ozivakidsImagePath("immunity-gummies.jpg");
+    this.ozivakidsBrainGummies = ozivakidsImagePath("brain-multi-gummies1.jpg");
+    this.ozivakidsImmunityGummies = ozivakidsImagePath("immunity-gummies1.jpg");
     this.ozivakidsMixChoco = ozivakidsImagePath(
-      "oziva-kids-mix-chocolates.png"
+      "oziva-kids-mix-chocolates1.png"
     );
     this.ozivakidsStickers = ozivakidsImagePath("ozivakids-sticker2.jpg");
     this.state = {
