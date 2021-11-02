@@ -38,7 +38,7 @@ class OzivaKids extends Component {
     this.ozivakidsMixChoco = ozivakidsImagePath(
       "oziva-kids-mix-chocolates.png"
     );
-    this.ozivakidsStickers = ozivakidsImagePath("ozivakids-stickers.png");
+    this.ozivakidsStickers = ozivakidsImagePath("ozivakids-sticker2.jpg");
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -253,7 +253,7 @@ class OzivaKids extends Component {
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
                     <div className="col-md-9 col-xs-12 no-gutters">
-                      <div className="fold3-imageitem">
+                      <div className="fold3-imageitem1">
                         <img
                           src={this.ozivakidsProducts}
                           alt="ozivakidsproducts"
@@ -299,8 +299,11 @@ class OzivaKids extends Component {
                 </div>
               </div>
 
-              <div className="fold-5">
-                <div className="container">
+              <div
+                className="fold-5 bg"
+                style={{ backgroundImage: `url(${this.ozivakidsStickers})` }}
+              >
+                {/* <div className="container">
                   <div className="row justify-content-center no-gutters">
                     <div className="col-md-10 col-xs-12 no-gutters fol5-bg-color">
                       <div className="fold5-imageitem">
@@ -311,7 +314,7 @@ class OzivaKids extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
