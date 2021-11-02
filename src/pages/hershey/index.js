@@ -144,7 +144,7 @@ class Hershey extends Component {
       });
     } else if (bannerElement.offsetHeight > winScroll) {
       this.setState({
-        toggleHeader: true,
+        toggleHeader: false,
         showSayHello: false
       });
     } else if (bannerElement.offsetHeight < winScroll) {
@@ -234,6 +234,7 @@ class Hershey extends Component {
                       <div className="justify-content-left">
                         <div className="col-md-6 col-xs-12">
                           <img
+                            className="baking-title"
                             src={this.hersheyBakingKittitle}
                             alt="bakingkittitle"
                           />
@@ -242,6 +243,7 @@ class Hershey extends Component {
                       <div className="project-image-container justify-content-right">
                         <div className="col-md-11 col-xs-12 align-right">
                           <img
+                            className="baking-kit-box"
                             src={this.hersheyBakingKitBox}
                             alt="bakingkitbox"
                           />
