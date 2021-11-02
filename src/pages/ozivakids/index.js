@@ -179,7 +179,7 @@ class OzivaKids extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Oziva Kids <br/> Gummies`,
+      workTitle: `OZiva Kids <br/> Gummies`,
       client: `OZiva Kids Nutrition`,
       project: `Packaging Design`,
       brief: `Design packaging for OZiva’s Kids’ Nutrition range`,
@@ -331,10 +331,10 @@ class OzivaKids extends Component {
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
               to="/work/tlc"
-              data-text="TLC"
+              data-text="The Laughing Cow"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              TLC
+              The Laughing Cow
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

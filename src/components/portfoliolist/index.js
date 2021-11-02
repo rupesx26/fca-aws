@@ -44,7 +44,7 @@ class PortfolioList extends Component {
         {
           _id: "1",
           color: "#fff",
-          title: "Oziva Kids Nutrition",
+          title: "OZiva Kids Nutrition",
           subtitle: "Research & Package Design",
           row: 0,
           route: "ozivakids",
@@ -63,7 +63,7 @@ class PortfolioList extends Component {
         {
           _id: "3",
           color: "#fff",
-          title: "Oziva",
+          title: "OZiva",
           subtitle: "Branding & Package Design",
           row: 1,
           route: "oziva",
