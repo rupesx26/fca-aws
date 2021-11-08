@@ -121,4 +121,24 @@
 		}
 	}
 
+	.hershey-mobile {
+		display: none;
+		@include respond-until(sm) {
+			display: block;
+		}
+		.mobile-image {
+		 margin-right: 5em;
+		}
+		.baking-kit-box {
+			max-width: 50vh;
+		}
+	}
+
+	.hershey-desktop {
+		display: block;
+		@include respond-until(sm) {
+			display: none;
+		}
+	}
+
 }
