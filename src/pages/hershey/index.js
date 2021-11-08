@@ -240,6 +240,17 @@ class Hershey extends Component {
                           />
                         </div>
                       </div>
+                      {isMobile && (
+                        <div className="project-image-container justify-content-center">
+                          <div className="col-md-11 col-xs-12 align-center">
+                            <img
+                              className="baking-kit-box"
+                              src={this.hersheyBakingKitBox}
+                              alt="bakingkitbox"
+                            />
+                          </div>
+                        </div>
+                      )}
                       <div className="project-image-container justify-content-right">
                         <div className="col-md-11 col-xs-12 align-right">
                           <img
