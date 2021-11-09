@@ -7,6 +7,7 @@ import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
 import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+import OzivaSlider from "../../components/ozivaslider";
 import ProjectPageSummary from "../../components/workdetailsanim";
 import { ozivakidsImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
@@ -27,18 +28,31 @@ class OzivaKids extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.ozivakidsHeaderbg = ozivakidsImagePath("ozivakids-hero-banner.jpg");
+    this.ozivakidsHeaderbg = ozivakidsImagePath("cover.jpg");
     this.ozivakidstitle = ozivakidsImagePath("ozivakids-text1.png");
-    this.ozivakidsProducts = ozivakidsImagePath("ozivakids-products.png");
-    this.ozivakidsVisionGummies = ozivakidsImagePath(
-      "vision-multi-gummies1.jpg"
-    );
-    this.ozivakidsBrainGummies = ozivakidsImagePath("brain-multi-gummies1.jpg");
-    this.ozivakidsImmunityGummies = ozivakidsImagePath("immunity-gummies1.jpg");
-    this.ozivakidsMixChoco = ozivakidsImagePath(
-      "oziva-kids-mix-chocolates1.png"
-    );
-    this.ozivakidsStickers = ozivakidsImagePath("ozivakids-sticker2.jpg");
+    this.ozivakidsProducts = ozivakidsImagePath("oziva-kids-group.png");
+    this.ozivakidsVisionGummies = ozivakidsImagePath("pack-oziva-08.jpg");
+    this.ozivakidsBrainGummies = ozivakidsImagePath("pack-oziva-07.jpg");
+    this.ozivakidsImmunityGummies = ozivakidsImagePath("pack-oziva-06.jpg");
+    this.ozivakidsMixChoco = ozivakidsImagePath("gummies.png");
+    this.ozivakidsStickers = ozivakidsImagePath("book.jpg");
+
+    this.ozivakidsslide01 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-01.jpg");
+    this.ozivakidsslide02 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-02.jpg");
+    this.ozivakidsslide03 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-03.jpg");
+    this.ozivakidsslide04 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-04.jpg");
+    this.ozivakidsslide05 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-05.jpg");
+    this.ozivakidsslide06 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-06.jpg");
+    this.ozivakidsslide07 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-07.jpg");
+    this.ozivakidsslide08 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-08.jpg");
+    this.ozivakidsslide09 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-09.jpg");
+    this.ozivakidsslide10 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-10.jpg");
+    this.ozivakidsslide11 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-11.jpg");
+    this.ozivakidsslide12 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-12.jpg");
+    this.ozivakidsslide13 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-13.jpg");
+    this.ozivakidsslide14 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-14.jpg");
+    this.ozivakidsslide15 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-15.jpg");
+    this.ozivakidsslide16 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-16.jpg");
     this.state = {
       toggleHeader: true,
       showSayHello: false,
@@ -300,21 +314,41 @@ class OzivaKids extends Component {
               </div>
 
               <div
-                className="fold-5 bg"
+                className="fold-5 bg background-mob"
                 style={{ backgroundImage: `url(${this.ozivakidsStickers})` }}
-              >
-                {/* <div className="container">
-                  <div className="row justify-content-center no-gutters">
-                    <div className="col-md-10 col-xs-12 no-gutters fol5-bg-color">
-                      <div className="fold5-imageitem">
-                        <img
-                          src={this.ozivakidsStickers}
-                          alt="ozivakidsproducts"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+              ></div>
+              <div className="fold-6 full-width ozivakids-mob-slide">
+                <div className="ozivakids-slider">
+                  <OzivaSlider
+                    dots={false}
+                    infinite={true}
+                    speed={3000}
+                    slidesToShow={1}
+                    slidesToScroll={1}
+                    fade={false}
+                    autoplay={false}
+                    autoplaySpeed={2000}
+                    pauseOnHover={false}
+                    customnextArrow={true}
+                    customprevArrow={true}
+                    slide1={this.ozivakidsslide01}
+                    slide2={this.ozivakidsslide02}
+                    slide3={this.ozivakidsslide03}
+                    slide4={this.ozivakidsslide04}
+                    slide5={this.ozivakidsslide05}
+                    slide6={this.ozivakidsslide06}
+                    slide7={this.ozivakidsslide07}
+                    slide8={this.ozivakidsslide08}
+                    slide9={this.ozivakidsslide09}
+                    slide10={this.ozivakidsslide10}
+                    slide11={this.ozivakidsslide11}
+                    slide12={this.ozivakidsslide12}
+                    slide13={this.ozivakidsslide13}
+                    slide14={this.ozivakidsslide14}
+                    slide15={this.ozivakidsslide15}
+                    slide16={this.ozivakidsslide16}
+                  />
+                </div>
               </div>
             </div>
           </div>
