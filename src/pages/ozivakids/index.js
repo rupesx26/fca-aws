@@ -54,7 +54,7 @@ class OzivaKids extends Component {
     this.ozivakidsslide15 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-15.jpg");
     this.ozivakidsslide16 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-16.jpg");
     this.state = {
-      toggleHeader: false,
+      toggleHeader: true,
       showSayHello: false,
       footerBgColor: "dark",
       footerActive: false,
@@ -164,7 +164,7 @@ class OzivaKids extends Component {
       });
     } else if (bannerElement.offsetHeight > winScroll) {
       this.setState({
-        toggleHeader: false,
+        toggleHeader: true,
         showSayHello: false
       });
     } else if (bannerElement.offsetHeight < winScroll) {
