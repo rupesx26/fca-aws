@@ -241,7 +241,7 @@ class Hershey extends Component {
                       </div>
                       <div className="hershey-mobile">
                         <div className="project-image-container justify-content-center">
-                          <div className="col-md-11 col-xs-12 align-center mobile-image">
+                          <div className="col-md-11 align-center mobile-image">
                             <img
                               className="mob-baking-kit-box"
                               src={this.hersheyBakingKitBox}

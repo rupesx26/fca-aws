@@ -70,7 +70,7 @@
 				max-width: 400px;
 			}
 			img.mob-baking-kit-box {
-				max-width: 70vh;
+				max-width: 68vh;
 			}
 		}
 	}
@@ -137,9 +137,7 @@
 		@include respond-until(sm) {
 			display: block;
 		}
-		.mobile-image {
-		 margin-right: 8em;
-		}
+		
 		.baking-kit-box {
 			max-width: 50vh;
 		}
