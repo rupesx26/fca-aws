@@ -29,7 +29,7 @@ class OzivaKids extends Component {
     this.pageAnimation = this.pageAnimation.bind(this);
 
     this.ozivakidsHeaderbg = ozivakidsImagePath("cover.jpg");
-    this.ozivakidstitle = ozivakidsImagePath("ozivakids-text1.png");
+    this.ozivakidstitle = ozivakidsImagePath("ozivakids-txt.png");
     this.ozivakidsProducts = ozivakidsImagePath("oziva-kids-group.png");
     this.ozivakidsVisionGummies = ozivakidsImagePath("pack-oziva-08.jpg");
     this.ozivakidsBrainGummies = ozivakidsImagePath("pack-oziva-07.jpg");
@@ -250,7 +250,7 @@ class OzivaKids extends Component {
                     <div className="col-md-8 col-xs-12 no-gutters">
                       <div className="project-image-container justify-content-center img-grid row fold-2-img">
                         <div className="project-image-container justify-content-center fold-2-img">
-                          <div className="col-md-6 col-xs-12">
+                          <div className="col-md-7 col-xs-12">
                             <img
                               src={this.ozivakidstitle}
                               alt="ozivakidstitle"
