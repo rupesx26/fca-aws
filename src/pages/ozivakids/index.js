@@ -54,7 +54,7 @@ class OzivaKids extends Component {
     this.ozivakidsslide15 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-15.jpg");
     this.ozivakidsslide16 = ozivakidsImagePath("Gullu-Opens-Banis-Eyes-16.jpg");
     this.state = {
-      toggleHeader: true,
+      toggleHeader: false,
       showSayHello: false,
       footerBgColor: "dark",
       footerActive: false,
