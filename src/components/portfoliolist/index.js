@@ -36,7 +36,7 @@ class PortfolioList extends Component {
           _id: "0",
           color: "#fff",
           title: "OZiva Personal Care",
-          subtitle: "Package Design",
+          subtitle: "Packaging Design ",
           row: 0,
           route: "oziva",
           tile: this.OzivaTile
