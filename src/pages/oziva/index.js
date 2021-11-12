@@ -328,7 +328,7 @@ class Oziva extends Component {
                   <OzivaSlider
                     dots={false}
                     infinite={true}
-                    speed={3000}
+                    speed={1000}
                     slidesToShow={1}
                     slidesToScroll={1}
                     fade={false}
