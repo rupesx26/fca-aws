@@ -207,7 +207,7 @@ class Tlc extends Component {
             >
               <WorkPageNavigation
                 prevLink="/work/ozivakids"
-                nextLink="/work/oziva"
+                nextLink="/work/hershey"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -305,11 +305,11 @@ class Tlc extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/oziva"
-              data-text="Oziva"
+              to="/work/hershey"
+              data-text="Hershey"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Oziva
+              Hershey
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

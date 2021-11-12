@@ -27,19 +27,19 @@ class PortfolioList extends Component {
     this.SetwetTile = workImagePath("setwet-tile.jpg");
     this.NiharShantiTile = workImagePath("nihar-shanti-tile.png");
     this.Tlctile = workImagePath("tlc-tile.jpg");
-    this.OzivaTile = workImagePath("oziva-tile.jpg");
-    this.HersheyTile = workImagePath("hershey-tile.jpg");
+    this.OzivaTile = workImagePath("oziva-tile.png");
+    this.HersheyTile = workImagePath("hershey-tile.png");
     this.OzivakidsTile = workImagePath("ozkn-tile.jpg");
     this.state = {
       data: [
         {
           _id: "0",
           color: "#fff",
-          title: "Hershey",
+          title: "OZiva Personal Care",
           subtitle: "Branding & Package Design",
           row: 0,
-          route: "hershey",
-          tile: this.HersheyTile
+          route: "oziva",
+          tile: this.OzivaTile
         },
         {
           _id: "1",
@@ -54,7 +54,7 @@ class PortfolioList extends Component {
         {
           _id: "2",
           color: "#fff",
-          title: "TLC",
+          title: "The Laughing Cow",
           subtitle: "Research & Package Design",
           row: 1,
           route: "tlc",
@@ -63,11 +63,11 @@ class PortfolioList extends Component {
         {
           _id: "3",
           color: "#fff",
-          title: "OZiva",
+          title: "Hershey",
           subtitle: "Branding & Package Design",
           row: 1,
-          route: "oziva",
-          tile: this.OzivaTile
+          route: "hershey",
+          tile: this.HersheyTile
         },
         {
           _id: "4",

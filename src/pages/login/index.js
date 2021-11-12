@@ -141,8 +141,8 @@ class Login extends Component {
                     <div className="col-md-10 col-xs-12">
                       <div className="content login-wrapper">
                         <WorkPageNavigation
-                          prevLink="/work/hrithik-roshan"
-                          nextLink="/work/tlc"
+                          prevLink="/work/hershey"
+                          nextLink="/work/kate-spade"
                         />
                         <p>
                           Hello Guys! Happy to know you’re interested in this

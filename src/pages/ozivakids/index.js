@@ -226,10 +226,7 @@ class OzivaKids extends Component {
               className="full-page-wrapper page-header bg"
               style={{ backgroundImage: `url(${this.ozivakidsHeaderbg})` }}
             >
-              <WorkPageNavigation
-                prevLink="/work/hershey"
-                nextLink="/work/tlc"
-              />
+              <WorkPageNavigation prevLink="/work/oziva" nextLink="/work/tlc" />
             </div>
             <div className="full-page-wrapper work-content">
               <ProjectPageSummary
@@ -322,7 +319,7 @@ class OzivaKids extends Component {
                   <OzivaSlider
                     dots={false}
                     infinite={true}
-                    speed={3000}
+                    speed={800}
                     slidesToShow={1}
                     slidesToScroll={1}
                     fade={false}

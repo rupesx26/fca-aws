@@ -279,8 +279,8 @@ class Oziva extends Component {
               style={{ backgroundImage: `url(${this.ozivaHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/tlc"
-                nextLink="/work/setwet"
+                prevLink="/work/cocosoul"
+                nextLink="/work/ozivakids"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -385,11 +385,11 @@ class Oziva extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/setwet"
-              data-text="Setwet"
+              to="/work/ozivakids"
+              data-text="OZiva Kids"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Setwet
+              OZiva Kids
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
