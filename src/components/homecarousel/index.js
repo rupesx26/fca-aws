@@ -459,7 +459,7 @@ class HomeCarousel extends Component {
       <React.Fragment>
         <section className="section slide-wrapper slide-1">
           <div className="carousel-wrapper">
-            <Link to="/work/hrithik-roshan">
+            <Link to="/work/oziva">
               <div className="carousel-container">
                 <div className="carousel-left-content">
                   <div className="carousel-img-clip">
@@ -472,7 +472,7 @@ class HomeCarousel extends Component {
                 <div className="carousel-right-content">
                   <div className="project-content">
                     <h2 className="project-title">OZiva Personal Care</h2>
-                    <h3 className="project-type">Branding & Package Design</h3>
+                    <h3 className="project-type">Packaging Design </h3>
                   </div>
                 </div>
               </div>
@@ -503,7 +503,7 @@ class HomeCarousel extends Component {
         </section>
         <section className="section slide-wrapper slide-3">
           <div className="carousel-wrapper">
-            <Link to="/work/cocosoul">
+            <Link to="/work/ozivakids">
               <div className="carousel-container">
                 <div className="carousel-left-content">
                   <div className="carousel-img-clip">
@@ -516,7 +516,7 @@ class HomeCarousel extends Component {
                 <div className="carousel-right-content">
                   <div className="project-content">
                     <h2 className="project-title">OZiva Kids Gummies</h2>
-                    <h3 className="project-type">Research & Package Design</h3>
+                    <h3 className="project-type">Packaging Design </h3>
                   </div>
                 </div>
               </div>
@@ -525,7 +525,7 @@ class HomeCarousel extends Component {
         </section>
         <section className="section slide-wrapper slide-4">
           <div className="carousel-wrapper">
-            <Link to="/work/sussegado-coffee">
+            <Link to="/work/tlc">
               <div className="carousel-container">
                 <div className="carousel-left-content">
                   <div className="carousel-img-clip">
@@ -538,7 +538,7 @@ class HomeCarousel extends Component {
                 <div className="carousel-right-content">
                   <div className="project-content">
                     <h2 className="project-title">The Laughing Cow</h2>
-                    <h3 className="project-type">Research & Package Design</h3>
+                    <h3 className="project-type">Packaging Design </h3>
                   </div>
                 </div>
               </div>

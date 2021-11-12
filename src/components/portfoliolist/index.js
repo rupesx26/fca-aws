@@ -36,7 +36,7 @@ class PortfolioList extends Component {
           _id: "0",
           color: "#fff",
           title: "OZiva Personal Care",
-          subtitle: "Branding & Package Design",
+          subtitle: "Package Design",
           row: 0,
           route: "oziva",
           tile: this.OzivaTile
@@ -45,7 +45,7 @@ class PortfolioList extends Component {
           _id: "1",
           color: "#fff",
           title: "OZiva Kids Nutrition",
-          subtitle: "Research & Package Design",
+          subtitle: "Packaging Design ",
           row: 0,
           route: "ozivakids",
           tile: this.OzivakidsTile
@@ -55,7 +55,7 @@ class PortfolioList extends Component {
           _id: "2",
           color: "#fff",
           title: "The Laughing Cow",
-          subtitle: "Research & Package Design",
+          subtitle: "Packaging Design ",
           row: 1,
           route: "tlc",
           tile: this.Tlctile
@@ -64,7 +64,7 @@ class PortfolioList extends Component {
           _id: "3",
           color: "#fff",
           title: "Hershey",
-          subtitle: "Branding & Package Design",
+          subtitle: "Packaging Design ",
           row: 1,
           route: "hershey",
           tile: this.HersheyTile
