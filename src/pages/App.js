@@ -7,7 +7,7 @@ import ContextMenu from "../components/disabledrightclick";
 const App = () => {
   return (
     <div className="app">
-      <ContextMenu />
+      {/* <ContextMenu /> */}
       {/* <Navigation /> */}
       {/* <NavLink exact to="/" activeClassName="active">
           Home
