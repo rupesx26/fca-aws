@@ -10,7 +10,7 @@
 /build
 
 # App.js
-/src/App.js
+/src/pages/App.js
 
 # misc
 .DS_Store
