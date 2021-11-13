@@ -70,7 +70,7 @@
 				max-width: 400px;
 			}
 			img.mob-baking-kit-box {
-				max-width: 68vh;
+				max-width: 65vh;
 			}
 		}
 	}
@@ -149,5 +149,14 @@
 			display: none;
 		}
 	}
-
+	.mobile {
+		@include respond-until(sm) {
+			.hershey-pack-mbile-1 {
+				margin-left: -4em;
+			}
+			.hershey-pack-mbile-2 {
+				margin-right: -3.8em;
+			}
+		}
+	}
 }

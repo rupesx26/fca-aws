@@ -258,7 +258,7 @@ class Cocosoul extends Component {
             >
               <WorkPageNavigation
                 prevLink="/work/nihar-gold"
-                nextLink="/work/hershey"
+                nextLink="/work/oziva"
               />
             </div>
             <div className="full-page-wrapper work-content">

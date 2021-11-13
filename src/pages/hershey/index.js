@@ -270,19 +270,19 @@ class Hershey extends Component {
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
                     <div className="col-md-10 col-xs-12">
-                      <div className="justify-content-left">
-                        <div className="col-md-7 col-xs-12 no-gutters">
+                      <div className="justify-content-left mobile">
+                        <div className="col-md-7 no-gutters">
                           <img
-                            className="hershey-pack1"
+                            className="hershey-pack1 hershey-pack-mbile-1"
                             src={this.hersheyBakingKitBox1}
                             alt="hershey"
                           />
                         </div>
                       </div>
-                      <div className="project-image-container justify-content-right">
-                        <div className="col-md-8 col-xs-12 no-gutters">
+                      <div className="project-image-container justify-content-right mobile">
+                        <div className="col-md-7 col-xs-12 no-gutters ">
                           <img
-                            className="hershey-pack1"
+                            className="hershey-pack1 hershey-pack-mbile-2"
                             src={this.hersheyBakingKitBox2}
                             alt="hershey"
                           />
