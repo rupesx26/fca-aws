@@ -306,11 +306,11 @@ class Hershey extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/ozivakids"
-              data-text="OZiva Kids"
+              to="/work/setwet"
+              data-text="Setwet"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              OZiva Kids
+              Setwet
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

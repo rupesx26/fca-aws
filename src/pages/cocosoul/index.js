@@ -421,11 +421,11 @@ class Cocosoul extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/hershey"
-              data-text="hershey"
+              to="/work/oziva"
+              data-text="OZiva Care"
               className={`title footer-title coco-soul-footer-link ${this.state.footerColor} `}
             >
-              Hershey
+              OZiva Care
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
