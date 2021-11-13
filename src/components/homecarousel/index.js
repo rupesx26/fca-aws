@@ -18,10 +18,10 @@ class HomeCarousel extends Component {
     this.slideAnimation3 = new TimelineMax();
     this.slideAnimation4 = new TimelineMax();
     this.footerAnimation = new TimelineMax();
-    this.image1 = workImagePath("hrx-tile.jpg");
+    this.image1 = workImagePath("oziva-tile.png");
     this.image2 = workImagePath("nihargold-tile.jpg");
-    this.image3 = workImagePath("cocosoul-tile.jpg");
-    this.image4 = workImagePath("sussegado-tile.jpg");
+    this.image3 = workImagePath("ozkn-tile.jpg");
+    this.image4 = workImagePath("tlc-tile.jpg");
   }
 
   componentDidMount() {
@@ -459,7 +459,7 @@ class HomeCarousel extends Component {
       <React.Fragment>
         <section className="section slide-wrapper slide-1">
           <div className="carousel-wrapper">
-            <Link to="/work/hrithik-roshan">
+            <Link to="/work/oziva">
               <div className="carousel-container">
                 <div className="carousel-left-content">
                   <div className="carousel-img-clip">
@@ -471,8 +471,8 @@ class HomeCarousel extends Component {
                 </div>
                 <div className="carousel-right-content">
                   <div className="project-content">
-                    <h2 className="project-title">Hrithik Roshan's</h2>
-                    <h3 className="project-type">Graphic Novel</h3>
+                    <h2 className="project-title">OZiva Personal Care</h2>
+                    <h3 className="project-type">Packaging Design </h3>
                   </div>
                 </div>
               </div>
@@ -503,7 +503,7 @@ class HomeCarousel extends Component {
         </section>
         <section className="section slide-wrapper slide-3">
           <div className="carousel-wrapper">
-            <Link to="/work/cocosoul">
+            <Link to="/work/ozivakids">
               <div className="carousel-container">
                 <div className="carousel-left-content">
                   <div className="carousel-img-clip">
@@ -515,8 +515,8 @@ class HomeCarousel extends Component {
                 </div>
                 <div className="carousel-right-content">
                   <div className="project-content">
-                    <h2 className="project-title">Coco Soul</h2>
-                    <h3 className="project-type">Digital Content</h3>
+                    <h2 className="project-title">OZiva Kids Gummies</h2>
+                    <h3 className="project-type">Packaging Design </h3>
                   </div>
                 </div>
               </div>
@@ -525,7 +525,7 @@ class HomeCarousel extends Component {
         </section>
         <section className="section slide-wrapper slide-4">
           <div className="carousel-wrapper">
-            <Link to="/work/sussegado-coffee">
+            <Link to="/work/tlc">
               <div className="carousel-container">
                 <div className="carousel-left-content">
                   <div className="carousel-img-clip">
@@ -537,8 +537,8 @@ class HomeCarousel extends Component {
                 </div>
                 <div className="carousel-right-content">
                   <div className="project-content">
-                    <h2 className="project-title">Sussegado</h2>
-                    <h3 className="project-type">Product & Package Design</h3>
+                    <h2 className="project-title">The Laughing Cow</h2>
+                    <h3 className="project-type">Packaging Design </h3>
                   </div>
                 </div>
               </div>

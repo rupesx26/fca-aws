@@ -77,3 +77,11 @@ export function tlcImagePath(assetName) {
 export function ozivaImagePath(assetName) {
   return `${ImageUrl}/oziva/${assetName}`;
 }
+
+export function hersheyImagePath(assetName) {
+  return `${ImageUrl}/hershey/${assetName}`;
+}
+
+export function ozivakidsImagePath(assetName) {
+  return `${ImageUrl}/ozivakids/${assetName}`;
+}

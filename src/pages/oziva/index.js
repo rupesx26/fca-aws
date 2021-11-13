@@ -279,8 +279,8 @@ class Oziva extends Component {
               style={{ backgroundImage: `url(${this.ozivaHeaderbg})` }}
             >
               <WorkPageNavigation
-                prevLink="/work/tlc"
-                nextLink="/work/nihar-gold"
+                prevLink="/work/cocosoul"
+                nextLink="/work/ozivakids"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -328,11 +328,11 @@ class Oziva extends Component {
                   <OzivaSlider
                     dots={false}
                     infinite={true}
-                    speed={3000}
+                    speed={1000}
                     slidesToShow={1}
                     slidesToScroll={1}
                     fade={false}
-                    autoplay={true}
+                    autoplay={false}
                     autoplaySpeed={2000}
                     pauseOnHover={false}
                     customnextArrow={true}
@@ -385,11 +385,11 @@ class Oziva extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/sussegado-coffee"
-              data-text="Sussegado Coffee"
+              to="/work/ozivakids"
+              data-text="OZiva Kids"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Sussegado Coffee
+              OZiva Kids
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

@@ -258,7 +258,7 @@ class Cocosoul extends Component {
             >
               <WorkPageNavigation
                 prevLink="/work/nihar-gold"
-                nextLink="/work/thambbi"
+                nextLink="/work/oziva"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -421,11 +421,11 @@ class Cocosoul extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/thambbi"
-              data-text="Thambbi"
+              to="/work/oziva"
+              data-text="OZiva Care"
               className={`title footer-title coco-soul-footer-link ${this.state.footerColor} `}
             >
-              Thambbi
+              OZiva Care
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

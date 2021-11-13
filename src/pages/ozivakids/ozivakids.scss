@@ -1,0 +1,184 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.ozivakids {
+	.work-title{
+		font-size: 5.3em !important;
+		@include respond-until(sm) {
+			font-size: 2.3em !important;
+		}
+	}
+
+	img{
+		width: 100%;
+	}
+
+	img{
+		max-width: 100%;
+	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: center;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-position: bottom;
+		}
+	}
+	&.work-details-page {
+		.work-description {
+			@include respond-until(sm) {
+				padding-bottom: 50px;
+			}
+		}
+	} 
+	.page-header {
+		.banner-img-container {
+			text-align: center;
+			@include respond-until(sm) {
+				width: 40vh;
+			}
+		}
+	}
+	.fold-2 {
+		background-color: #6abf58;
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		display: flex;
+		vertical-align: middle;
+		padding: 10em 0;
+		@include respond-until(sm) {
+			min-height: 45vh;
+			padding: 5em 0;
+		}
+
+		.fold-2-img{
+			margin-bottom: 0;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+		} 
+	}
+
+	.project-image-container{
+		display: flex;
+		position: relative;
+		z-index: 5;
+		@include respond-until(sm) {
+			min-height: auto;
+		}
+	}
+
+	.fold-3 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 45vh;
+		text-align: center;
+			@include respond-until(sm) {
+				margin-top: 5em;
+			}
+		.fold3-imageitem1{
+			margin-bottom: 15em;
+			margin-left: -1em;
+			@include respond-until(sm) {
+				margin-bottom: 3em;
+				padding: 0 1em;
+			}
+		}
+		.fold3-imageitem{
+			margin-bottom: 5em;
+
+			@include respond-until(sm) {
+				margin-bottom: 3em;
+				padding: 0 1em;
+			}
+		}
+		.mobile-scrn-2 {
+			@include respond-until(sm) {
+				transform: translate(0, -20%);
+			}
+		}
+	}
+
+	.fold-4{
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		.oziva-kids-chocolate{
+			position: absolute;
+			right: -16em;
+			top: -152px;
+			@include respond-until(sm) {
+				right: -2em;
+    			top: -110px;
+			}
+		}
+
+		@include respond-until(sm) {
+			min-height: 15vh;
+		}
+	}
+
+	.fold-5{
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		margin-bottom: -5em;
+		display: block;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-size: contain;
+			display: none;
+		}
+	}
+
+	.fold-6{
+		margin-top: 5em;
+		@include respond-until(sm) {
+			margin-top: 10em;
+		}
+		.ozivakids-slider{
+			display: none;
+			@include respond-until(sm) {
+				display: block;
+				margin-bottom: -8px;
+			}
+			.slick-arrow svg{
+				width: 100%;
+				height: 100%;
+				fill: #fff;
+				@include respond-until(sm) {
+					width: 40%;
+				}
+			}
+			.slick-prev{
+				left: 35px;
+				z-index: 1;
+				@include respond-until(sm) {
+					left: 10px;
+				}
+			}
+			.slick-next{
+				@include respond-until(sm) {
+					right: -25px;
+				}
+			}
+	
+			.slick-next, .slick-prev{
+				width: 60px;
+				height: 290px;
+				top: 43%;
+			}
+	
+			.slick-next:before, .slick-prev:before{
+				display: none;
+			}
+		}
+	}
+	
+
+}

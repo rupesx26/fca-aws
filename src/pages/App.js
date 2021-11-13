@@ -2,12 +2,12 @@ import React from "react";
 
 // import { NavLink } from 'react-router-dom';
 import Routes from "../routes";
-import ContextMenu from "../components/disabledrightclick";
+//import ContextMenu from "../components/disabledrightclick";
 // import Navigation from '../components/navigation';
 const App = () => {
   return (
     <div className="app">
-      <ContextMenu />
+      {/* <ContextMenu /> */}
       {/* <Navigation /> */}
       {/* <NavLink exact to="/" activeClassName="active">
           Home

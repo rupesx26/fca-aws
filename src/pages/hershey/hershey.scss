@@ -1,0 +1,162 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.hershey {
+	.next-project a, .prev-project a {
+		color: #000;
+	}
+	.work-title{
+		font-size: 5em !important;
+		@include respond-until(sm) {
+			font-size: 2.2em !important;
+		}
+	}
+
+	img{
+		width: 100%;
+	}
+
+	img{
+		max-width: 100%;
+	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: center;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-position: bottom;
+		}
+	}
+	&.work-details-page {
+		.work-description {
+			@include respond-until(sm) {
+				padding-bottom: 50px;
+			}
+		}
+	} 
+	.page-header {
+		.banner-img-container {
+			text-align: center;
+			@include respond-until(sm) {
+				width: 40vh;
+			}
+		}
+	}
+	.fold-2 {
+		min-height: 50vh;
+		position: relative;
+		width: 100%;
+		padding-top: 10em;
+		margin-top: 0vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		@include respond-until(sm) {
+			min-height: 45vh;
+			padding-top: 5em;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+		}
+		@include respond-until(sm) {
+			img.baking-title {
+				width: 220px;
+				display: block;
+				margin: 0 auto;
+			}
+			img.baking-kit-box {
+				max-width: 400px;
+			}
+			img.mob-baking-kit-box {
+				max-width: 65vh;
+			}
+		}
+	}
+
+	.project-image-container{
+		display: flex;
+		position: relative;
+		z-index: 5;
+		@include respond-until(sm) {
+			min-height: auto;
+		}
+	}
+
+	.fold-3 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		margin-top: 20vh;
+		text-align: center;
+		.mobile-scrn-1 {
+			@include respond-until(sm) {
+				transform: translate(0, -50%);
+			}
+		}
+		.mobile-scrn-2 {
+			@include respond-until(sm) {
+				transform: translate(0, -20%);
+			}
+		}
+
+		@include respond-until(sm) {
+			margin-top: 10vh;
+			min-height: 50vh;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+			&.img-grid {
+				.right-img {
+					margin-top: 0vh;
+					@include respond-until(sm) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
+		.project-image-container{
+			// .hershey-pack1{
+			// 	margin-top:-277px;
+			// }
+			.hershey-pack2{
+				//margin-top:-205px;
+				@include respond-until(sm) {
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+
+	.hershey-mobile {
+		display: none;
+		@include respond-until(sm) {
+			display: block;
+		}
+		
+		.baking-kit-box {
+			max-width: 50vh;
+		}
+	}
+
+	.hershey-desktop {
+		display: block;
+		@include respond-until(sm) {
+			display: none;
+		}
+	}
+	.mobile {
+		@include respond-until(sm) {
+			.hershey-pack-mbile-1 {
+				margin-left: -4em;
+			}
+			.hershey-pack-mbile-2 {
+				margin-right: -3.8em;
+			}
+		}
+	}
+}

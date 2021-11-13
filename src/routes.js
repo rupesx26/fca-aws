@@ -21,6 +21,11 @@ const LoadableWork = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableWorkNew = Loadable({
+  loader: () => import(/* webpackChunkName: 'workNew' */ "./pages/workNew"),
+  loading: () => <PageLoader />
+});
+
 const LoadableConnect = Loadable({
   loader: () => import(/* webpackChunkName: 'connect' */ "./pages/connect"),
   loading: () => <PageLoader />
@@ -130,6 +135,18 @@ const LoadableOziva = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableHershey = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: 'ozivaproduct' */ "./pages/hershey"),
+  loading: () => <PageLoader />
+});
+
+const LoadableOzivaKids = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: 'ozivaproduct' */ "./pages/ozivakids"),
+  loading: () => <PageLoader />
+});
+
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
@@ -167,6 +184,7 @@ const Routes = () => {
       <Route exact path="/" component={LoadableHome} />
       <Route exact path="/difference" component={LoadableDifference} />
       <Route exact path="/work" component={LoadableWork} />
+      <Route exact path="/workNew" component={LoadableWorkNew} />
       <Route exact path="/connect" component={LoadableConnect} />
       <Route exact path="/work/hrithik-roshan" component={LoadableHrx} />
       <Route exact path="/work/nihar-gold" component={LoadableNiharGold} />
@@ -176,6 +194,8 @@ const Routes = () => {
       <Route exact path="/work/cocosoul" component={LoadableCoco} />
       <Route exact path="/work/tlc" component={LoadableTlc} />
       <Route exact path="/work/oziva" component={LoadableOziva} />
+      <Route exact path="/work/hershey" component={LoadableHershey} />
+      <Route exact path="/work/ozivakids" component={LoadableOzivaKids} />
       <Route
         exact
         path="/login"

@@ -357,8 +357,8 @@ class Lifebuoy extends Component {
             >
               <div className="banner-img-container"></div>
               <WorkPageNavigation
-                prevLink="/work/nihar-gold"
-                nextLink="/work/thambbi"
+                prevLink="/work/setwet"
+                nextLink="/work/kate-spade"
               />
             </div>
             <div className="full-page-wrapper work-content">
@@ -514,11 +514,11 @@ class Lifebuoy extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/thambbi"
-              data-text="Thambbi"
+              to="/work/kate-spade"
+              data-text="Kate Spade"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              Thambbi
+              Kate Spade
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>

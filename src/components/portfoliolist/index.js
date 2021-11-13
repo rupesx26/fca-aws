@@ -27,137 +27,158 @@ class PortfolioList extends Component {
     this.SetwetTile = workImagePath("setwet-tile.jpg");
     this.NiharShantiTile = workImagePath("nihar-shanti-tile.png");
     this.Tlctile = workImagePath("tlc-tile.jpg");
-    this.OzivaTile = workImagePath("oziva-tile.jpg");
+    this.OzivaTile = workImagePath("oziva-tile.png");
+    this.HersheyTile = workImagePath("hershey-tile.png");
+    this.OzivakidsTile = workImagePath("ozkn-tile.jpg");
     this.state = {
       data: [
         {
           _id: "0",
           color: "#fff",
-          title: "Nihar Gold",
-          subtitle: "Packaging Design",
+          title: "OZiva Personal Care",
+          subtitle: "Packaging Design ",
           row: 0,
-          route: "nihar-gold",
-          tile: this.NiharGoldTile
+          route: "oziva",
+          tile: this.OzivaTile
         },
         {
           _id: "1",
           color: "#fff",
-          title: "Coco Soul",
-          subtitle: "Digital Content",
+          title: "OZiva Kids Nutrition",
+          subtitle: "Packaging Design ",
           row: 0,
-          route: "cocosoul",
-          tile: this.CocoSoulTile
+          route: "ozivakids",
+          tile: this.OzivakidsTile
         },
 
         {
           _id: "2",
           color: "#fff",
-          title: "Thambbi",
-          subtitle: "Branding & Communication Design",
+          title: "The Laughing Cow",
+          subtitle: "Packaging Design ",
           row: 1,
-          route: "thambbi",
-          tile: this.ThambbiTile
+          route: "tlc",
+          tile: this.Tlctile
         },
         {
           _id: "3",
           color: "#fff",
-          title: "Rapid Rupee",
-          subtitle: "Brand Strategy & Communication",
+          title: "Hershey",
+          subtitle: "Packaging Design ",
           row: 1,
-          route: "rapid-rupee",
-          tile: this.RapidRupeeTile
+          route: "hershey",
+          tile: this.HersheyTile
         },
         {
           _id: "4",
           color: "#fff",
-          title: "Sussegado",
-          subtitle: "Product & Package Design",
-          row: 2,
-          route: "sussegado-coffee",
-          tile: this.SussegadoCoffeeTile
-        },
-        {
-          _id: "5",
-          color: "#fff",
-          title: "Nihar Shanti",
-          subtitle: "Packaging Design",
-          row: 2,
-          route: "nihar-shanti",
-          tile: this.NiharShantiTile
-        },
-        {
-          _id: "5",
-          color: "#fff",
-          title: "Socranos Gravity",
-          subtitle: "Strategy & Packaging Design",
-          row: 3,
-          route: "socranos-gravity",
-          tile: this.GravityTile
-        },
-        {
-          _id: "6",
-          color: "#fff",
-          title: "HERO Talkies",
-          subtitle: "Brand Design",
-          row: 3,
-          route: "hero-talkies",
-          tile: this.HeroTalkiesTile
-        },
-        {
-          _id: "7",
-          color: "#fff",
-          title: "Kate Spade",
-          subtitle: "Digital Audit",
-          row: 4,
-          route: "kate-spade",
-          tile: this.KateSpadeTile
-        },
-        {
-          _id: "8",
-          color: "#fff",
-          title: "Hrithik Roshan's",
-          subtitle: "Graphic Novel",
-          row: 4,
-          route: "hrithik-roshan",
-          tile: this.HrithikRoshanTile
-        },
-        {
-          _id: "9",
-          color: "#fff",
           title: "Setwet",
           subtitle: "Audit & Research",
-          row: 5,
+          row: 2,
           route: "setwet",
           tile: this.SetwetTile
         },
 
         {
-          _id: "9",
+          _id: "5",
           color: "#fff",
           title: "Lifebuoy",
           subtitle: "Audit & Research",
-          row: 5,
+          row: 2,
           route: "lifebuoy",
           tile: this.LifebuoyTile
         },
 
         {
+          _id: "6",
+          color: "#fff",
+          title: "Kate Spade",
+          subtitle: "Digital Audit",
+          row: 3,
+          route: "kate-spade",
+          tile: this.KateSpadeTile
+        },
+        {
+          _id: "7",
+          color: "#fff",
+          title: "Hrithik Roshan's",
+          subtitle: "Graphic Novel",
+          row: 3,
+          route: "hrithik-roshan",
+          tile: this.HrithikRoshanTile
+        },
+        {
+          _id: "8",
+          color: "#fff",
+          title: "Socranos Gravity",
+          subtitle: "Strategy & Packaging Design",
+          row: 4,
+          route: "socranos-gravity",
+          tile: this.GravityTile
+        },
+        {
+          _id: "9",
+          color: "#fff",
+          title: "HERO Talkies",
+          subtitle: "Brand Design",
+          row: 4,
+          route: "hero-talkies",
+          tile: this.HeroTalkiesTile
+        },
+        {
           _id: "10",
           color: "#fff",
-          title: "TLC",
-          subtitle: "Research & Package Design",
-          row: 6,
-          route: "tlc",
-          tile: this.Tlctile
+          title: "Sussegado",
+          subtitle: "Product & Package Design",
+          row: 5,
+          route: "sussegado-coffee",
+          tile: this.SussegadoCoffeeTile
         },
         {
           _id: "11",
           color: "#fff",
-          title: "Oziva",
-          subtitle: "Branding & Package Design",
+          title: "Nihar Shanti",
+          subtitle: "Packaging Design",
+          row: 5,
+          route: "nihar-shanti",
+          tile: this.NiharShantiTile
+        },
+        {
+          _id: "12",
+          color: "#fff",
+          title: "Thambbi",
+          subtitle: "Branding & Communication Design",
           row: 6,
-          route: "oziva",
-          tile: this.OzivaTile
+          route: "thambbi",
+          tile: this.ThambbiTile
+        },
+        {
+          _id: "13",
+          color: "#fff",
+          title: "Rapid Rupee",
+          subtitle: "Brand Strategy & Communication",
+          row: 6,
+          route: "rapid-rupee",
+          tile: this.RapidRupeeTile
+        },
+
+        {
+          _id: "14",
+          color: "#fff",
+          title: "Nihar Gold",
+          subtitle: "Packaging Design",
+          row: 7,
+          route: "nihar-gold",
+          tile: this.NiharGoldTile
+        },
+        {
+          _id: "15",
+          color: "#fff",
+          title: "Coco Soul",
+          subtitle: "Digital Content",
+          row: 7,
+          route: "cocosoul",
+          tile: this.CocoSoulTile
         }
       ]
     };
