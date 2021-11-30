@@ -147,6 +147,12 @@ const LoadableOzivaKids = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableWildStoneCodeWhite = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: 'ozivaproduct' */ "./pages/wildstonecode"),
+  loading: () => <PageLoader />
+});
+
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
@@ -196,6 +202,11 @@ const Routes = () => {
       <Route exact path="/work/oziva" component={LoadableOziva} />
       <Route exact path="/work/hershey" component={LoadableHershey} />
       <Route exact path="/work/ozivakids" component={LoadableOzivaKids} />
+      <Route
+        exact
+        path="/work/wildstonecodewhite"
+        component={LoadableWildStoneCodeWhite}
+      />
       <Route
         exact
         path="/login"
