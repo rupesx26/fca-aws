@@ -85,3 +85,7 @@ export function hersheyImagePath(assetName) {
 export function ozivakidsImagePath(assetName) {
   return `${process.env.PUBLIC_URL}/images/ozivakids/${assetName}`;
 }
+
+export function wildstonecodeImagePath(assetName) {
+  return `${process.env.PUBLIC_URL}/images/wild-stone-code/${assetName}`;
+}
