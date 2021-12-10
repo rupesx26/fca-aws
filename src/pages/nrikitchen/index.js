@@ -8,11 +8,11 @@ import Navigation from "../../components/navigation";
 import { TimelineLite, TweenMax, Power1, Power4, CSSPlugin, gsap } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import ProjectPageSummary from "../../components/workdetailsanim";
-import { wildstonecodeImagePath } from "../../utils/assetUtils";
+import { nrikitchenImagePath } from "../../utils/assetUtils";
 import WorkPageNavigation from "../../components/workpagenav";
 import * as meta from "../../components/meta.json";
 import { colorClassList } from "../../components/colorconfig";
-import "./wildstonecode.scss";
+import "./nrikitchen.scss";
 /* eslint-disable no-console */
 const plugins = [CSSPlugin];
 
@@ -27,11 +27,12 @@ class WildStoneCodeWhite extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.pageAnimation = this.pageAnimation.bind(this);
 
-    this.wildstoneHeaderbg = wildstonecodeImagePath("ws-cover.jpg");
-    this.wildstonePattern = wildstonecodeImagePath("mockup2.jpg");
-    this.wildstoneSpray1 = wildstonecodeImagePath("ws-spray1.jpg");
-    this.wildstoneSpray2 = wildstonecodeImagePath("ws-spray2.jpg");
-    this.wildstonemockup = wildstonecodeImagePath("wscw-bottle.jpg");
+    this.nriHeaderbg = nrikitchenImagePath("nri-cover.jpg");
+    this.nriMotherIndia = nrikitchenImagePath("nri-mother-india.png");
+    this.nriLogo = nrikitchenImagePath("nri-logo.jpg");
+    this.nriRoganMasala = nrikitchenImagePath("nri-rogan-masala.jpg");
+    this.nriButterMasala = nrikitchenImagePath("nri-butter-masala.jpg");
+    this.nriMasalaPack = nrikitchenImagePath("nri-3-pack.jpg");
     this.state = {
       toggleHeader: false,
       showSayHello: false,
@@ -172,14 +173,12 @@ class WildStoneCodeWhite extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Wild Stone <br /> Code White`,
-      client: `OZiva Kids Nutrition`,
-      project: `Packaging Design`,
-      brief: `Design packaging for OZiva’s Kids’ Nutrition range`,
-      para1: `It sure takes a lot to get kids to consume anything healthy. So when OZiva wanted us to design packaging for their kids’ nutrition range (Gummies and Protein Powder), we put ourselves in the shoes of a 7-year old, to design around certain truths:`,
-      para2: `Kids love to feel grown-up. So, we introduced a simple gummy dispenser as part of the packaging. A tiny opening from which the kid can pull a gummy out each day. Kids love quirky characters. They could look up to elephants for their memory, chimps for their hunger for adventure, Tigers for strength and Owls for eyesight. And so, we got each animal to represent a product based on its main benefit.`,
-      para3: `Colour-colour which colour do you choose? Kids are intuitively drawn to interesting colours. So we didn’t shy away from using them well. Mamma makes everything more fun. Each box in the range comes with an engaging comic-style story with the OZiva characters. Something moms could read out to their little ones, creating magical moments between them. All along, while she makes sure her child is staying healthy.
-      `
+      workTitle: `NRI Kitchen`,
+      client: `NRI Kitchen`,
+      project: `Logo & Packaging Design`,
+      brief: `Design logo & packaging for NRI Kitchen`,
+      para1: `NRI kitchen in New Zealand serves up the authentic taste of India, to many homesick Desis in the region. Being a team that loves food, we could relate to the intensity of craving for hot Rasam or Butter Chicken in a foreign land. We brought that feeling alive through packaging with the use of colour-blocking, Bollywood-inspired typeface, Jharokha elements, and a line that summed up what the brand brings to the table – A mouthful of memories.`,
+      para2: ``
     };
     const metakeywords = meta.ozivakids;
     return (
@@ -196,14 +195,14 @@ class WildStoneCodeWhite extends Component {
           />
 
           <div
-            className="page-wrapper work-details-page wild-stone-code wildstonecode-page-wrapper"
+            className="page-wrapper work-details-page nri-kitchen nrikitchen-page-wrapper"
             ref={this.mainWrapper}
           >
             <div
               id="banner"
               ref={this.bannerWrapper}
               className="full-page-wrapper page-header bg"
-              style={{ backgroundImage: `url(${this.wildstoneHeaderbg})` }}
+              style={{ backgroundImage: `url(${this.nriHeaderbg})` }}
             >
               <WorkPageNavigation prevLink="/work/oziva" nextLink="/work/tlc" />
             </div>
@@ -220,38 +219,29 @@ class WildStoneCodeWhite extends Component {
                 team={projectSummaryContent.team}
               />
 
-              <div
-                className="fold-2 bg"
-                style={{ backgroundImage: `url(${this.wildstonePattern})` }}
-              ></div>
-
-              <div className="fold-3">
+              <div className="fold-2">
                 <div className="container">
                   <div className="row justify-content-center no-gutters">
-                    <div className="col-md-6 col-xs-12 no-gutters">
-                      <div className="fold3-imageitem1">
-                        <img
-                          src={this.wildstoneSpray1}
-                          alt="wildstoneproduct1"
-                        />
+                    <div className="col-md-9 col-xs-12 no-gutters">
+                      <div className="fold2-imageitem">
+                        <img src={this.nriMotherIndia} alt="nriMotherIndia" />
                       </div>
-                    </div>
-                    <div className="col-md-6 col-xs-12 no-gutters">
-                      <div className="fold3-imageitem1">
-                        <img
-                          src={this.wildstoneSpray2}
-                          alt="wildstoneproduct2"
-                        />
+                      <div className="fold2-imageitem">
+                        <img src={this.nriLogo} alt="NRILogo" />
+                      </div>
+                      <div className="fold2-imageitem">
+                        <img src={this.nriRoganMasala} alt="RoganMasala" />
+                      </div>
+                      <div className="fold2-imageitem">
+                        <img src={this.nriButterMasala} alt="ButterMasala" />
+                      </div>
+                      <div className="fold2-imageitem">
+                        <img src={this.nriMasalaPack} alt="MasalaPack" />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div
-                className="fold-4 page-header bg"
-                style={{ backgroundImage: `url(${this.wildstonemockup})` }}
-              ></div>
             </div>
           </div>
           <Footer
@@ -266,11 +256,11 @@ class WildStoneCodeWhite extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/nrikitchen"
-              data-text="NRI Kitchen"
+              to="/work/tlc"
+              data-text="The Laughing Cow"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              NRI Kitchen
+              The Laughing Cow
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
