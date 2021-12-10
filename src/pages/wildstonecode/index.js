@@ -172,14 +172,12 @@ class WildStoneCodeWhite extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Wild Stone <br /> Code White`,
-      client: `OZiva Kids Nutrition`,
-      project: `Packaging Design`,
-      brief: `Design packaging for OZiva’s Kids’ Nutrition range`,
-      para1: `It sure takes a lot to get kids to consume anything healthy. So when OZiva wanted us to design packaging for their kids’ nutrition range (Gummies and Protein Powder), we put ourselves in the shoes of a 7-year old, to design around certain truths:`,
-      para2: `Kids love to feel grown-up. So, we introduced a simple gummy dispenser as part of the packaging. A tiny opening from which the kid can pull a gummy out each day. Kids love quirky characters. They could look up to elephants for their memory, chimps for their hunger for adventure, Tigers for strength and Owls for eyesight. And so, we got each animal to represent a product based on its main benefit.`,
-      para3: `Colour-colour which colour do you choose? Kids are intuitively drawn to interesting colours. So we didn’t shy away from using them well. Mamma makes everything more fun. Each box in the range comes with an engaging comic-style story with the OZiva characters. Something moms could read out to their little ones, creating magical moments between them. All along, while she makes sure her child is staying healthy.
-      `
+      workTitle: `Lorem Ipsum`,
+      client: `Lorem Ipsum`,
+      project: `Lorem Ipsum`,
+      brief: `Lorem Ipsum`,
+      para1: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+      para2: ``
     };
     const metakeywords = meta.ozivakids;
     return (
