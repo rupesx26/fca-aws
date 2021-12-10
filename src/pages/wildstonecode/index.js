@@ -237,7 +237,7 @@ class WildStoneCodeWhite extends Component {
                       </div>
                     </div>
                     <div className="col-md-6 col-xs-12 no-gutters">
-                      <div className="fold3-imageitem1">
+                      <div className="fold3-imageitem2">
                         <img
                           src={this.wildstoneSpray2}
                           alt="wildstoneproduct2"
