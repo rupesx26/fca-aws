@@ -256,11 +256,11 @@ class WildStoneCodeWhite extends Component {
           >
             <small className="footer-subtitle subtitle">Next Project?</small>
             <Link
-              to="/work/tlc"
-              data-text="The Laughing Cow"
+              to="/work/oziva"
+              data-text="Oziva Personal Care"
               className={`title footer-title ${this.state.footerColor} `}
             >
-              The Laughing Cow
+              Oziva Personal Care
               <div className="footer-arrow">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
