@@ -31,6 +31,7 @@ class PortfolioList extends Component {
     this.HersheyTile = workImagePath("hershey-tile.png");
     this.OzivakidsTile = workImagePath("ozkn-tile.jpg");
     this.WildStoneTile = workImagePath("ws-code-white-tile.png");
+    this.NriKitchenTile = workImagePath("ws-code-white-tile.png");
     this.state = {
       data: [
         {
@@ -45,14 +46,23 @@ class PortfolioList extends Component {
         {
           _id: "1",
           color: "#fff",
-          title: "OZiva Personal Care",
+          title: "NRI Kitchen",
           subtitle: "Packaging Design ",
           row: 0,
+          route: "nrikitchen",
+          tile: this.NriKitchenTile
+        },
+        {
+          _id: "2",
+          color: "#fff",
+          title: "OZiva Personal Care",
+          subtitle: "Packaging Design ",
+          row: 1,
           route: "oziva",
           tile: this.OzivaTile
         },
         {
-          _id: "2",
+          _id: "3",
           color: "#fff",
           title: "OZiva Kids Nutrition",
           subtitle: "Packaging Design ",
@@ -62,16 +72,16 @@ class PortfolioList extends Component {
         },
 
         {
-          _id: "3",
+          _id: "4",
           color: "#fff",
           title: "The Laughing Cow",
           subtitle: "Packaging Design ",
-          row: 1,
+          row: 2,
           route: "tlc",
           tile: this.Tlctile
         },
         {
-          _id: "4",
+          _id: "5",
           color: "#fff",
           title: "Hershey",
           subtitle: "Packaging Design ",
@@ -80,17 +90,17 @@ class PortfolioList extends Component {
           tile: this.HersheyTile
         },
         {
-          _id: "5",
+          _id: "6",
           color: "#fff",
           title: "Setwet",
           subtitle: "Audit & Research",
-          row: 2,
+          row: 3,
           route: "setwet",
           tile: this.SetwetTile
         },
 
         {
-          _id: "6",
+          _id: "7",
           color: "#fff",
           title: "Lifebuoy",
           subtitle: "Audit & Research",
@@ -100,16 +110,16 @@ class PortfolioList extends Component {
         },
 
         {
-          _id: "7",
+          _id: "8",
           color: "#fff",
           title: "Kate Spade",
           subtitle: "Digital Audit",
-          row: 3,
+          row: 4,
           route: "kate-spade",
           tile: this.KateSpadeTile
         },
         {
-          _id: "8",
+          _id: "9",
           color: "#fff",
           title: "Hrithik Roshan's",
           subtitle: "Graphic Novel",
@@ -118,16 +128,16 @@ class PortfolioList extends Component {
           tile: this.HrithikRoshanTile
         },
         {
-          _id: "9",
+          _id: "10",
           color: "#fff",
           title: "Socranos Gravity",
           subtitle: "Strategy & Packaging Design",
-          row: 4,
+          row: 5,
           route: "socranos-gravity",
           tile: this.GravityTile
         },
         {
-          _id: "10",
+          _id: "11",
           color: "#fff",
           title: "HERO Talkies",
           subtitle: "Brand Design",
@@ -136,16 +146,16 @@ class PortfolioList extends Component {
           tile: this.HeroTalkiesTile
         },
         {
-          _id: "11",
+          _id: "12",
           color: "#fff",
           title: "Sussegado",
           subtitle: "Product & Package Design",
-          row: 5,
+          row: 6,
           route: "sussegado-coffee",
           tile: this.SussegadoCoffeeTile
         },
         {
-          _id: "12",
+          _id: "13",
           color: "#fff",
           title: "Nihar Shanti",
           subtitle: "Packaging Design",
@@ -154,16 +164,16 @@ class PortfolioList extends Component {
           tile: this.NiharShantiTile
         },
         {
-          _id: "13",
+          _id: "14",
           color: "#fff",
           title: "Thambbi",
           subtitle: "Branding & Communication Design",
-          row: 6,
+          row: 7,
           route: "thambbi",
           tile: this.ThambbiTile
         },
         {
-          _id: "14",
+          _id: "15",
           color: "#fff",
           title: "Rapid Rupee",
           subtitle: "Brand Strategy & Communication",
@@ -173,16 +183,16 @@ class PortfolioList extends Component {
         },
 
         {
-          _id: "15",
+          _id: "16",
           color: "#fff",
           title: "Nihar Gold",
           subtitle: "Packaging Design",
-          row: 7,
+          row: 8,
           route: "nihar-gold",
           tile: this.NiharGoldTile
         },
         {
-          _id: "16",
+          _id: "17",
           color: "#fff",
           title: "Coco Soul",
           subtitle: "Digital Content",

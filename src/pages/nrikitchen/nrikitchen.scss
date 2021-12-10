@@ -1,0 +1,73 @@
+@import '../../styles/mixins';
+@import '../../styles/work-details';
+
+.nri-kitchen {
+
+	.next-project a, .prev-project a {
+		color: #000;
+	}
+
+	img{
+		width: 100%;
+	}
+
+	img{
+		max-width: 100%;
+	}
+	.bg{
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: top;
+		@include respond-until(sm) {
+			min-height: 50vh;
+			background-position: bottom;
+		}
+	}
+	&.work-details-page {
+		.work-description {
+			@include respond-until(sm) {
+				padding-bottom: 50px;
+			}
+		}
+	} 
+	.page-header {
+		.banner-img-container {
+			text-align: center;
+			@include respond-until(sm) {
+				width: 40vh;
+			}
+		}
+	}
+	.fold-2 {
+		min-height: 100vh;
+		position: relative;
+		width: 100%;
+		display: flex;
+		vertical-align: middle;
+		padding: 10em 0;
+		@include respond-until(sm) {
+			min-height: 45vh;
+			padding: 5em 0;
+		}
+
+		.fold2-imageitem{
+			margin-bottom: 5em;
+		}
+
+		.project-image-container{
+			z-index: 9;
+			position: relative;
+		} 
+	}
+
+	.project-image-container{
+		display: flex;
+		position: relative;
+		z-index: 5;
+		@include respond-until(sm) {
+			min-height: auto;
+		}
+	}
+	
+
+}

@@ -89,3 +89,7 @@ export function ozivakidsImagePath(assetName) {
 export function wildstonecodeImagePath(assetName) {
   return `${process.env.PUBLIC_URL}/images/wild-stone-code/${assetName}`;
 }
+
+export function nrikitchenImagePath(assetName) {
+  return `${process.env.PUBLIC_URL}/images/nri-kitchen/${assetName}`;
+}

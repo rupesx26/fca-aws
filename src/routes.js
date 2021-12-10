@@ -153,6 +153,12 @@ const LoadableWildStoneCodeWhite = Loadable({
   loading: () => <PageLoader />
 });
 
+const LoadableNriKitchen = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: 'ozivaproduct' */ "./pages/nrikitchen"),
+  loading: () => <PageLoader />
+});
+
 const fakeAuth = {
   isAuthenticated: false,
   authenticate(cb) {
@@ -207,6 +213,7 @@ const Routes = () => {
         path="/work/wildstonecodewhite"
         component={LoadableWildStoneCodeWhite}
       />
+      <Route exact path="/work/nrikitchen" component={LoadableNriKitchen} />
       <Route
         exact
         path="/login"
