@@ -172,7 +172,7 @@ class WildStoneCodeWhite extends Component {
 
   render() {
     const projectSummaryContent = {
-      workTitle: `Lorem Ipsum`,
+      workTitle: `Wild Stone Code`,
       client: `Lorem Ipsum`,
       project: `Lorem Ipsum`,
       brief: `Lorem Ipsum`,
