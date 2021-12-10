@@ -47,11 +47,14 @@
 		padding: 10em 0;
 		@include respond-until(sm) {
 			min-height: 45vh;
-			padding: 5em 0;
+			padding: 1em 1em 0 1em;
 		}
 
 		.fold2-imageitem{
 			margin-bottom: 5em;
+			@include respond-until(sm) {
+				margin-bottom: 2em;
+			}
 		}
 
 		.project-image-container{
