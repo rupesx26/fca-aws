@@ -1,7 +1,8 @@
 // We can use "process.env.VAR_NAME" on both the server and the client.
 // See config/env.js and server/indexHtml.js
 
-const ImageUrl = "http://dqwpk0oa16wlh.cloudfront.net";
+//const ImageUrl = "http://dqwpk0oa16wlh.cloudfront.net"; //prod
+const ImageUrl = `${process.env.PUBLIC_URL}/images/`; //local dev
 export function imagePath(assetName) {
   return `${ImageUrl}/${assetName}`;
 }
@@ -87,9 +88,9 @@ export function ozivakidsImagePath(assetName) {
 }
 
 export function wildstonecodeImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/wild-stone-code/${assetName}`;
+  return `${ImageUrl}/wild-stone-code/${assetName}`;
 }
 
 export function nrikitchenImagePath(assetName) {
-  return `${process.env.PUBLIC_URL}/images/nri-kitchen/${assetName}`;
+  return `${ImageUrl}/nri-kitchen/${assetName}`;
 }
