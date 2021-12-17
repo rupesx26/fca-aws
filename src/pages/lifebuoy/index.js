@@ -318,13 +318,8 @@ class Lifebuoy extends Component {
   }
 
   render() {
-    const pageTitle = (
-      <div>
-        Lifebuoy <br /> Audit & Research
-      </div>
-    );
     const projectSummaryContent = {
-      workTitle: pageTitle,
+      workTitle: `Lifebuoy <br /> Audit & Research`,
       client: `HUL, Lifebuoy`,
       project: `Audit & Research`,
       brief: `Design Lifebuoy's future strategy and package design.`,

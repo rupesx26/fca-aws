@@ -320,13 +320,8 @@ class SetWet extends Component {
   }
 
   render() {
-    const pageTitle = (
-      <div>
-        Set Wet <br /> Brand Audit
-      </div>
-    );
     const projectSummaryContent = {
-      workTitle: pageTitle,
+      workTitle: `Set Wet <br /> Brand Audit`,
       client: `Marico, Set Wet`,
       project: `Audit & Research`,
       brief: `Brand Audit and Research on the TG.`,
